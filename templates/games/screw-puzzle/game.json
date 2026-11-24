@@ -1,0 +1,30 @@
+{
+  "id": "screw-puzzle",
+  "title": "Screw Jam: Unbolt Everything",
+  "description": "Layered acrylic plates pinned tight by colorful bolts — pop the right screws into matching boxes, watch whole slabs drop free, and never jam your tray.",
+  "genre": "casual",
+  "style": "minimal",
+  "setting": "modern",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Tap exposed screws to sort them into matching boxes (3 per box). Keep buffer holes clear and use power-ups when jammed.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-24T00:00:00.000Z",
+  "updatedAt": "2026-11-24T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "top赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "进厂打螺丝：解压拆板",
+      "description": "今天也在赛博电子厂疯狂打工！一层层亚克力板死死叠在一起，挑准颜色把螺丝全拧进同色盒子，看着整块板子「咣当」掉下去，解压值直接拉满。",
+      "controls": "点击没被压住的螺丝就能拧下，凑齐 3 颗同色装满盒子；别把中间备用孔位塞爆，卡关就点道具救场！"
+    }
+  }
+}

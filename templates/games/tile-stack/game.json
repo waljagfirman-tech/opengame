@@ -1,0 +1,30 @@
+{
+  "id": "tile-stack",
+  "title": "Tile Stack: Can You Beat Lv.2?",
+  "description": "Easy to learn on Stage 1, devilishly layered from Stage 2 onward — clear the strawberry hamster's stacked farm tiles using Undo, Pop-out and Shuffle.",
+  "genre": "casual",
+  "style": "anime",
+  "setting": "fantasy",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Tap unblocked tiles into the 7-slot tray to clear triples. Save Undo, Pop-out and Shuffle for tight layers.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-24T00:00:00.000Z",
+  "updatedAt": "2026-11-24T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "top赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "叠叠消：第2关算你狠",
+      "description": "草莓仓鼠喊你来破关！第 1 关三秒学会，第 2 关起层层叠叠暗藏杀机——到底能闯到第几关？移出、撤回、洗牌三大法宝全给你配齐了。",
+      "controls": "点击亮起的可选卡牌放进底部 7 格槽，凑齐 3 张同图案消除；卡壳别慌，底部移出、撤回、洗牌随便秀操作！"
+    }
+  }
+}

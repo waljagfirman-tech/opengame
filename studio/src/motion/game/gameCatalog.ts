@@ -108,8 +108,8 @@ export const bundledGames: GameCard[] = Object.entries(bundledMeta).map(([path, 
   return { ...meta, id, cover: genreCovers[meta.genre] ?? null, playUrl: `bundled:${id}`, reaction: 0, favorite: false, source: 'template', remixOf: null };
 }).sort((a, b) => b.plays - a.plays);
 
-/** A bundled page that loads sibling files (./assets/...) cannot run from a blob URL. */
-export const needsGameService = (html: string) => /["'(]\.?\/?assets\//.test(html);
+/** A bundled page that loads sibling files (./assets/..., ./src/..., ./app.part0.js) cannot run from a blob URL. */
+export const needsGameService = (html: string) => /["'(]\.?\/?(?:assets|src)\/|["']\.\/[^"']+\.(?:js|css|json|wasm)\b|<(?:script|link)\b[^>]+(?:src|href)=["'](?!https?:|data:|blob:|#)/i.test(html);
 
 /** Resolve a playable URL. Service URLs go through the Studio proxy; bundled pages become blob URLs. */
 export async function playableUrl(game: GameCard) {

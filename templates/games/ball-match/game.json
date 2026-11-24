@@ -1,0 +1,30 @@
+{
+  "id": "ball-match",
+  "title": "Jelly Ball Chain Pop",
+  "description": "Trace long glossy chains across a 3D bubble grid, pop huge clusters before moves run dry, and drop bombs to blast through tight goals.",
+  "genre": "casual",
+  "style": "3d",
+  "setting": "modern",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Press and drag through adjacent balls of the same color, then release to pop. Trigger bombs when moves get tight.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-24T00:00:00.000Z",
+  "updatedAt": "2026-11-24T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "top赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "弹珠连线爆爆乐",
+      "description": "一指划过满屏果冻感立体彩球，连得越长、爆得越爽！步数紧巴巴的时候甩出一颗骷髅炸弹瞬间清场，专治各种不开心。",
+      "controls": "按住相邻的同色彩球一笔连到底，松手立刻噼里啪啦消一片，攒够金币随时炸翻全场！"
+    }
+  }
+}

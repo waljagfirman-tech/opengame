@@ -9,7 +9,7 @@ import { execFileSync } from 'node:child_process';
 
 test('public Motion sources contain no company endpoints, workstation paths or embedded upstream ingest keys', async () => {
   const root = fileURLToPath(new URL('../', import.meta.url));
-  const files = execFileSync('git', ['ls-files', '--cached', '--others', '--exclude-standard', '-z', '--', '.'], { cwd: root, encoding: 'utf8' }).split('\0').filter(Boolean);
+  const files = execFileSync('git', ['ls-files', '--cached', '--others', '--exclude-standard', '-z', '--', '.'], { cwd: root, encoding: 'utf8', maxBuffer: 16 * 1024 * 1024 }).split('\0').filter(Boolean);
   for (const file of files) {
     if (!/\.(?:md|txt|ts|tsx|js|mjs|json|yml|yaml|html|css|sh|ps1|command)$/.test(file)) continue;
     let content: string;

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+  <title>雀神对对消</title>
+
+  
+  <meta name="viewport"
+        content="width=device-width,user-scalable=no,initial-scale=1,minimum-scale=1,maximum-scale=1,minimal-ui=true"/>
+
+  
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- force webkit on 360 -->
+  <meta name="renderer" content="webkit"/>
+  <meta name="force-rendering" content="webkit"/>
+  <!-- force edge on IE -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <!-- force full screen on some browser -->
+  <meta name="full-screen" content="yes"/>
+  <meta name="x5-fullscreen" content="true"/>
+  <meta name="360-fullscreen" content="true"/>
+
+  <!--fix fireball/issues/3568 -->
+  <!--<meta name="browsermode" content="application">-->
+  <meta name="x5-page-mode" content="app">
+
+  <!--<link rel="apple-touch-icon" href=".png" />-->
+  <!--<link rel="apple-touch-icon-precomposed" href=".png" />-->
+
+  <link rel="stylesheet" type="text/css" href="style.css"/>
+
+</head>
+<body>
+  <div id="GameDiv" cc_exact_fit_screen="true">
+      <div id="Cocos3dGameContainer">
+        <canvas id="GameCanvas" oncontextmenu="event.preventDefault()" tabindex="99"></canvas>
+      </div>
+    </div>
+  
+
+<!-- Polyfills bundle. -->
+
+<script>
+(function(){
+  function mem(){var s=Object.create(null);return{get length(){return Object.keys(s).length;},key:function(i){return Object.keys(s)[i]||null;},getItem:function(k){k=String(k);return Object.prototype.hasOwnProperty.call(s,k)?s[k]:null;},setItem:function(k,v){s[String(k)]=String(v);},removeItem:function(k){delete s[String(k)];},clear:function(){for(var k in s)delete s[k];}};}
+  ['localStorage','sessionStorage'].forEach(function(n){try{void window[n];}catch(e){try{Object.defineProperty(window,n,{value:mem(),configurable:true});}catch(_){}}});
+})();
+</script>
+<script src="src/polyfills.bundle.js" charset="utf-8"> </script>
+
+
+<!-- SystemJS support. -->
+<script src="src/system.bundle.js" charset="utf-8"> </script>
+
+<!-- Import map -->
+<script src="src/import-map.json" type="systemjs-importmap" charset="utf-8"> </script>
+
+<script>
+(function(){
+  var chunks={"cocos-js/cc.js":["cc.part0.js","cc.part1.js","cc.part2.js"]};
+  var proto=Object.getPrototypeOf(System),orig=proto.instantiate;
+  proto.instantiate=function(url,parent){
+    for(var key in chunks){
+      if(url.endsWith('/'+key)){
+        var base=url.slice(0,url.lastIndexOf('/')+1);
+        return Promise.all(chunks[key].map(function(p){
+          return fetch(base+p).then(function(r){if(!r.ok)throw new Error('HTTP '+r.status);return r.text();});
+        })).then(function(parts){
+          var reg=null,prev=System.register;
+          System.register=function(d,f){reg=[d,f];};
+          try{(0,eval)(parts.join(''));}finally{System.register=prev;}
+          return reg;
+        });
+      }
+    }
+    return orig.call(this,url,parent);
+  };
+})();
+</script>
+<script>
+    System.import('./index.js').catch(function(err) { console.error(err); })
+</script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+{
+  "id": "block-blast",
+  "title": "Block Blast: Board Sweeper",
+  "description": "\"Just one more piece\" — snap wild polyominoes into an 8x8 grid and detonate multi-line combos that scratch every perfectionist itch.",
+  "genre": "casual",
+  "style": "minimal",
+  "setting": "modern",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Drag shapes from the tray onto the 8x8 board. Fill complete rows or columns to blast them clear and chain combos.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-24T00:00:00.000Z",
+  "updatedAt": "2026-11-24T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "top赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "方块爆破：清屏狂魔",
+      "description": "「再放一块我就睡」——8×8 棋盘上的极致解压连消！把奇形怪状的彩块严丝合缝塞进空位，多行多列同时引爆那一秒，强迫症直接原地升天。",
+      "controls": "拖住底部方块放进棋盘，填满任意一行或一列即刻清屏爆破，连续消除触发暴击高分！"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "catch-piggy",
+  "title": "Catch Piggy: Toy Pile Match",
+  "description": "A physics heap of plump pink piggies, teddy bears and colorful toys tumbles across the screen — snatch matching triples before the clock runs dry.",
+  "genre": "casual",
+  "style": "anime",
+  "setting": "fantasy",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Tap toys and piggies into your 7-slot tray to match triples. Hit Freeze, Auto-Match, or Pop-Out when the tray fills up.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-24T00:00:00.000Z",
+  "updatedAt": "2026-11-24T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "top赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "抓小猪：全堆里揪三只",
+      "description": "一整堆软萌小猪屁股、泰迪熊和玩具咕噜咕噜滚满屏幕！眼疾手快翻出三个一模一样的凑对消掉，倒计时嘀嗒作响，越抓越上头。",
+      "controls": "点击画面里露出的小猪或玩具放进底部 7 格托盘，集齐 3 个自动消除；危机时刻点「冰冻」「凑齐」「移出」极限救命！"
+    }
+  }
+}

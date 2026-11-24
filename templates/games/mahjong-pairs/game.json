@@ -1,0 +1,30 @@
+{
+  "id": "mahjong-pairs",
+  "title": "Mahjong Slide & Pair",
+  "description": "No hand-counting required — shove whole rows and columns of classic tiles until twins collide, snap pairs off the emerald felt, and clear the table.",
+  "genre": "casual",
+  "style": "minimal",
+  "setting": "retro",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Tap adjacent matching tiles to clear them, or slide any row/column to line up pairs. Use Hint or Shuffle anytime.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-24T00:00:00.000Z",
+  "updatedAt": "2026-11-24T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "top赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "雀神推牌对对消",
+      "description": "不用凑番也能当雀神！整行整列「哗啦」一推，把两张相同的萬、筒、條、红中推到面对面直接碰走，节奏丝滑到根本停不下来。",
+      "controls": "相邻同牌直接点掉，隔得远就拖住整行或整列推过去对齐；眼花时随时点「提示」或「洗牌」翻盘！"
+    }
+  }
+}

@@ -525,7 +525,7 @@ export class GameProjects {
     for (const file of await inventory(dir)) { const dest = path.join(target, file.path); await mkdir(path.dirname(dest), { recursive: true }); await writeFile(dest, await readFile(await safeFile(dir, file.path))); }
     const originalMeta = await jsonFile<StoredGame>(path.join(dir, 'game.json'));
     // A remix keeps the original brief (and its playable-ad format line) so the Agent follows the same recipe.
-    const game = { ...original, titleCustomized: undefined, kit: originalMeta.kit, cover: originalMeta.cover ?? null, ...(originalMeta.rawPrompt ? { rawPrompt: originalMeta.rawPrompt } : {}), id: newId, title: `${original.title.slice(0,72)} remix`, source: 'mine' as const, status: 'draft' as const, plays: 0, likes: 0, dislikes: 0, reaction: 0 as const, favorite: false, remixOf: id, createdAt: new Date().toISOString(), updatedAt: new Date().toISOString() };
+    const game = { ...original, titleCustomized: undefined, tags: undefined, kit: originalMeta.kit, cover: originalMeta.cover ?? null, ...(originalMeta.rawPrompt ? { rawPrompt: originalMeta.rawPrompt } : {}), id: newId, title: `${original.title.slice(0,72)} remix`, source: 'mine' as const, status: 'draft' as const, plays: 0, likes: 0, dislikes: 0, reaction: 0 as const, favorite: false, remixOf: id, createdAt: new Date().toISOString(), updatedAt: new Date().toISOString() };
     await this.save(newId, game);
     return { game: await this.get(newId), agentInstruction: instruction(game, { prompt: originalMeta.rawPrompt ?? original.description, genre: original.genre, style: original.style, setting: original.setting, multiplayer: original.multiplayer, orientation: original.orientation, playableAd: original.playableAd }, true) };
     });

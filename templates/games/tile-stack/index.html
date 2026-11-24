@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="theme-color" content="#cdeccf" />
+    <title>叠叠消</title>
+    <style>html,body{background:linear-gradient(#cfe7ee 0%,#cfe7ee 40%,#c4e6c8 60%,#c4e6c8 100%);width:100%;height:100%;margin:0;padding:0;overflow:hidden}body{touch-action:none;-webkit-user-select:none;-moz-user-select:none;user-select:none;-webkit-tap-highlight-color:transparent}#app{justify-content:center;align-items:center;width:100%;height:100%;display:flex}canvas{display:block}</style>
+  <script>
+(function(){
+  function mem(){var s=Object.create(null);return{get length(){return Object.keys(s).length;},key:function(i){return Object.keys(s)[i]||null;},getItem:function(k){k=String(k);return Object.prototype.hasOwnProperty.call(s,k)?s[k]:null;},setItem:function(k,v){s[String(k)]=String(v);},removeItem:function(k){delete s[String(k)];},clear:function(){for(var k in s)delete s[k];}};}
+  ['localStorage','sessionStorage'].forEach(function(n){try{void window[n];}catch(e){try{Object.defineProperty(window,n,{value:mem(),configurable:true});}catch(_){}}});
+})();
+</script>
+</head>
+  <body>
+    <div id="app"></div>
+  <script>Promise.all(["./app.part0.js","./app.part1.js"].map(function(u){return fetch(u).then(function(r){if(!r.ok)throw new Error('HTTP '+r.status);return r.text();});})).then(function(p){(0,eval)(p.join(''));}).catch(function(e){console.error(e);});</script>
+</body>
+</html>

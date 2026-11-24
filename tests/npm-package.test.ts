@@ -260,7 +260,7 @@ test('test npm artifacts contain their application, locked manifest and no bundl
     }
     assert(!entryPaths.some(parts => parts.some(part => part.startsWith('.env'))), 'Environment files must not ship');
     assert(!entryPaths.some(parts => parts.includes('.motion-data')), 'Workspace data must not ship');
-    const nonRuntimePackageEntries = entryNames.filter(file => !file.startsWith('packages/multimodal-models/src/')).join('\n');
+    const nonRuntimePackageEntries = entryNames.filter(file => !file.startsWith('packages/multimodal-models/src/') && !/^templates\/games\/[^/]+\/src\//.test(file)).join('\n');
     assert(!/(^|\/)(tests|src)\//.test(nonRuntimePackageEntries), 'Development sources and fixtures must not ship');
     for (const script of ['measure_frame.mjs', 'register_motion.py', 'measure_motion.py', 'observe_marks.py', 'vision-tools.mjs']) {
       const filename = 'skills/openmotion-recreate/scripts/' + script;
