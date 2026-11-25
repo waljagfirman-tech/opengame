@@ -1,0 +1,30 @@
+{
+  "id": "daily-drift-3d",
+  "title": "Daily Drift 3D",
+  "description": "Weave through sunlit 3D street courses, hit glowing turbo boost pads, merge and upgrade sleek sports cars, and leave rival racers in your slipstream.",
+  "genre": "racing",
+  "style": "3d",
+  "setting": "modern",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Hold and drag left or right to steer across lanes, hit boost pads, dodge traffic, and sprint to first place.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "TOP赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "天天飙车 3D",
+      "description": "超爽 3D 街机极速狂飙：单手滑动变道踩满氮气加速带，贴身超车甩开对手，合成解锁更猛超跑冲刺冠军！",
+      "controls": "按住屏幕左右滑动控制赛车变道与漂移，踩加速带氮气冲刺超越所有对手。"
+    }
+  }
+}
