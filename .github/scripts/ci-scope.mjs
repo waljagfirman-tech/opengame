@@ -60,7 +60,7 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
       : process.env.BASE_SHA;
     if (process.env.GITHUB_EVENT_NAME !== 'workflow_dispatch' && /^[a-f0-9]{40}$/.test(base ?? '') && !/^0+$/.test(base)) {
       const available = spawnSync('git', ['cat-file', '-e', `${base}^{commit}`]).status === 0;
-      const files = available ? execFileSync('git', ['diff', '--name-only', '--no-renames', '-z', base, 'HEAD'], { encoding: 'utf8', maxBuffer: 64 * 1024 * 1024 })
+      const files = available ? execFileSync('git', ['diff', '--name-only', '--no-renames', '-z', base, 'HEAD'], { encoding: 'utf8' })
         .split('\0').filter(Boolean) : [];
       scope = classifyChanges(files);
       if (!scope.full) {
