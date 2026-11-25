@@ -100,10 +100,10 @@ test('draft lifecycle, remix, persisted local viewer and concurrent counters',()
 
 test('templates are optional, read-only and remix into independent owned files',()=>fixture(async(service,workspace)=>{
   const {game}=await service.create(brief),template=path.join(service.templates,'racer');
-  await mkdir(template,{recursive:true}); await writeFile(path.join(template,'game.json'),JSON.stringify({...game,id:'racer',status:'published',source:'template',tags:['top赚钱']}));
+  await mkdir(template,{recursive:true}); await writeFile(path.join(template,'game.json'),JSON.stringify({...game,id:'racer',status:'published',source:'template',tags:['TOP赚钱']}));
   await writeFile(path.join(template,'index.html'),'<title>Template</title>');
   assert.equal((await service.get('racer')).source,'template');
-  assert.deepEqual((await service.get('racer')).tags,['top赚钱']);
+  assert.deepEqual((await service.get('racer')).tags,['TOP赚钱']);
   const raw=JSON.parse(await readFile(path.join(template,'game.json'),'utf8')); raw.cover='cover.png'; delete raw.remixOf; await writeFile(path.join(template,'game.json'),JSON.stringify(raw));
   assert.equal((await service.get('racer')).cover,'/api/games/racer/play/cover.png'); assert.equal((await service.get('racer')).remixOf,null);
   await assert.rejects(service.write('racer',[{path:'index.html',content:'bad'}]),/not found/);

@@ -158,3 +158,12 @@ export const gameApi = {
 export function formatPlays(value: number, locale: string) {
   return new Intl.NumberFormat(locale, { notation: value >= 10000 ? 'compact' : 'standard', maximumFractionDigits: 1 }).format(value);
 }
+
+/** Prominent curated badge/filter tag for high-grossing mini-game templates. */
+export const TOP_EARNING_TAG = 'TOP赚钱';
+
+/** Match both canonical `TOP赚钱` and legacy lowercase `top赚钱` tags on game cards. */
+export function isTopEarningGame(game: Pick<GameCard, 'tags'>): boolean {
+  const needle = TOP_EARNING_TAG.toLowerCase();
+  return Array.isArray(game.tags) && game.tags.some((tag) => tag.trim().toLowerCase() === needle);
+}

@@ -65,7 +65,7 @@ export type GameCard = {
   controls: string;
   /** Optional per-locale title, description and controls shipped with the game (e.g. { 'zh-CN': { title, description } }). */
   i18n?: Record<string, { title?: string; description?: string; controls?: string }>;
-  /** Optional internal curation tags for catalog grouping; not displayed to players. */
+  /** Optional featured curation tags (e.g. "TOP赚钱") exposed as visible card badges and market filters. */
   tags?: string[];
   /** Latest trailer job for this game, if one was started. */
   trailer?: GameTrailer;
