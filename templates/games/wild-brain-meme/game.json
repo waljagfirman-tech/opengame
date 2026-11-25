@@ -1,0 +1,30 @@
+{
+  "id": "wild-brain-meme",
+  "title": "Wild Brain Meme",
+  "description": "Crack outrageous comic brain-teasers and spot hilarious hidden meme twists across dozens of absurdly funny puzzle stages.",
+  "genre": "casual",
+  "style": "anime",
+  "setting": "modern",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Tap, drag, or combine unexpected clues inside each cartoon scene to solve every wacky riddle.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "TOP赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "非正常脑洞",
+      "description": "抖音爆笑玩梗脑洞解谜合集：花式找茬、反套路互动、离谱名场面层出不穷，挑战你的清奇脑回路！",
+      "controls": "点击或拖动场景中的道具与可疑细节，触发意想不到的搞笑机关完成每一关任务。"
+    }
+  }
+}

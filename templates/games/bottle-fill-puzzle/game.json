@@ -1,0 +1,30 @@
+{
+  "id": "bottle-fill-puzzle",
+  "title": "Bottle Fill Puzzle",
+  "description": "Drop bouncy fruits and clever physics shapes into quirky glass jars—pack every piece cleanly below the rim line without a single overflow.",
+  "genre": "casual",
+  "style": "minimal",
+  "setting": "modern",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Tap or drag horizontally above the bottle mouth to position each item and drop it neatly inside the jar.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "TOP赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "烧脑挑战装满瓶子",
+      "description": "抖音魔性物理装瓶收纳挑战：看准水果尺寸和物理弹跳落点逐一投入玻璃瓶，完美塞满不溢出才算真高手！",
+      "controls": "按住拖动控制上方水果投放位置，松手下落将所有水果稳稳装入玻璃瓶中不溢出。"
+    }
+  }
+}

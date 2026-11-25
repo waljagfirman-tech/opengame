@@ -1,0 +1,30 @@
+{
+  "id": "bullet-storm-horde",
+  "title": "Bullet Storm Horde",
+  "description": "Weave through endless monster swarms while your auto-firing arsenal evolves into screen-filling volleys, spinning blades, and explosive skills.",
+  "genre": "shooter",
+  "style": "anime",
+  "setting": "modern",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Drag with one finger to dodge incoming enemy waves, gather XP gems, and choose roguelike weapon upgrades.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "TOP赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "还有谁突突突",
+      "description": "满屏弹幕肉鸽割草射击：单手风骚走位自动狂射、升级进化超武大招，体验以一敌百横扫怪潮的极致爽感！",
+      "controls": "按住屏幕拖动虚拟摇杆控制走位躲怪，拾取经验宝石升级挑选强力武器词条横扫全场。"
+    }
+  }
+}

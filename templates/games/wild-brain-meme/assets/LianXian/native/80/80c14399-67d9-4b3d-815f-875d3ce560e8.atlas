@@ -1,0 +1,27 @@
+
+BoFang.png
+size: 60,34
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+yuying_2
+  rotate: true
+  xy: 2, 22
+  size: 10, 15
+  orig: 10, 15
+  offset: 0, 0
+  index: -1
+yuying_3
+  rotate: true
+  xy: 19, 20
+  size: 12, 36
+  orig: 12, 36
+  offset: 0, 0
+  index: -1
+yuying_4
+  rotate: true
+  xy: 2, 2
+  size: 16, 56
+  orig: 16, 56
+  offset: 0, 0
+  index: -1

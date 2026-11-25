@@ -1,0 +1,30 @@
+{
+  "id": "blossom-bloom-match",
+  "title": "Blossom Bloom Match",
+  "description": "Sort vibrant roses, sunflowers, and tulips across sunny wooden garden shelves—pair three identical blossoms in a pot to clear dazzling floral combos.",
+  "genre": "casual",
+  "style": "anime",
+  "setting": "fantasy",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Drag flowers from pot to pot to group three matching blossoms together and clear every shelf before the timer runs out.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "TOP赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "花朵消除",
+      "description": "超治愈爆款三消花艺收纳：拖动玫瑰、向日葵、郁金香归类进同色花盆，三朵凑齐瞬间绽放消除超解压！",
+      "controls": "拖动不同花盆里的花朵进行整理，同一花盆集齐三朵相同花朵即可消除通关。"
+    }
+  }
+}

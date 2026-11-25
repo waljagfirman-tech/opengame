@@ -1,0 +1,30 @@
+{
+  "id": "pinball-bricks-2999",
+  "title": "Pinball Bricks 2999",
+  "description": "Aim a growing stream of bouncing pinballs across 2,999 numbered brick stages—nail banked top-wall angles to shred hundreds of blocks in one volley.",
+  "genre": "casual",
+  "style": "minimal",
+  "setting": "retro",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Drag to aim your dotted trajectory line, then release to fire a stream of bouncing balls that chip down numbered bricks.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "TOP赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "数字弹球大闯关",
+      "description": "超耐玩 2999 关经典物理弹球消砖块：一指拉线找准黄金反弹死角，几十颗弹球连环撞击清光满屏数字砖块超解压！",
+      "controls": "按住拖动瞄准虚线角度后松手发射弹球串，利用多次反弹清空所有数字砖块。"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "hoop-dunk-master",
+  "title": "Hoop Dunk Master",
+  "description": "Step onto the hardwood, charge your power gauge with perfect timing, and sink swish after swish for blazing arcade basketball streaks.",
+  "genre": "casual",
+  "style": "anime",
+  "setting": "modern",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Press and hold to charge the shot power bar, then release inside the sweet spot to swish the basketball through the hoop.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "landscape",
+  "tags": [
+    "TOP赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "投篮高手",
+      "description": "魔性街机蓄力投篮挑战：按住精准把控力度条、松手拉出完美弧线空心入网，连进触发超高分狂热手感！",
+      "controls": "按住屏幕观察右侧力度条蓄力，瞄准最佳区间松手起跳投篮得分。"
+    }
+  }
+}

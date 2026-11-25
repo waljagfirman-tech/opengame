@@ -1,0 +1,30 @@
+{
+  "id": "fruit-bubble-pop",
+  "title": "Fruit Bubble Pop",
+  "description": "Bank crisp shots off side walls to pop vibrant clusters of glossy fruit bubbles—drop whole hanging sections at once for juicy cascade scores.",
+  "genre": "casual",
+  "style": "anime",
+  "setting": "modern",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Drag to aim the dotted bounce guide and release to shoot fruit bubbles into matching color clusters.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "TOP赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "水果泡泡龙",
+      "description": "经典全民休闲水果泡泡龙：拉线借助墙壁反弹精准射出彩色水果泡泡，打断顶部支点整片掉落爽翻天！",
+      "controls": "按住拖动虚线瞄准目标颜色泡泡，松手发射凑齐三个及以上同色消除。"
+    }
+  }
+}

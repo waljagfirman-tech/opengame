@@ -1,0 +1,30 @@
+{
+  "id": "zuma-marble-blast",
+  "title": "Zuma Marble Blast",
+  "description": "Rotate an ancient stone launcher in the heart of jungle ruins—shoot colorful marbles into rolling chains to spark explosive match-3 combos before they reach the skull.",
+  "genre": "casual",
+  "style": "anime",
+  "setting": "fantasy",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Aim with pointer or touch and click/tap to fire colorful marbles into the rolling track to match three or more.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "landscape",
+  "tags": [
+    "TOP赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "经典祖玛",
+      "description": "国民回忆杀神作经典祖玛：旋转神庙石像发射彩色弹珠，精准打入滚珠长龙触发连锁三消爆破，在进洞前全清通关！",
+      "controls": "移动准星并点击屏幕发射彩色祖玛珠，凑齐三个及以上同色相连即可消除并触发连击。"
+    }
+  }
+}

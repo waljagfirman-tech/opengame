@@ -1,0 +1,30 @@
+{
+  "id": "stickman-sniper-pro",
+  "title": "Stickman Sniper Pro",
+  "description": "Peer through a steady sniper scope across rooftop and city missions—read target briefs, line up clean headshots, and take down every mark.",
+  "genre": "shooter",
+  "style": "minimal",
+  "setting": "modern",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Drag to aim your sniper scope crosshair onto the mission target, then tap or release to fire a precision shot.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "landscape",
+  "tags": [
+    "TOP赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "火柴人狙击大师",
+      "description": "经典高能横版火柴人狙击暗杀：阅读悬赏情报、开倍镜稳准锁定目标要害，一枪毙命完成全套特工任务！",
+      "controls": "拖动屏幕移动狙击镜准星瞄准目标头部，找准时机点击开火一击必杀。"
+    }
+  }
+}

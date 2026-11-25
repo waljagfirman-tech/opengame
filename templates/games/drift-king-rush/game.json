@@ -1,0 +1,30 @@
+{
+  "id": "drift-king-rush",
+  "title": "Drift King Rush",
+  "description": "Hold through tight winding asphalt curves to sling your race car into buttery one-thumb drifts, rack up lap combos, and upgrade faster rides.",
+  "genre": "racing",
+  "style": "3d",
+  "setting": "modern",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Press and hold on screen to hook into corners and drift smoothly; release on straightaways to rocket ahead.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "TOP赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "全民漂移",
+      "description": "魔性一指挂钩甩尾漂移赛车：入弯长按贴弯极限漂移、出弯松手全速冲刺，升级爱车刷爆赛道连击纪录！",
+      "controls": "靠近弯道时长按屏幕钩住弯心漂移过弯，出弯松手恢复直线全速冲刺。"
+    }
+  }
+}

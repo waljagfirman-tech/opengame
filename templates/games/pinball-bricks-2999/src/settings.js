@@ -1,0 +1,1 @@
+window._CCSettings={platform:"web-mobile",groupList:["default","bgView","boll","box"],collisionMatrix:[[false,false,false,false],[false,false,true,true],[false,true,false,true],[false,true,true,false]],hasResourcesBundle:true,hasStartSceneBundle:false,remoteBundles:[],subpackages:[],launchScene:"db:/"+"/assets/scene/hall.fire",orientation:"portrait",jsList:[]};

@@ -1,0 +1,1 @@
+[1,0,0,[["cc.TextAsset",["_name","text"],1]],[[0,0,1,3]],[[0,"goldMinerHookLevel","等级id,开始等级,等级每级加成\r\nlevelId,start_level,level_addition\r\n0,0,0\r\n1,1,0.1\r\n2,2,0.05\r\n3,3,0.04\r\n4,4,0.025\r\n5,8,0.02\r\n6,11,0.005\r\n7,21,0.0025\r\n8,41,0.0015\r\n9,101,0.001\r\n"]],0,0,[],[],[]]
