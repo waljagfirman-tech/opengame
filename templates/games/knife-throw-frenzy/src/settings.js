@@ -1,0 +1,1 @@
+window._CCSettings={platform:"web-mobile",groupList:["default","gui"],collisionMatrix:[[true],[false,false]],hasResourcesBundle:true,hasStartSceneBundle:false,remoteBundles:[],subpackages:[],launchScene:"db:/"+"/assets/scenes/1.fire",orientation:"portrait",jsList:["assets/scripts/MoveCircleBy.js"]};

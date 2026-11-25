@@ -1,0 +1,30 @@
+{
+  "id": "ring-stack-match",
+  "title": "Ring Stack Match",
+  "description": "Drag concentric neon color rings onto a sleek grid—align three matching rings across rows, columns, or diagonals to ignite chain-reaction clears.",
+  "genre": "casual",
+  "style": "minimal",
+  "setting": "modern",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Drag incoming concentric rings onto open pegs to match three of the same color in a row or stack.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "TOP赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "环与环",
+      "description": "极简烧脑套环三消神作：把大中小霓虹彩环拖进九宫格，横竖斜或同格三色连消触发炫酷连击停不下来！",
+      "controls": "按住拖动下方出现的彩色圆环放置到棋盘格点上，凑齐三个同色圆环即可消除得分。"
+    }
+  }
+}

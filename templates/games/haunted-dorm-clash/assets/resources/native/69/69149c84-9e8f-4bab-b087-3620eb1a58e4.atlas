@@ -1,0 +1,314 @@
+
+skin6.png
+size: 1364,396
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+b
+  rotate: true
+  xy: 1218, 97
+  size: 297, 106
+  orig: 297, 106
+  offset: 0, 0
+  index: -1
+body
+  rotate: true
+  xy: 1103, 92
+  size: 69, 100
+  orig: 69, 100
+  offset: 0, 0
+  index: -1
+hair
+  rotate: true
+  xy: 273, 19
+  size: 167, 180
+  orig: 167, 180
+  offset: 0, 0
+  index: -1
+head
+  rotate: true
+  xy: 637, 15
+  size: 146, 150
+  orig: 146, 150
+  offset: 0, 0
+  index: -1
+hudiej
+  rotate: false
+  xy: 1251, 41
+  size: 44, 54
+  orig: 44, 56
+  offset: 0, 1
+  index: -1
+mm
+  rotate: false
+  xy: 114, 23
+  size: 51, 6
+  orig: 51, 6
+  offset: 0, 0
+  index: -1
+mouth
+  rotate: false
+  xy: 167, 24
+  size: 15, 5
+  orig: 16, 6
+  offset: 0, 0
+  index: -1
+people/body
+  rotate: true
+  xy: 1097, 21
+  size: 69, 100
+  orig: 69, 100
+  offset: 0, 0
+  index: -1
+people/hair
+  rotate: true
+  xy: 455, 19
+  size: 167, 180
+  orig: 167, 180
+  offset: 0, 0
+  index: -1
+people/head
+  rotate: true
+  xy: 789, 15
+  size: 146, 150
+  orig: 146, 150
+  offset: 0, 0
+  index: -1
+people/mm
+  rotate: true
+  xy: 1205, 107
+  size: 54, 11
+  orig: 55, 11
+  offset: 0, 0
+  index: -1
+people/mouth
+  rotate: false
+  xy: 377, 230
+  size: 21, 10
+  orig: 22, 10
+  offset: 0, 0
+  index: -1
+people/qunzi
+  rotate: false
+  xy: 941, 45
+  size: 102, 70
+  orig: 102, 70
+  offset: 0, 0
+  index: -1
+people/y_dabi
+  rotate: true
+  xy: 58, 2
+  size: 27, 54
+  orig: 28, 54
+  offset: 0, 0
+  index: -1
+people/y_datui
+  rotate: true
+  xy: 1046, 16
+  size: 32, 43
+  orig: 33, 43
+  offset: 0, 0
+  index: -1
+people/z_datui
+  rotate: true
+  xy: 1046, 16
+  size: 32, 43
+  orig: 33, 43
+  offset: 0, 0
+  index: -1
+people/y_eye
+  rotate: false
+  xy: 377, 242
+  size: 22, 20
+  orig: 22, 20
+  offset: 0, 0
+  index: -1
+people/y_shoe
+  rotate: false
+  xy: 1199, 2
+  size: 42, 21
+  orig: 43, 21
+  offset: 0, 0
+  index: -1
+people/z_shoe
+  rotate: false
+  xy: 1199, 2
+  size: 42, 21
+  orig: 43, 21
+  offset: 0, 0
+  index: -1
+people/y_xiaobi
+  rotate: false
+  xy: 1326, 248
+  size: 36, 72
+  orig: 36, 73
+  offset: 0, 1
+  index: -1
+people/y_xiaotui
+  rotate: false
+  xy: 1297, 38
+  size: 30, 57
+  orig: 30, 58
+  offset: 0, 0
+  index: -1
+people/z_xiaotui
+  rotate: false
+  xy: 1297, 38
+  size: 30, 57
+  orig: 30, 58
+  offset: 0, 0
+  index: -1
+people/z_dabi
+  rotate: false
+  xy: 1326, 126
+  size: 33, 59
+  orig: 33, 60
+  offset: 0, 0
+  index: -1
+people/z_eye
+  rotate: false
+  xy: 114, 2
+  size: 21, 19
+  orig: 22, 20
+  offset: 0, 0
+  index: -1
+people/z_xiaobi
+  rotate: false
+  xy: 1199, 25
+  size: 50, 65
+  orig: 51, 67
+  offset: 1, 1
+  index: -1
+qunzi
+  rotate: false
+  xy: 273, 192
+  size: 102, 70
+  orig: 102, 70
+  offset: 0, 0
+  index: -1
+s
+  rotate: false
+  xy: 2, 264
+  size: 397, 130
+  orig: 397, 130
+  offset: 0, 0
+  index: -1
+y1
+  rotate: false
+  xy: 952, 163
+  size: 264, 231
+  orig: 264, 231
+  offset: 0, 0
+  index: -1
+y2
+  rotate: false
+  xy: 2, 31
+  size: 269, 231
+  orig: 269, 231
+  offset: 0, 0
+  index: -1
+y3
+  rotate: false
+  xy: 683, 163
+  size: 267, 231
+  orig: 267, 231
+  offset: 0, 0
+  index: -1
+y_dabi
+  rotate: true
+  xy: 2, 2
+  size: 27, 54
+  orig: 28, 54
+  offset: 0, 0
+  index: -1
+y_datui
+  rotate: true
+  xy: 1001, 11
+  size: 32, 43
+  orig: 33, 43
+  offset: 0, 0
+  index: -1
+y_eye
+  rotate: true
+  xy: 1251, 25
+  size: 14, 15
+  orig: 14, 15
+  offset: 0, 0
+  index: -1
+z_eye
+  rotate: true
+  xy: 1251, 25
+  size: 14, 15
+  orig: 14, 15
+  offset: 0, 0
+  index: -1
+y_shoe
+  rotate: false
+  xy: 1243, 2
+  size: 39, 21
+  orig: 40, 21
+  offset: 0, 0
+  index: -1
+y_xiaobi
+  rotate: false
+  xy: 1326, 322
+  size: 36, 72
+  orig: 36, 73
+  offset: 0, 1
+  index: -1
+y_xiaotui
+  rotate: true
+  xy: 941, 13
+  size: 30, 58
+  orig: 30, 58
+  offset: 0, 0
+  index: -1
+yz
+  rotate: false
+  xy: 941, 117
+  size: 160, 44
+  orig: 160, 44
+  offset: 0, 0
+  index: -1
+z_dabi
+  rotate: false
+  xy: 1326, 187
+  size: 33, 59
+  orig: 33, 60
+  offset: 0, 0
+  index: -1
+z_datui
+  rotate: false
+  xy: 1329, 22
+  size: 32, 43
+  orig: 33, 43
+  offset: 0, 0
+  index: -1
+z_shoe
+  rotate: false
+  xy: 637, 165
+  size: 39, 21
+  orig: 40, 21
+  offset: 0, 0
+  index: -1
+z_xiaobi
+  rotate: false
+  xy: 1045, 50
+  size: 50, 65
+  orig: 51, 67
+  offset: 1, 1
+  index: -1
+z_xiaotui
+  rotate: false
+  xy: 1329, 67
+  size: 30, 57
+  orig: 30, 58
+  offset: 0, 0
+  index: -1
+zy
+  rotate: true
+  xy: 401, 188
+  size: 206, 280
+  orig: 206, 280
+  offset: 0, 0
+  index: -1

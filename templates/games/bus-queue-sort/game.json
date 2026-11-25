@@ -1,0 +1,30 @@
+{
+  "id": "bus-queue-sort",
+  "title": "Bus Queue Sort",
+  "description": "Clear gridlocked parking lanes and dispatch color-coded buses to pick up matching waiting passengers before every boarding bay fills up.",
+  "genre": "casual",
+  "style": "minimal",
+  "setting": "modern",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Tap unblocked colored buses in the lot to send them to the pickup lane so matching passengers can board and depart.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "TOP赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "排队上车",
+      "description": "抖音爆款颜色配对挪车接人：按队列乘客颜色依次调度对应颜色小巴驶出停车场，清空全部乘客爽感拉满！",
+      "controls": "点击前方无遮挡的彩色大巴驶入候车位，接走对应颜色排队乘客即可发车清场。"
+    }
+  }
+}

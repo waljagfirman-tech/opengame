@@ -1,0 +1,30 @@
+{
+  "id": "ball-laser-bounce",
+  "title": "Ball Laser Bounce",
+  "description": "Line up dazzling ricochet angles to launch plasma balls and slicing laser beams across geometric blocks in explosive neon chain reactions.",
+  "genre": "casual",
+  "style": "minimal",
+  "setting": "cyberpunk",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Press and drag to aim your shot angle, then release to fire bouncing balls and trigger laser blasts across the board.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "TOP赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "球球与激光",
+      "description": "炫酷霓虹物理弹球激光消砖块：找准刁钻反弹角度发射满屏弹球，触发激光连环扫射一口气清屏超解压！",
+      "controls": "按住拖动瞄准发射角度后松手射出弹球，利用多次弹射与激光机关击碎所有方块。"
+    }
+  }
+}

@@ -32,13 +32,26 @@ describe('gameCatalog multi-file detection and internal tags', () => {
   });
 
   it('preserves internal top赚钱 tags on bundled templates for downstream category grouping', () => {
-    const tagged = bundledGames.filter(game => game.tags?.includes('top赚钱')).map(game => game.id).sort();
+    const tagged = bundledGames
+      .filter(game => game.tags?.some(tag => tag.trim().toLowerCase() === 'top赚钱'))
+      .map(game => game.id)
+      .sort();
     expect(tagged).toEqual([
+      'ball-laser-bounce',
       'ball-match',
       'block-blast',
+      'bus-queue-sort',
+      'button-cut-200',
       'catch-piggy',
+      'haunted-dorm-clash',
+      'human-cannon-blast',
+      'knife-throw-frenzy',
+      'knit-yarn-unravel',
       'mahjong-pairs',
+      'monkey-mart-idle',
+      'ring-stack-match',
       'screw-puzzle',
+      'supermarket-tycoon',
       'tile-stack',
       'vice-beach-motor-club',
     ]);

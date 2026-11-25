@@ -1,0 +1,230 @@
+
+animals.png
+size: 570,110
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+chicken_body
+  rotate: false
+  xy: 349, 65
+  size: 74, 45
+  orig: 74, 45
+  offset: 0, 0
+  index: -1
+chicken_eyes
+  rotate: false
+  xy: 184, 9
+  size: 43, 23
+  orig: 43, 23
+  offset: 0, 0
+  index: -1
+chicken_eyes_sleep
+  rotate: false
+  xy: 229, 9
+  size: 43, 23
+  orig: 43, 23
+  offset: 0, 0
+  index: -1
+chicken_hand
+  rotate: false
+  xy: 324, 16
+  size: 20, 16
+  orig: 20, 16
+  offset: 0, 0
+  index: -1
+chicken_head
+  rotate: true
+  xy: 491, 67
+  size: 43, 59
+  orig: 43, 59
+  offset: 0, 0
+  index: -1
+chicken_leg
+  rotate: true
+  xy: 466, 27
+  size: 29, 20
+  orig: 29, 20
+  offset: 0, 0
+  index: -1
+chicken_mouth
+  rotate: true
+  xy: 293, 1
+  size: 13, 24
+  orig: 13, 24
+  offset: 0, 0
+  index: -1
+chicken_nose
+  rotate: false
+  xy: 522, 10
+  size: 15, 15
+  orig: 15, 15
+  offset: 0, 0
+  index: -1
+cow_body
+  rotate: false
+  xy: 0, 23
+  size: 98, 87
+  orig: 98, 87
+  offset: 0, 0
+  index: -1
+cow_ear
+  rotate: true
+  xy: 539, 29
+  size: 36, 31
+  orig: 36, 31
+  offset: 0, 0
+  index: -1
+cow_eyes
+  rotate: false
+  xy: 100, 34
+  size: 81, 76
+  orig: 81, 76
+  offset: 0, 0
+  index: -1
+cow_eyes_sleep
+  rotate: false
+  xy: 183, 34
+  size: 81, 76
+  orig: 81, 76
+  offset: 0, 0
+  index: -1
+cow_hand
+  rotate: false
+  xy: 106, 0
+  size: 22, 32
+  orig: 22, 32
+  offset: 0, 0
+  index: -1
+cow_head
+  rotate: false
+  xy: 266, 34
+  size: 81, 76
+  orig: 81, 76
+  offset: 0, 0
+  index: -1
+cow_leg
+  rotate: true
+  xy: 410, 3
+  size: 25, 40
+  orig: 25, 40
+  offset: 0, 0
+  index: -1
+cow_mouth
+  rotate: false
+  xy: 489, 5
+  size: 31, 20
+  orig: 31, 20
+  offset: 0, 0
+  index: -1
+cow_nose
+  rotate: false
+  xy: 349, 26
+  size: 59, 37
+  orig: 59, 37
+  offset: 0, 0
+  index: -1
+cow_tail
+  rotate: true
+  xy: 130, 7
+  size: 25, 52
+  orig: 25, 52
+  offset: 0, 0
+  index: -1
+parrot_body
+  rotate: false
+  xy: 425, 58
+  size: 64, 52
+  orig: 64, 52
+  offset: 0, 0
+  index: -1
+parrot_eyes
+  rotate: false
+  xy: 410, 30
+  size: 54, 26
+  orig: 54, 26
+  offset: 0, 0
+  index: -1
+parrot_hand
+  rotate: false
+  xy: 346, 8
+  size: 20, 16
+  orig: 20, 16
+  offset: 0, 0
+  index: -1
+parrot_head
+  rotate: false
+  xy: 491, 27
+  size: 46, 38
+  orig: 46, 38
+  offset: 0, 0
+  index: -1
+parrot_leg
+  rotate: false
+  xy: 80, 0
+  size: 24, 21
+  orig: 24, 21
+  offset: 0, 0
+  index: -1
+parrot_mouth
+  rotate: false
+  xy: 274, 0
+  size: 17, 14
+  orig: 17, 14
+  offset: 0, 0
+  index: -1
+parrot_nose
+  rotate: false
+  xy: 319, 3
+  size: 12, 11
+  orig: 12, 11
+  offset: 0, 0
+  index: -1
+pupil1
+  rotate: false
+  xy: 368, 8
+  size: 17, 16
+  orig: 17, 16
+  offset: 0, 0
+  index: -1
+shadow
+  rotate: false
+  xy: 274, 16
+  size: 48, 16
+  orig: 48, 16
+  offset: 0, 0
+  index: -1
+swing_parrot1
+  rotate: false
+  xy: 552, 72
+  size: 18, 38
+  orig: 18, 38
+  offset: 0, 0
+  index: -1
+swing_parrot2
+  rotate: true
+  xy: 43, 0
+  size: 21, 35
+  orig: 21, 35
+  offset: 0, 0
+  index: -1
+swing_parrot3
+  rotate: false
+  xy: 452, 0
+  size: 35, 25
+  orig: 35, 25
+  offset: 0, 0
+  index: -1
+swing_parrot4
+  rotate: false
+  xy: 539, 0
+  size: 27, 27
+  orig: 27, 27
+  offset: 0, 0
+  index: -1
+swing_parrot5
+  rotate: true
+  xy: 0, 0
+  size: 21, 41
+  orig: 21, 41
+  offset: 0, 0
+  index: -1

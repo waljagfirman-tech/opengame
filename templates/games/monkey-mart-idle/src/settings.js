@@ -1,0 +1,1 @@
+window._CCSettings={platform:"web-mobile",groupList:["default","game"],collisionMatrix:[[true],[false,false]],hasResourcesBundle:true,hasStartSceneBundle:false,remoteBundles:[],subpackages:[],launchScene:"db:/"+"/assets/start/start.fire",orientation:"portrait",jsList:["assets/scripts/libs/SAT.js","assets/scripts/libs/clipper.js","assets/scripts/libs/poly2tri.js"]};

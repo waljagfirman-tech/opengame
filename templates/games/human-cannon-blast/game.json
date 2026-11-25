@@ -1,0 +1,30 @@
+{
+  "id": "human-cannon-blast",
+  "title": "Human Cannon Blast",
+  "description": "Aim oversized cartoon cannons and fire ragdoll troopers through explosive barricades, bonus multiplier gates, and comical fortress towers.",
+  "genre": "shooter",
+  "style": "anime",
+  "setting": "modern",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Hold and drag to aim your cannon angle and power, then fire waves of troopers to smash enemy defenses.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "TOP赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "人间大炮",
+      "description": "魔性爆笑物理大炮发射对决：瞄准角度把整队小兵连发轰向敌阵、穿越倍增门轰塌堡垒，火力全开爽到飞起！",
+      "controls": "按住屏幕左右滑动调整大炮发射方向，持续发射小兵军团击溃前方防线与敌方据点。"
+    }
+  }
+}

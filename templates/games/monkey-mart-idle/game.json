@@ -1,0 +1,30 @@
+{
+  "id": "monkey-mart-idle",
+  "title": "Monkey Mart Idle",
+  "description": "Run a lively cartoon supermarket staffed by energetic monkeys—harvest bananas, fill stalls, ring up shoppers, and unlock bustling new aisles.",
+  "genre": "casual",
+  "style": "3d",
+  "setting": "modern",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Drag on screen with the virtual joystick to move your monkey manager, harvest produce, restock stands, and collect coins.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "TOP赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "猴子集市",
+      "description": "全球爆火萌猴经营超市神作：操控小猴现摘香蕉玉米、搬运补货上架、收银数钱雇帮手，打造最热闹的森林百货集市！",
+      "controls": "按住拖动摇杆控制小猴移动，靠近果树自动采摘并搬运到货架与收银台收钱升级店铺。"
+    }
+  }
+}

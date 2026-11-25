@@ -1,0 +1,30 @@
+{
+  "id": "knife-throw-frenzy",
+  "title": "Knife Throw Frenzy",
+  "description": "Sink gleaming throwing knives into spinning wooden targets and boss wheels—thread tight gaps, slice bonus apples, and never hit another blade.",
+  "genre": "casual",
+  "style": "anime",
+  "setting": "modern",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Tap anywhere to fling a knife straight up into the rotating target without colliding with embedded blades.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "TOP赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "疯狂甩飞刀",
+      "description": "国民级魔性见缝插针甩飞刀：看准旋转木桩的缝隙一键连射飞刀、切爆苹果、干碎强力 Boss 轮盘根本停不下来！",
+      "controls": "点击屏幕向上掷出飞刀扎入旋转靶盘，避开已有飞刀插满全部飞刀即可破关。"
+    }
+  }
+}

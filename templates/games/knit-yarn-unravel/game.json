@@ -1,0 +1,30 @@
+{
+  "id": "knit-yarn-unravel",
+  "title": "Knit Yarn Unravel",
+  "description": "Unravel chunky woven yarn models strand by strand—match spool colors cleanly to untangle every vibrant thread in ultra-satisfying puzzle levels.",
+  "genre": "casual",
+  "style": "minimal",
+  "setting": "modern",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Tap colored yarn pins and spools in the right sequence to unravel matching wool layers without jamming the holding slots.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "TOP赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "拆个毛线",
+      "description": "抖音爆火解压拆毛线闯关：按颜色顺序一根根抽丝剥茧拆掉毛线织物，卷满同色线轴一秒强迫症狂喜！",
+      "controls": "点击对应颜色的毛线节点按顺序拆解并收入上方同色线轴，合理规划空位清光全部毛线。"
+    }
+  }
+}

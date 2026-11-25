@@ -1,0 +1,30 @@
+{
+  "id": "haunted-dorm-clash",
+  "title": "Haunted Dorm Clash",
+  "description": "Dash into an empty dorm room, hop into bed to farm coins, reinforce your steel door, and build rapid-fire turrets before the prowling ghost breaks in.",
+  "genre": "horror",
+  "style": "anime",
+  "setting": "modern",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Drag to run into a dorm room and climb into bed, then tap empty floor tiles to construct and upgrade doors, generators, and turrets.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "TOP赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "猛鬼大作战",
+      "description": "超上头躺平发育宿舍塔防：开局狂奔进宿舍躺床发育、疯狂升级铁门与满屋炮塔，硬扛猛鬼猛砸宿舍门反杀通关！",
+      "controls": "拖动控制角色进入宿舍上床睡觉赚金币，点击房间空地建造并升级炮塔、大门与发电装置。"
+    }
+  }
+}

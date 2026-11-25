@@ -1,0 +1,265 @@
+
+skin4.png
+size: 488,1032
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+b
+  rotate: false
+  xy: 134, 102
+  size: 297, 106
+  orig: 297, 106
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 378, 629
+  size: 100, 135
+  orig: 100, 135
+  offset: 0, 0
+  index: -1
+head
+  rotate: true
+  xy: 235, 590
+  size: 174, 141
+  orig: 174, 141
+  offset: 0, 0
+  index: -1
+mm
+  rotate: false
+  xy: 85, 2
+  size: 50, 7
+  orig: 50, 7
+  offset: 0, 0
+  index: -1
+mouth
+  rotate: false
+  xy: 134, 94
+  size: 11, 6
+  orig: 11, 6
+  offset: 0, 0
+  index: -1
+people/body
+  rotate: false
+  xy: 342, 277
+  size: 100, 135
+  orig: 100, 135
+  offset: 0, 0
+  index: -1
+people/head
+  rotate: true
+  xy: 342, 414
+  size: 174, 141
+  orig: 174, 141
+  offset: 0, 0
+  index: -1
+people/mm
+  rotate: false
+  xy: 436, 620
+  size: 50, 7
+  orig: 51, 9
+  offset: 0, 1
+  index: -1
+people/mouth
+  rotate: true
+  xy: 152, 83
+  size: 17, 8
+  orig: 17, 8
+  offset: 0, 0
+  index: -1
+people/weibo
+  rotate: false
+  xy: 243, 3
+  size: 92, 45
+  orig: 92, 45
+  offset: 0, 0
+  index: -1
+people/y_dabi
+  rotate: true
+  xy: 378, 594
+  size: 33, 56
+  orig: 34, 56
+  offset: 1, 0
+  index: -1
+people/y_datui
+  rotate: true
+  xy: 331, 50
+  size: 50, 79
+  orig: 50, 79
+  offset: 0, 0
+  index: -1
+people/y_eye
+  rotate: false
+  xy: 436, 596
+  size: 25, 22
+  orig: 25, 23
+  offset: 0, 1
+  index: -1
+people/y_xiaobi
+  rotate: false
+  xy: 433, 125
+  size: 46, 83
+  orig: 48, 83
+  offset: 0, 0
+  index: -1
+people/y_xiaotui
+  rotate: false
+  xy: 427, 210
+  size: 31, 65
+  orig: 31, 67
+  offset: 0, 2
+  index: -1
+people/z_dabi
+  rotate: false
+  xy: 444, 351
+  size: 39, 61
+  orig: 41, 61
+  offset: 0, 0
+  index: -1
+people/z_datui
+  rotate: true
+  xy: 2, 37
+  size: 54, 85
+  orig: 55, 86
+  offset: 0, 0
+  index: -1
+people/z_eye
+  rotate: false
+  xy: 463, 594
+  size: 20, 24
+  orig: 20, 24
+  offset: 0, 0
+  index: -1
+people/z_xiaobi
+  rotate: true
+  xy: 235, 492
+  size: 47, 87
+  orig: 47, 87
+  offset: 0, 0
+  index: -1
+people/z_xiaotui
+  rotate: false
+  xy: 444, 284
+  size: 31, 65
+  orig: 31, 67
+  offset: 0, 2
+  index: -1
+s
+  rotate: true
+  xy: 2, 93
+  size: 397, 130
+  orig: 397, 130
+  offset: 0, 0
+  index: -1
+weibo
+  rotate: true
+  xy: 412, 8
+  size: 92, 45
+  orig: 92, 45
+  offset: 0, 0
+  index: -1
+y1
+  rotate: true
+  xy: 235, 766
+  size: 264, 231
+  orig: 264, 231
+  offset: 0, 0
+  index: -1
+y2
+  rotate: true
+  xy: 2, 761
+  size: 269, 231
+  orig: 269, 231
+  offset: 0, 0
+  index: -1
+y3
+  rotate: true
+  xy: 2, 492
+  size: 267, 231
+  orig: 267, 231
+  offset: 0, 0
+  index: -1
+y_dabi
+  rotate: true
+  xy: 2, 2
+  size: 33, 56
+  orig: 34, 56
+  offset: 1, 0
+  index: -1
+y_datui
+  rotate: true
+  xy: 169, 4
+  size: 50, 72
+  orig: 50, 72
+  offset: 0, 0
+  index: -1
+y_eye
+  rotate: true
+  xy: 60, 8
+  size: 27, 23
+  orig: 27, 23
+  offset: 0, 0
+  index: -1
+y_xiaobi
+  rotate: true
+  xy: 342, 229
+  size: 46, 83
+  orig: 48, 83
+  offset: 0, 0
+  index: -1
+y_xiaotui
+  rotate: true
+  xy: 342, 210
+  size: 17, 60
+  orig: 17, 60
+  offset: 0, 0
+  index: -1
+yz
+  rotate: false
+  xy: 169, 56
+  size: 160, 44
+  orig: 160, 44
+  offset: 0, 0
+  index: -1
+z_dabi
+  rotate: true
+  xy: 337, 9
+  size: 39, 61
+  orig: 41, 61
+  offset: 0, 0
+  index: -1
+z_datui
+  rotate: true
+  xy: 89, 40
+  size: 51, 61
+  orig: 51, 61
+  offset: 0, 0
+  index: -1
+z_eye
+  rotate: true
+  xy: 433, 103
+  size: 20, 23
+  orig: 20, 23
+  offset: 0, 0
+  index: -1
+z_xiaobi
+  rotate: true
+  xy: 235, 541
+  size: 47, 87
+  orig: 47, 87
+  offset: 0, 0
+  index: -1
+z_xiaotui
+  rotate: true
+  xy: 89, 11
+  size: 27, 78
+  orig: 28, 78
+  offset: 0, 0
+  index: -1
+zy
+  rotate: false
+  xy: 134, 210
+  size: 206, 280
+  orig: 206, 280
+  offset: 0, 0
+  index: -1

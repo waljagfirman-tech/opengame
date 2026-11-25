@@ -1,0 +1,30 @@
+{
+  "id": "supermarket-tycoon",
+  "title": "Supermarket Tycoon",
+  "description": "Build and expand a bustling mini-supermarket empire—stock fresh shelves, ring up eager customers, hire helpers, and watch profits pile sky-high.",
+  "genre": "casual",
+  "style": "3d",
+  "setting": "modern",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Tap and drag to manage departments, restock goods, unlock new aisles, and collect cash earnings.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "TOP赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "超市大亨",
+      "description": "超上头模拟经营超市大亨：补满生鲜货架、加快收银结账、招募店员扩建卖场，从街头小店一路干成亿万连锁商超！",
+      "controls": "点击升级货架、收银台与店员效率，收集营业额不断解锁新商品区扩大超市规模。"
+    }
+  }
+}

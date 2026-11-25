@@ -1,0 +1,30 @@
+{
+  "id": "button-cut-200",
+  "title": "Button Cut 200",
+  "description": "Snip gleaming tailor shears along crisp straight lines of matching buttons across 200 tactile ASMR craft puzzles until the cloth is spotless.",
+  "genre": "casual",
+  "style": "minimal",
+  "setting": "modern",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Swipe cleanly across two or more aligned buttons of the same color to snip them off the fabric board.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "TOP赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "剪扣子 200 关",
+      "description": "超治愈 ASMR 剪纽扣益智闯关：沿着直线一剪刀剪落成排同色纽扣，200 道巧思关卡一剪清空极度解压！",
+      "controls": "按住沿横、竖或斜线滑过两个及以上同色纽扣，松手一刀剪下清空布面全部纽扣。"
+    }
+  }
+}

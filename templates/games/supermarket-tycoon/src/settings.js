@@ -1,0 +1,1 @@
+window._CCSettings={platform:"web-mobile",groupList:["default","GameScene","NotRendering"],collisionMatrix:[[true],[false,false],[false,false,false]],hasResourcesBundle:true,hasStartSceneBundle:false,remoteBundles:[],subpackages:["main"],launchScene:"db:/"+"/assets/scene/loading.fire",orientation:"portrait",jsList:["assets/script/k-cocos/k-cocos.js"]};
