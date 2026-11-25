@@ -1,0 +1,30 @@
+{
+  "id": "kitty-snack-shop",
+  "title": "Kitty Snack Shop",
+  "description": "Manage a cozy street-side snack shop staffed by adorable cat chefs—cook tasty treats, serve impatient kitten guests, upgrade stalls, and unlock fresh recipes.",
+  "genre": "casual",
+  "style": "anime",
+  "setting": "modern",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Tap orders, cooking stations, and upgrade buttons to serve adorable cat customers and grow your cozy snack bar.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "TOP赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "喵咪小吃铺",
+      "description": "超治愈猫咪美食经营小店：和胖乎乎的猫咪大厨一起制作热气腾腾的特色小吃，招待可爱的猫猫客人，升级菜单装修人气夜宵摊。",
+      "controls": "点击解锁灶台、升级菜品与招募小猫店员，接待源源不断的猫咪顾客赚取金币扩建小吃铺。"
+    }
+  }
+}

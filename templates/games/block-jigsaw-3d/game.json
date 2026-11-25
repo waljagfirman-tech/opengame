@@ -1,0 +1,30 @@
+{
+  "id": "block-jigsaw-3d",
+  "title": "3D Block Jigsaw",
+  "description": "Fit colorful 3D polyomino blocks snugly into sculpted geometric trays with zero gaps—rotate your thinking and lock every satisfying click into place.",
+  "genre": "casual",
+  "style": "3d",
+  "setting": "modern",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Drag 3D polyomino blocks from the dock into the puzzle frame so all pieces fill the tray completely with no overlaps.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "TOP赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "3D 方块拼图",
+      "description": "极度舒适的 3D 立体七巧板拼块：把糖果色异形立体方块严丝合缝塞进几何托盘，强迫症看了直呼解压。",
+      "controls": "拖动下方彩色 3D 方块放入棋盘空格，将全部区域严丝合缝填满即可过关。"
+    }
+  }
+}

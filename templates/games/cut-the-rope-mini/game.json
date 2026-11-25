@@ -1,0 +1,30 @@
+{
+  "id": "cut-the-rope-mini",
+  "title": "Cut the Rope Mini",
+  "description": "Time every physics rope slice to swing the striped candy through floating golden stars and drop it straight into your hungry little monster’s mouth.",
+  "genre": "casual",
+  "style": "anime",
+  "setting": "modern",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Swipe across taut ropes to slice them cleanly, collect floating stars along the swing arc, and feed the candy to the monster.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "TOP赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "割绳子",
+      "description": "国民级物理益智割绳子：算准摆动时机一刀划断绳索，借力收集沿途金星，把糖果稳稳送进小怪兽嘴里。",
+      "controls": "用手指或鼠标划过绳索即可切断，利用惯性收集星星并让糖果落入小怪兽口中。"
+    }
+  }
+}

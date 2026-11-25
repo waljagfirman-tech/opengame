@@ -3,7 +3,7 @@
 <p align="center"><strong>The First Super Game Agent — Open-Source Full-Stack AI Game Studio</strong></p>
 
 <p align="center">
-  <img src="docs/readme/opengame-hero.webp" width="100%" alt="OpenGame — The First Super Game Agent. Remix, re-style, test, and publish playable 3D, anime, pixel, and 9:16 mini-games from 26 built-in playable templates across 22 local AI agents.">
+  <img src="docs/readme/opengame-hero.webp" width="100%" alt="OpenGame — The First Super Game Agent. Remix, re-style, test, and publish playable 3D, anime, pixel, and 9:16 mini-games from 44 built-in playable templates across 22 local AI agents.">
 </p>
 
 <p align="center">
@@ -33,7 +33,7 @@
 
 OpenGame is **the first Super Game Agent** — turning your local coding agent into an open-source AI Unreal Engine / Unity and full-stack game studio, taking you from a single prompt or viral game template all the way to automated QA, instant web sharing, and monetization-ready builds.
 
-- 🎮 **One-Click Remix Any Game.** **26 built-in playable templates** (3D, voxel, anime, pixel & 9:16 mini-games / playable ads) with full editable source and design specs.
+- 🎮 **One-Click Remix Any Game.** **44 built-in playable templates** (3D, voxel, anime, pixel & 9:16 mini-games / playable ads) with full editable source and design specs.
 - 🎨 **One-Click Re-style Any Game.** Keep a proven game loop while swapping characters, art style, and audio — affordable models like **DeepSeek** ship polished reskins fast, while **Claude Fable 5.2**, **Opus**, **Codex**, and **Gemini** build original 3D worlds from scratch.
 - 💰 **End-to-End Pipeline: Build → Verify → Publish & Monetize.** Automated validation, simulation, headless playtesting, cover capture, and trailers — ship a live web link, a 9:16 Playable Ad, or mini-game platform builds.
 - 🔓 **Full-Stack Open Source (BYOA + BYOK).** Code, art, video, music, voice, SFX, and Three.js 3D are all open source. Bring [your local agent](#agent-wall) and keys, or connect [OpenDesign Go](https://go.open-design.ai/?utm_source=github&utm_medium=referral&utm_campaign=opengame&utm_content=readme_en).
@@ -82,7 +82,7 @@ npm start
 
 ## 🕹️ Playable Game Templates & Showcase
 
-OpenGame ships with **26 ready-to-play games** right inside [`templates/games/`](templates/games/) — complete with playable HTML5 / Three.js source, artwork, controls, and localization. Play them locally in Game Studio, **Remix** any title with one click, or **Re-style** it into your own IP, theme, or brand.
+OpenGame ships with **44 ready-to-play games** right inside [`templates/games/`](templates/games/) — complete with playable HTML5 / Three.js source, artwork, controls, and localization. Play them locally in Game Studio, **Remix** any title with one click, or **Re-style** it into your own IP, theme, or brand.
 
 ### 3D, Voxel & Action Games (16:9)
 
@@ -229,10 +229,56 @@ Bake dough, merge matching pastries, and serve timed customer orders to hit \$25
 <a href="templates/games/merge-bakery/">Source →</a>
 </td>
 </tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<img src="templates/games/my-burger-bistro/cover.webp" width="100%" alt="My Burger Bistro — 3D burger restaurant tycoon"><br>
+<strong>My Burger Bistro</strong><br>
+<code>9:16 · 3D Restaurant Tycoon</code><br>
+Grill sizzling patties, serve hungry lines, collect cash stacks, and expand your bistro.<br>
+<a href="templates/games/my-burger-bistro/">Source →</a>
+</td>
+<td width="33%" valign="top" align="center">
+<img src="templates/games/kitty-snack-shop/cover.webp" width="100%" alt="Kitty Snack Shop — Cozy cat street food stall"><br>
+<strong>Kitty Snack Shop</strong><br>
+<code>9:16 · Cat Cafe Tycoon</code><br>
+Cook taiyaki, ramen, and shakes with chubby cat chefs for adorable kitten guests.<br>
+<a href="templates/games/kitty-snack-shop/">Source →</a>
+</td>
+<td width="33%" valign="top" align="center">
+<img src="templates/games/car-color-jam/cover.webp" width="100%" alt="Car Color Jam — Color-coded parking jam sort"><br>
+<strong>Car Color Jam</strong><br>
+<code>9:16 · Traffic Color Sort</code><br>
+Untangle a packed parking grid and match every colored car with waiting passengers.<br>
+<a href="templates/games/car-color-jam/">Source →</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<img src="templates/games/meme-spot-diff/cover.webp" width="100%" alt="Meme Spot the Difference — Comical brain-teaser hunt"><br>
+<strong>Meme Spot the Difference</strong><br>
+<code>9:16 · Meme Brain Teaser</code><br>
+Zoom through comical cartoon scenes to spot hilarious gags and sneaky hidden details.<br>
+<a href="templates/games/meme-spot-diff/">Source →</a>
+</td>
+<td width="33%" valign="top" align="center">
+<img src="templates/games/cut-the-rope-mini/cover.webp" width="100%" alt="Cut the Rope Mini — Physics rope-slicing candy puzzle"><br>
+<strong>Cut the Rope Mini</strong><br>
+<code>9:16 · Physics Rope Puzzle</code><br>
+Slice taut ropes at the exact swing moment to collect stars and feed the little monster.<br>
+<a href="templates/games/cut-the-rope-mini/">Source →</a>
+</td>
+<td width="33%" valign="top" align="center">
+<img src="templates/games/video-jigsaw/cover.webp" width="100%" alt="Video Jigsaw — Live moving-footage jigsaw puzzle"><br>
+<strong>Video Jigsaw</strong><br>
+<code>9:16 · Live Video Jigsaw</code><br>
+Track live moving footage across puzzle tiles and lock every animated piece together.<br>
+<a href="templates/games/video-jigsaw/">Source →</a>
+</td>
+</tr>
 </table>
 
 <details>
-<summary><strong>Browse all 26 built-in playable game templates</strong></summary>
+<summary><strong>Browse all 44 built-in playable game templates</strong></summary>
 
 | Game | Genre | Style | Format | Summary | Source |
 | --- | --- | --- | --- | --- | --- |
@@ -262,6 +308,24 @@ Bake dough, merge matching pastries, and serve timed customer orders to hit \$25
 | **Starlight Bastion** | Shooter | Voxel | 16:9 Landscape | Five-wave crystal defense with roguelite upgrades | [starlight-bastion](templates/games/starlight-bastion/) |
 | **Tidebreaker** | Racing | 3D | 16:9 Landscape | Storm archipelago 3D speedboat racing & wave jumps | [tidebreaker](templates/games/tidebreaker/) |
 | **Tilt Temple** | Casual | 3D | 9:16 Portrait | 3D floating labyrinth — tilt, collect the key, reach the portal | [tilt-temple](templates/games/tilt-temple/) |
+| **3D Block Jigsaw** | Casual | 3D | 9:16 Portrait | Fit glossy 3D polyomino blocks into sculpted geometric trays with zero gaps | [block-jigsaw-3d](templates/games/block-jigsaw-3d/) |
+| **Block Blast: Board Sweeper** | Casual | Minimal | 9:16 Portrait | Drag tetrominoes onto an 8x8 board to chain row and column clears | [block-blast](templates/games/block-blast/) |
+| **Car Color Jam** | Casual | 3D | 9:16 Portrait | Untangle a packed parking grid to pick up matching-color passengers | [car-color-jam](templates/games/car-color-jam/) |
+| **Catch Piggy: Toy Pile Match** | Casual | Anime | 9:16 Portrait | 3D physics pile matching starring plump pastel piggies and toys | [catch-piggy](templates/games/catch-piggy/) |
+| **Classic Jigsaw** | Casual | Minimal | 9:16 Portrait | Unwind snapping interlocking jigsaw pieces into vibrant full-screen illustrations | [classic-jigsaw](templates/games/classic-jigsaw/) |
+| **Cut the Rope Mini** | Casual | Anime | 9:16 Portrait | Time every physics rope slice to swing candy through stars into the monster’s mouth | [cut-the-rope-mini](templates/games/cut-the-rope-mini/) |
+| **Find the Cow** | Casual | Anime | 9:16 Portrait | Inspect playful illustrated scenes and spot every sneaky cow hiding in plain sight | [find-the-cow](templates/games/find-the-cow/) |
+| **Jelly Ball Chain Pop** | Casual | 3D | 9:16 Portrait | Chain-link bouncy 3D jelly balls for huge combo bursts | [ball-match](templates/games/ball-match/) |
+| **Kitty Snack Shop** | Casual | Anime | 9:16 Portrait | Run a cozy cat-staffed street snack stall and serve hungry kitten guests | [kitty-snack-shop](templates/games/kitty-snack-shop/) |
+| **Mahjong Slide & Pair** | Casual | Minimal | 9:16 Portrait | Slide mahjong tiles across rows and columns to clear matching pairs | [mahjong-pairs](templates/games/mahjong-pairs/) |
+| **Meme Spot the Difference** | Casual | Anime | 9:16 Portrait | Hunt down hilarious visual gags and sneaky hidden details in comical scenes | [meme-spot-diff](templates/games/meme-spot-diff/) |
+| **Model Jigsaw** | Casual | 3D | 9:16 Portrait | Assemble charming miniature 3D diorama models piece by piece | [model-jigsaw-3d](templates/games/model-jigsaw-3d/) |
+| **My Burger Bistro** | Casual | 3D | 9:16 Portrait | Grill burgers, serve queues, collect cash stacks, and expand your 3D restaurant | [my-burger-bistro](templates/games/my-burger-bistro/) |
+| **Pixel Block Clear** | Casual | Pixel | 9:16 Portrait | Blast luminous pixel-art mosaics block by block in crisp color chain clears | [pixel-block-clear](templates/games/pixel-block-clear/) |
+| **Screw Jam: Unbolt Everything** | Casual | Minimal | 9:16 Portrait | Unscrew color-coded bolts into matching toolboxes to dismantle layered plates | [screw-puzzle](templates/games/screw-puzzle/) |
+| **Tile Stack: Can You Beat Lv.2?** | Casual | Anime | 9:16 Portrait | Layered mahjong-style 3-match stacker with a notorious second stage | [tile-stack](templates/games/tile-stack/) |
+| **Vice Beach: Neon Drift Club** | Racing | ASCII | 16:9 Landscape | Retro neon sunset coastal highway drift racer | [vice-beach-motor-club](templates/games/vice-beach-motor-club/) |
+| **Video Jigsaw** | Casual | Minimal | 9:16 Portrait | Assemble live moving-video puzzle tiles into one seamless cinema clip | [video-jigsaw](templates/games/video-jigsaw/) |
 
 </details>
 
@@ -274,7 +338,7 @@ Bake dough, merge matching pastries, and serve timed customer orders to hit \$25
 Building a polished game from a blank prompt is hard for any model. OpenGame solves this by separating **verified game engineering** from **theme, art direction, and content**:
 
 - **Every game is clean, inspectable source**: `index.html`, deterministic `logic.js`, vendored Three.js for 3D titles, plus structured design docs (`design/plan.md`, `design/style.md`, `design/assets.csv`, `design/verification.md`).
-- **Remix in one click**: Click **Remix** on any of the 26 templates in Game Studio (or ask your agent to remix it) to fork an owned, editable draft with full controls, tuning knobs, and automated test hooks already wired up.
+- **Remix in one click**: Click **Remix** on any of the 44 templates in Game Studio (or ask your agent to remix it) to fork an owned, editable draft with full controls, tuning knobs, and automated test hooks already wired up.
 - **Re-style into any universe**: Swap genre dressing, characters, palette, sprites, textures, and music without breaking physics or win/loss rules — ideal for fast iteration with affordable models like **DeepSeek**, or pushing AAA-grade 3D & shader ambition with **Claude Fable 5.2**, **Opus**, **Codex**, and **Gemini**.
 
 **Try these prompts in your connected Agent:**
@@ -448,7 +512,7 @@ Every connected agent can read [`skills/openmotion-game/SKILL.md`](skills/openmo
 | **Game Runtime & QA** | Node.js, native HTTP, Puppeteer Core / Chrome, deterministic simulator | [game-projects.ts](game-projects.ts) · [shared/game-contract.ts](shared/game-contract.ts) · [server.ts](server.ts) |
 | **MCP & Agent Skills** | Local stdio MCP server, `openmotion-game` Skill & 18 handbooks | [mcp.ts](mcp.ts) · [skills/openmotion-game/](skills/openmotion-game/) |
 | **Multimodal Gateway** | BYOK model discovery, job polling, asset library & web publish | [gateway/service.ts](gateway/service.ts) · [gateway/catalog.ts](gateway/catalog.ts) · [docs/assets.md](docs/assets.md) |
-| **Playable Templates** | 26 standalone HTML5 / Canvas / Three.js games with covers & metadata | [templates/games/](templates/games/) |
+| **Playable Templates** | 44 standalone HTML5 / Canvas / Three.js games with covers & metadata | [templates/games/](templates/games/) |
 | **Trailer Pipeline** | Headless gameplay capture + HTML composition + FFmpeg MP4 export | [docs/usage.md](docs/usage.md) · [scripts/verify-export.ts](scripts/verify-export.ts) |
 
 <a id="community"></a>

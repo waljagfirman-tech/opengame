@@ -1,0 +1,30 @@
+{
+  "id": "meme-spot-diff",
+  "title": "Meme Spot the Difference",
+  "description": "Hunt down hilarious visual gags, anachronisms, and sneaky meme details across comical cartoon scenes before the timer ticks down.",
+  "genre": "casual",
+  "style": "anime",
+  "setting": "modern",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Pan and zoom the illustrated scene, then tap every oddity or hidden meme clue to mark it off the list.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "TOP赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "玩梗找不同",
+      "description": "爆笑热梗找茬大合集！放大仔细搜遍离谱又熟悉的漫画名场面，揪出藏在角落里的穿帮细节与隐藏笑点。",
+      "controls": "拖动或缩放画面观察细节，点击画面中的异常穿帮点或不同之处即可标记收集。"
+    }
+  }
+}

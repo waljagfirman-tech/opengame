@@ -1,0 +1,30 @@
+{
+  "id": "find-the-cow",
+  "title": "Find the Cow",
+  "description": "Solve clever color-region logic grid puzzles inspired by viral Queens brain teasers—place exactly one cheeky creature in every row, column, and colored zone with no two touching.",
+  "genre": "casual",
+  "style": "anime",
+  "setting": "modern",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Tap grid squares to mark empty cells or place a creature so every row, column, and colored region holds exactly one without touching diagonally or orthogonally.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "TOP赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "找牛大作战",
+      "description": "超上头的彩色区域逻辑推理棋盘：每种颜色区域、每行、每列有且仅有 1 只目标且互不相邻，步步排除越玩越停不下来！",
+      "controls": "点击格子标记排除或放置目标，满足每行、每列、每种颜色区域各 1 只且互不相邻即可通关。"
+    }
+  }
+}

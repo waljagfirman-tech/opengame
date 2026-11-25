@@ -1,0 +1,30 @@
+{
+  "id": "pixel-block-clear",
+  "title": "Pixel Block Clear",
+  "description": "Blast luminous pixel-art mosaics block by block—match vivid color clusters, trigger crisp chain clears, and watch every pixel artwork pop into confetti.",
+  "genre": "casual",
+  "style": "pixel",
+  "setting": "retro",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Tap matching color pixel blocks or launchers to clear matching cubes from the board until the entire mosaic is gone.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "TOP赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "像素消除",
+      "description": "超解压像素画方块消除：点选同色像素块连消清屏，一格一格击碎缤纷像素图案，看着整幅画面清脆崩解。",
+      "controls": "点击底部对应颜色方块或发射位消除上方同色像素块，清空整幅像素图即可过关。"
+    }
+  }
+}

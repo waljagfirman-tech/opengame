@@ -1,0 +1,30 @@
+{
+  "id": "video-jigsaw",
+  "title": "Video Jigsaw",
+  "description": "Assemble live moving-video puzzle tiles while the clip plays in real time—track motion across seams and lock every animated piece into one seamless cinema frame.",
+  "genre": "casual",
+  "style": "minimal",
+  "setting": "modern",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Drag animated video puzzle pieces onto matching slots by following the live moving footage until the full video plays seamlessly.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "TOP赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "动态视频拼图",
+      "description": "会动的创意视频拼图！每一块拼图都在实时播放动态画面，顺着画面运动轨迹把碎片拼成一段完整流畅的动态影片。",
+      "controls": "观察碎片中的动态画面走向，拖动拼图块到对应位置吸附拼接，还原完整播放的视频即可过关。"
+    }
+  }
+}

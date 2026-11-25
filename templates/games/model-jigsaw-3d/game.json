@@ -1,0 +1,30 @@
+{
+  "id": "model-jigsaw-3d",
+  "title": "Model Jigsaw",
+  "description": "Rotate and assemble charming miniature 3D models piece by piece, snapping each sculpted part cleanly into its slot to bring tiny dioramas to life.",
+  "genre": "casual",
+  "style": "3d",
+  "setting": "modern",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Drag sculpted model parts from the tray onto their matching slots on the miniature diorama until every piece clicks into place.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "TOP赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "模型拼图",
+      "description": "治愈系精致立体模型组装：把零散的微缩模型零件逐一拼装归位，亲手还原一座座色彩明快的立体小景。",
+      "controls": "按住拖动模型零件放到对应的模型槽位中，全部拼合到位即可完成作品。"
+    }
+  }
+}

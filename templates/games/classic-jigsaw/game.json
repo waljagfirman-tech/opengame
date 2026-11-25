@@ -1,0 +1,30 @@
+{
+  "id": "classic-jigsaw",
+  "title": "Classic Jigsaw",
+  "description": "Unwind with crisp interlocking jigsaw puzzles—drag curved pieces across the table, snap matching edges together, and reveal vibrant full-screen illustrations.",
+  "genre": "casual",
+  "style": "minimal",
+  "setting": "modern",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Drag scattered jigsaw pieces onto their matching positions on the board; correctly placed neighbors lock together smoothly.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "TOP赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "经典拼图游戏",
+      "description": "轻松治愈的经典拼图体验：拖动精美插画碎片对准凹凸接口咔哒拼合，一步步还原完整高清大图。",
+      "controls": "拖动散落的拼图碎片至正确位置，相邻正确碎片会自动吸附锁定，拼完一整幅画即通关。"
+    }
+  }
+}

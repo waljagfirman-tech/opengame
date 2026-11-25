@@ -33,7 +33,7 @@
 
 OpenGame 是**首个开源全栈 Super Game Agent**——把你本地的编程 Agent 变成一座开源 AI 版虚幻引擎 / Unity 与完整游戏工作室，从一句话创意或爆款游戏模板出发，走完**制作 → 自动化试玩验证 → 一键在线分享 → 上架变现**的端到端全链路。
 
-- 🎮 **一键复刻任何游戏。** 内置 **26 款可玩游戏模板**（3D、体素、像素、动漫及 9:16 爆款小游戏 / 试玩广告），源码与设计文档全部可编辑。
+- 🎮 **一键复刻任何游戏。** 内置 **44 款可玩游戏模板**（3D、体素、像素、动漫及 9:16 爆款小游戏 / 试玩广告），源码与设计文档全部可编辑。
 - 🎨 **一键风格化任何游戏。** 保留成熟玩法骨架，快速替换角色、画风与配乐——**DeepSeek** 可低成本稳定换皮，**Claude Fable 5.2 / Opus / Codex / Gemini** 可从零打造 3D 大作。
 - 💰 **全链路闭环：制作 → 验证 → 发布变现。** 自动完成逻辑校验、仿真试玩、封面截图与实机预告片，一键生成在线链接或 9:16 试玩广告，并衔接小游戏上架路径。
 - 🔓 **全栈开源（BYOA + BYOK）。** 代码、美术、视频、音乐、配音与 Three.js 3D 全部开源；自带 [本地 Agent](#agent-wall) 与 API Key，或接入 [OpenDesign Go](https://go.open-design.ai/?utm_source=github&utm_medium=referral&utm_campaign=opengame&utm_content=readme_zh)。
@@ -82,7 +82,7 @@ npm start
 
 ## 🕹️ 内置可玩游戏模板与示例
 
-OpenGame 在 [`templates/games/`](templates/games/) 中内置了 **26 款开箱即玩的完整游戏工程**，全部包含 HTML5 / Three.js 源码、封面、操控说明与中英双语元数据。在 Game Studio 里可直接试玩，一键 **Remix 复刻**，或**一键换画风 / 换题材 / 换角色**做成属于你的游戏。
+OpenGame 在 [`templates/games/`](templates/games/) 中内置了 **44 款开箱即玩的完整游戏工程**，全部包含 HTML5 / Three.js 源码、封面、操控说明与中英双语元数据。在 Game Studio 里可直接试玩，一键 **Remix 复刻**，或**一键换画风 / 换题材 / 换角色**做成属于你的游戏。
 
 ### 3D、体素与动作游戏（16:9 横屏）
 
@@ -229,10 +229,56 @@ OpenGame 在 [`templates/games/`](templates/games/) 中内置了 **26 款开箱�
 <a href="templates/games/merge-bakery/">查看源码 →</a>
 </td>
 </tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<img src="templates/games/my-burger-bistro/cover.webp" width="100%" alt="我的汉堡餐厅 My Burger Bistro — 3D 汉堡店经营"><br>
+<strong>我的汉堡餐厅</strong><br>
+<code>9:16 · 3D 餐厅经营</code><br>
+端盘上汉堡、疯狂收钞票、雇佣员工扩建餐桌，把小店干成爆满连锁餐厅。<br>
+<a href="templates/games/my-burger-bistro/">查看源码 →</a>
+</td>
+<td width="33%" valign="top" align="center">
+<img src="templates/games/kitty-snack-shop/cover.webp" width="100%" alt="喵咪小吃铺 Kitty Snack Shop — 治愈猫咪美食摊"><br>
+<strong>喵咪小吃铺</strong><br>
+<code>9:16 · 猫咪美食经营</code><br>
+和胖乎乎猫咪大厨一起制作特色小吃，招待猫猫顾客升级人气夜宵摊。<br>
+<a href="templates/games/kitty-snack-shop/">查看源码 →</a>
+</td>
+<td width="33%" valign="top" align="center">
+<img src="templates/games/car-color-jam/cover.webp" width="100%" alt="看谁能通关 Car Color Jam — 挪车接人颜色排序"><br>
+<strong>看谁能通关</strong><br>
+<code>9:16 · 挪车颜色排序</code><br>
+精准规划停车场出车顺序，把彩色小车开进候车位接走对应颜色乘客。<br>
+<a href="templates/games/car-color-jam/">查看源码 →</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<img src="templates/games/meme-spot-diff/cover.webp" width="100%" alt="玩梗找不同 Meme Spot the Difference — 热梗找茬合集"><br>
+<strong>玩梗找不同</strong><br>
+<code>9:16 · 热梗脑洞找茬</code><br>
+放大细搜离谱搞笑漫画名场面，揪出藏在角落里的穿帮细节与隐藏笑点。<br>
+<a href="templates/games/meme-spot-diff/">查看源码 →</a>
+</td>
+<td width="33%" valign="top" align="center">
+<img src="templates/games/cut-the-rope-mini/cover.webp" width="100%" alt="割绳子 Cut the Rope Mini — 物理割绳吃糖益智"><br>
+<strong>割绳子</strong><br>
+<code>9:16 · 物理割绳益智</code><br>
+算准摆动时机一刀划断绳索，借力收集星星把糖果稳稳送进小怪兽嘴里。<br>
+<a href="templates/games/cut-the-rope-mini/">查看源码 →</a>
+</td>
+<td width="33%" valign="top" align="center">
+<img src="templates/games/video-jigsaw/cover.webp" width="100%" alt="动态视频拼图 Video Jigsaw — 会动的创意视频拼图"><br>
+<strong>动态视频拼图</strong><br>
+<code>9:16 · 创意视频拼图</code><br>
+每块碎片都在实时播放动态画面，顺着画面运动轨迹还原完整影片。<br>
+<a href="templates/games/video-jigsaw/">查看源码 →</a>
+</td>
+</tr>
 </table>
 
 <details>
-<summary><strong>展开查看全部 26 款内置可玩游戏模板</strong></summary>
+<summary><strong>展开查看全部 44 款内置可玩游戏模板</strong></summary>
 
 | 游戏名称 | 类型 | 画风 | 屏幕方向 | 简介 | 源码目录 |
 | --- | --- | --- | --- | --- | --- |
@@ -262,6 +308,24 @@ OpenGame 在 [`templates/games/`](templates/games/) 中内置了 **26 款开箱�
 | **星辉堡垒 (Starlight Bastion)** | 射击 | 体素 | 16:9 横屏 | 五波体素敌人晶核防卫战 + 局间升级 | [starlight-bastion](templates/games/starlight-bastion/) |
 | **破潮者 (Tidebreaker)** | 竞速 | 3D | 16:9 横屏 | 风暴群岛 3D 快艇跳浪与限时过关竞速 | [tidebreaker](templates/games/tidebreaker/) |
 | **倾斜神庙 (Tilt Temple)** | 休闲 | 3D | 9:16 竖屏 | 3D 悬浮迷宫拖动倾斜滚球，拿钥匙闯三关 | [tilt-temple](templates/games/tilt-temple/) |
+| **3D 方块拼图 (3D Block Jigsaw)** | 休闲 | 3D | 9:16 竖屏 | 糖果色立体异形方块严丝合缝塞进几何托盘，强迫症解压 | [block-jigsaw-3d](templates/games/block-jigsaw-3d/) |
+| **叠叠消 (Tile Stack)** | 休闲 | 动漫 | 9:16 竖屏 | 多层堆叠三消挑战，体验魔性第二关极限通关 | [tile-stack](templates/games/tile-stack/) |
+| **动态视频拼图 (Video Jigsaw)** | 休闲 | 极简 | 9:16 竖屏 | 每块拼图都在实时播放视频，顺着动态轨迹拼出完整影片 | [video-jigsaw](templates/games/video-jigsaw/) |
+| **弹珠连线爆爆乐 (Jelly Ball Chain Pop)** | 休闲 | 3D | 9:16 竖屏 | 3D 果冻弹珠一笔连消，引爆全屏连锁特效 | [ball-match](templates/games/ball-match/) |
+| **方块爆破 (Block Blast)** | 休闲 | 极简 | 9:16 竖屏 | 8×8 棋盘拖拽拼块，触发横竖整行整列爽快连消 | [block-blast](templates/games/block-blast/) |
+| **割绳子 (Cut the Rope Mini)** | 休闲 | 动漫 | 9:16 竖屏 | 国民级物理益智割绳子，收集金星把糖果送进小怪兽嘴里 | [cut-the-rope-mini](templates/games/cut-the-rope-mini/) |
+| **进厂打螺丝 (Screw Jam)** | 休闲 | 极简 | 9:16 竖屏 | 按颜色拧下螺丝装入对应工具箱，层层拆解钢板 | [screw-puzzle](templates/games/screw-puzzle/) |
+| **经典拼图游戏 (Classic Jigsaw)** | 休闲 | 极简 | 9:16 竖屏 | 轻松治愈的经典插画拼图，拖动碎片咔哒吸附还原完整大图 | [classic-jigsaw](templates/games/classic-jigsaw/) |
+| **看谁能通关 (Car Color Jam)** | 休闲 | 3D | 9:16 竖屏 | 爆火挪车接人颜色排序，精准规划出车顺序清空候车队列 | [car-color-jam](templates/games/car-color-jam/) |
+| **喵咪小吃铺 (Kitty Snack Shop)** | 休闲 | 动漫 | 9:16 竖屏 | 治愈系猫咪美食摊经营，制作特色小吃招待萌猫顾客 | [kitty-snack-shop](templates/games/kitty-snack-shop/) |
+| **模型拼图 (Model Jigsaw)** | 休闲 | 3D | 9:16 竖屏 | 微缩立体模型组装，将零散零件逐一拼合成精致 3D 小景 | [model-jigsaw-3d](templates/games/model-jigsaw-3d/) |
+| **雀神推牌对对消 (Mahjong Slide & Pair)** | 休闲 | 极简 | 9:16 竖屏 | 滑动麻将牌行与列，撞出相同牌面爽快对对消 | [mahjong-pairs](templates/games/mahjong-pairs/) |
+| **玩梗找不同 (Meme Spot the Difference)** | 休闲 | 动漫 | 9:16 竖屏 | 爆笑热梗找茬合集，放大漫画名场面揪出隐藏穿帮与笑点 | [meme-spot-diff](templates/games/meme-spot-diff/) |
+| **我的汉堡餐厅 (My Burger Bistro)** | 休闲 | 3D | 9:16 竖屏 | 3D 汉堡餐厅模拟经营，端盘上菜收钞票扩建爆满连锁店 | [my-burger-bistro](templates/games/my-burger-bistro/) |
+| **像素消除 (Pixel Block Clear)** | 休闲 | 像素 | 9:16 竖屏 | 解压像素画方块连消，一格一格击碎缤纷像素图案 | [pixel-block-clear](templates/games/pixel-block-clear/) |
+| **找牛大作战 (Find the Cow)** | 休闲 | 动漫 | 9:16 竖屏 | 魔性脑洞寻物挑战，顺着线索揪出藏在场景里的调皮小牛 | [find-the-cow](templates/games/find-the-cow/) |
+| **抓小猪 (Catch Piggy)** | 休闲 | 动漫 | 9:16 竖屏 | 3D 物理玩具堆找三消，从满满萌物中精准抓齐三只 | [catch-piggy](templates/games/catch-piggy/) |
+| **罪恶海滩：霓虹夜飙 (Vice Beach)** | 竞速 | ASCII | 16:9 横屏 | 复古霓虹海岸公路夜飙赛车 | [vice-beach-motor-club](templates/games/vice-beach-motor-club/) |
 
 </details>
 
@@ -448,7 +512,7 @@ OpenGame 通过本地 stdio MCP 暴露完整的游戏开发与测试工具集（
 | **游戏运行时与自动 QA** | Node.js, 原生 HTTP, Puppeteer Core / Chrome, 确定性仿真器 | [game-projects.ts](game-projects.ts) · [shared/game-contract.ts](shared/game-contract.ts) · [server.ts](server.ts) |
 | **MCP 与游戏 Skill** | 本地 stdio MCP 服务、`openmotion-game` Skill 及 18 份手册 | [mcp.ts](mcp.ts) · [skills/openmotion-game/](skills/openmotion-game/) |
 | **多模态 Model Gateway** | BYOK 模型发现、异步任务轮询、素材库与在线分享发布 | [gateway/service.ts](gateway/service.ts) · [gateway/catalog.ts](gateway/catalog.ts) · [docs/assets.md](docs/assets.md) |
-| **内置游戏模板库** | 26 款独立可玩 HTML5 / Canvas / Three.js 工程与封面 | [templates/games/](templates/games/) |
+| **内置游戏模板库** | 44 款独立可玩 HTML5 / Canvas / Three.js 工程与封面 | [templates/games/](templates/games/) |
 | **实机预告片管线** | 无头实机录屏 + HTML 合成 + FFmpeg MP4 渲染 | [docs/usage.md](docs/usage.md) · [scripts/verify-export.ts](scripts/verify-export.ts) |
 
 <a id="community"></a>

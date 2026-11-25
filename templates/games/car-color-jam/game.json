@@ -1,0 +1,30 @@
+{
+  "id": "car-color-jam",
+  "title": "Car Color Jam",
+  "description": "Untangle a packed parking lot of color-coded cars and buses—send each vehicle out in the right order to pick up matching passengers before the waiting bays fill up.",
+  "genre": "casual",
+  "style": "3d",
+  "setting": "modern",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Tap unblocked colored cars to drive them into the boarding bays and pick up matching-color passengers from the queue.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "TOP赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "看谁能通关",
+      "description": "爆火全网的挪车接人颜色排序！精准判断出车顺序，把堵满停车场的彩色小车开进候车位，接走对应颜色乘客清空全场。",
+      "controls": "点击前方无阻挡的彩色车辆驶入候车位，自动接走同色乘客；合理规划空位避免卡死，接完所有乘客即可通关。"
+    }
+  }
+}

@@ -3,7 +3,7 @@
 <p align="center"><strong>世界初の Super Game Agent —— オープンソース・フルスタック AI ゲームスタジオ</strong></p>
 
 <p align="center">
-  <img src="docs/readme/opengame-hero.webp" width="100%" alt="OpenGame — 世界初の Super Game Agent。22種類のローカル AI Agent と26本の内蔵ゲームテンプレートから、3D・アニメ・ドット絵・9:16 縦型ミニゲームを制作・リミックス・検証・公開。">
+  <img src="docs/readme/opengame-hero.webp" width="100%" alt="OpenGame — 世界初の Super Game Agent。22種類のローカル AI Agent と44本の内蔵ゲームテンプレートから、3D・アニメ・ドット絵・9:16 縦型ミニゲームを制作・リミックス・検証・公開。">
 </p>
 
 <p align="center">
@@ -33,7 +33,7 @@
 
 OpenGame は**世界初のオープンソース・フルスタック Super Game Agent** です。手元のローカルコーディング Agent を**オープンソースの AI 版 Unreal Engine / Unity** かつ本格的なゲームスタジオへと変え、一言のアイデアやヒット作テンプレートから**制作 → 自動プレイテスト検証 → ワンクリック共有 → 公開・収益化**までの全工程を一気通貫で実現します。
 
-- 🎮 **あらゆるゲームをワンクリックでリミックス。** **26 本のプレイ可能な内蔵テンプレート**（3D・ボクセル・ドット絵・アニメ・9:16 縦型ミニゲーム／プレイアブル広告）を搭載し、ソースコードも設計書もすべて編集可能。
+- 🎮 **あらゆるゲームをワンクリックでリミックス。** **44 本のプレイ可能な内蔵テンプレート**（3D・ボクセル・ドット絵・アニメ・9:16 縦型ミニゲーム／プレイアブル広告）を搭載し、ソースコードも設計書もすべて編集可能。
 - 🎨 **あらゆるゲームをワンクリックでスタイル変換。** 検証済みのゲームループを保ったまま、キャラクター・アートスタイル・BGM を瞬時に差し替え。**DeepSeek** などの高コスパモデルで手早く高品質なリスキンを量産でき、**Claude Fable 5.2 / Opus / Codex / Gemini** ならゼロから 3D 大作にも挑めます。
 - 💰 **一気通貫のパイプライン：制作 → 検証 → 配信・収益化。** ロジック検証・バランスシミュレーション・実機プレイテスト・カバー画像撮影・トレーラー録画まで自動化し、Web 共有リンク・9:16 プレイアブル広告・ミニゲームプラットフォーム向け出力に対応。
 - 🔓 **フルスタック・オープンソース（BYOA + BYOK）。** コード・アート・映像・BGM・ボイス・効果音・Three.js 3D まですべてオープンソース。お使いの [ローカル Agent](#agent-wall) と API キー、または [OpenDesign Go](https://go.open-design.ai/?utm_source=github&utm_medium=referral&utm_campaign=opengame&utm_content=readme_ja) を接続して利用できます。
@@ -82,7 +82,7 @@ npm start
 
 ## 🕹️ 内蔵プレイ可能ゲームテンプレート & ショーケース
 
-OpenGame は [`templates/games/`](templates/games/) に**すぐ遊べる 26 本の完全なゲームプロジェクト**を標準搭載しています。すべて HTML5 / Three.js ソースコード、カバーアート、操作ガイド、多言語メタデータ付き。Game Studio 上でそのまま試遊し、ワンクリックで **Remix**、あるいは**世界観・アートスタイル・キャラクターを丸ごと差し替えて**自分だけの作品にできます。
+OpenGame は [`templates/games/`](templates/games/) に**すぐ遊べる 44 本の完全なゲームプロジェクト**を標準搭載しています。すべて HTML5 / Three.js ソースコード、カバーアート、操作ガイド、多言語メタデータ付き。Game Studio 上でそのまま試遊し、ワンクリックで **Remix**、あるいは**世界観・アートスタイル・キャラクターを丸ごと差し替えて**自分だけの作品にできます。
 
 ### 3D・ボクセル・アクションゲーム（16:9 横画面）
 
@@ -229,10 +229,56 @@ OpenGame は [`templates/games/`](templates/games/) に**すぐ遊べる 26 本�
 <a href="templates/games/merge-bakery/">ソース →</a>
 </td>
 </tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<img src="templates/games/my-burger-bistro/cover.webp" width="100%" alt="My Burger Bistro — 3D ハンバーガー店経営"><br>
+<strong>My Burger Bistro</strong><br>
+<code>9:16 · 3D レストラン経営</code><br>
+バーガーを焼いてお客に提供し、売上を集めてお店をどんどん拡大しよう。<br>
+<a href="templates/games/my-burger-bistro/">ソース →</a>
+</td>
+<td width="33%" valign="top" align="center">
+<img src="templates/games/kitty-snack-shop/cover.webp" width="100%" alt="Kitty Snack Shop — 猫の屋台経営"><br>
+<strong>Kitty Snack Shop</strong><br>
+<code>9:16 · 猫屋台タイクーン</code><br>
+可愛い猫シェフたちと軽食を作り、行列のできる癒し系屋台を育てよう。<br>
+<a href="templates/games/kitty-snack-shop/">ソース →</a>
+</td>
+<td width="33%" valign="top" align="center">
+<img src="templates/games/car-color-jam/cover.webp" width="100%" alt="Car Color Jam — カラフル駐車パズル"><br>
+<strong>Car Color Jam</strong><br>
+<code>9:16 · 駐車カラーソート</code><br>
+ぎっしり詰まった駐車場から車を順番に出し、同じ色の乗客を乗せていこう。<br>
+<a href="templates/games/car-color-jam/">ソース →</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<img src="templates/games/meme-spot-diff/cover.webp" width="100%" alt="Meme Spot the Difference — ツッコミ間違い探し"><br>
+<strong>Meme Spot the Difference</strong><br>
+<code>9:16 · ネタ系間違い探し</code><br>
+コミカルなイラストに潜むツッコミどころや隠れた違いを見つけ出そう。<br>
+<a href="templates/games/meme-spot-diff/">ソース →</a>
+</td>
+<td width="33%" valign="top" align="center">
+<img src="templates/games/cut-the-rope-mini/cover.webp" width="100%" alt="Cut the Rope Mini — 物理ロープ切りパズル"><br>
+<strong>Cut the Rope Mini</strong><br>
+<code>9:16 · 物理ロープパズル</code><br>
+絶妙なタイミングでロープを切り、星を集めてモンスターにキャンディを届けよう。<br>
+<a href="templates/games/cut-the-rope-mini/">ソース →</a>
+</td>
+<td width="33%" valign="top" align="center">
+<img src="templates/games/video-jigsaw/cover.webp" width="100%" alt="Video Jigsaw — 動く動画ジグソーパズル"><br>
+<strong>Video Jigsaw</strong><br>
+<code>9:16 · 動画ジグソー</code><br>
+リアルタイムで動く映像ピースを組み合わせて 1 本の動画を完成させよう。<br>
+<a href="templates/games/video-jigsaw/">ソース →</a>
+</td>
+</tr>
 </table>
 
 <details>
-<summary><strong>全 26 本の内蔵プレイ可能テンプレート一覧を開く</strong></summary>
+<summary><strong>全 44 本の内蔵プレイ可能テンプレート一覧を開く</strong></summary>
 
 | ゲーム名 | ジャンル | スタイル | 画面比率 | 概要 | ソース |
 | --- | --- | --- | --- | --- | --- |
@@ -262,6 +308,24 @@ OpenGame は [`templates/games/`](templates/games/) に**すぐ遊べる 26 本�
 | **Starlight Bastion** | シューター | ボクセル | 16:9 横画面 | ローグライト強化付き・全5ウェーブのクリスタル防衛戦 | [starlight-bastion](templates/games/starlight-bastion/) |
 | **Tidebreaker** | レーシング | 3D | 16:9 横画面 | 嵐の群島で波を跳ね越える 3D スピードボートレース | [tidebreaker](templates/games/tidebreaker/) |
 | **Tilt Temple** | カジュアル | 3D | 9:16 縦画面 | 浮遊迷宮を傾けて鍵を取りポータルへ導く 3D 傾きパズル | [tilt-temple](templates/games/tilt-temple/) |
+| **3D Block Jigsaw** | カジュアル | 3D | 9:16 縦画面 | カラフルな 3D ブロックをトレイにぴったり収める立体パズル | [block-jigsaw-3d](templates/games/block-jigsaw-3d/) |
+| **Block Blast: Board Sweeper** | カジュアル | ミニマル | 9:16 縦画面 | 8×8 盤面にブロックを配置して縦横ラインを連鎖消去 | [block-blast](templates/games/block-blast/) |
+| **Car Color Jam** | カジュアル | 3D | 9:16 縦画面 | 混雑した駐車場から車を誘導して同色の乗客を乗せるカラーソート | [car-color-jam](templates/games/car-color-jam/) |
+| **Catch Piggy: Toy Pile Match** | カジュアル | アニメ | 9:16 縦画面 | 3D 物理おもちゃの山から同じ 3 つをピックアップするマッチパズル | [catch-piggy](templates/games/catch-piggy/) |
+| **Classic Jigsaw** | カジュアル | ミニマル | 9:16 縦画面 | 鮮やかなイラストピースをカチッと繋げて完成させる王道ジグソー | [classic-jigsaw](templates/games/classic-jigsaw/) |
+| **Cut the Rope Mini** | カジュアル | アニメ | 9:16 縦画面 | ロープを切るタイミングを見極めてキャンディと星を届ける物理パズル | [cut-the-rope-mini](templates/games/cut-the-rope-mini/) |
+| **Find the Cow** | カジュアル | アニメ | 9:16 縦画面 | 牧場イラストの隅々に隠れた牛をヒント頼りに探し出す観察ゲーム | [find-the-cow](templates/games/find-the-cow/) |
+| **Jelly Ball Chain Pop** | カジュアル | 3D | 9:16 縦画面 | ぷるぷる 3D ゼリーボールをなぞって繋げる爽快コンボパズル | [ball-match](templates/games/ball-match/) |
+| **Kitty Snack Shop** | カジュアル | アニメ | 9:16 縦画面 | 可愛い猫シェフと一緒に軽食を作って提供する癒し系屋台経営 | [kitty-snack-shop](templates/games/kitty-snack-shop/) |
+| **Mahjong Slide & Pair** | カジュアル | ミニマル | 9:16 縦画面 | 麻雀牌をスライドさせて同じペアを揃えるパズル | [mahjong-pairs](templates/games/mahjong-pairs/) |
+| **Meme Spot the Difference** | カジュアル | アニメ | 9:16 縦画面 | コミカルなイラストのツッコミどころや違いを探し出す脳トレゲーム | [meme-spot-diff](templates/games/meme-spot-diff/) |
+| **Model Jigsaw** | カジュアル | 3D | 9:16 縦画面 | ミニチュア 3D ジオラマをパーツごとに組み立てる癒しパズル | [model-jigsaw-3d](templates/games/model-jigsaw-3d/) |
+| **My Burger Bistro** | カジュアル | 3D | 9:16 縦画面 | バーガー提供と店舗拡張を楽しむ 3D レストラン経営タイクーン | [my-burger-bistro](templates/games/my-burger-bistro/) |
+| **Pixel Block Clear** | カジュアル | ピクセル | 9:16 縦画面 | ピクセルアートのブロックを色ごとに爽快連鎖消去するパズル | [pixel-block-clear](templates/games/pixel-block-clear/) |
+| **Screw Jam: Unbolt Everything** | カジュアル | ミニマル | 9:16 縦画面 | 同色のネジを外してパーツを分解していく爽快パズル | [screw-puzzle](templates/games/screw-puzzle/) |
+| **Tile Stack: Can You Beat Lv.2?** | カジュアル | アニメ | 9:16 縦画面 | 重なったタイルを 3 つ揃えて消す高難度ステージ付きスタックパズル | [tile-stack](templates/games/tile-stack/) |
+| **Vice Beach: Neon Drift Club** | レーシング | ASCII | 16:9 横画面 | ネオン輝く夜の海辺ハイウェイを駆け抜けるレトロドリフトレース | [vice-beach-motor-club](templates/games/vice-beach-motor-club/) |
+| **Video Jigsaw** | カジュアル | ミニマル | 9:16 縦画面 | 動き続ける映像ピースを組み合わせて動画を完成させるジグソー | [video-jigsaw](templates/games/video-jigsaw/) |
 
 </details>
 
@@ -274,7 +338,7 @@ OpenGame は [`templates/games/`](templates/games/) に**すぐ遊べる 26 本�
 白紙のプロンプトから完成度の高いゲームをゼロから作るのは、最先端モデルにとっても難題です。OpenGame は**検証済みのゲームエンジニアリング基盤**と**世界観・アート・演出コンテンツ**を分離することでこの壁を突破します：
 
 - **すべてが透明で編集可能なソースコード**：`index.html`、決定論的ロジック `logic.js`、3D 向け内蔵 Three.js、さらに構造化設計ドキュメント（`design/plan.md`、`design/style.md`、`design/assets.csv`、`design/verification.md`）で構成されます。
-- **ワンクリックでリミックス**：Game Studio で 26 本のテンプレートから **Remix** を押す（または Agent に指示する）だけで、操作系・パラメータ調整・自動テストフックまで整った編集用ドラフトを即座に複製できます。
+- **ワンクリックでリミックス**：Game Studio で 44 本のテンプレートから **Remix** を押す（または Agent に指示する）だけで、操作系・パラメータ調整・自動テストフックまで整った編集用ドラフトを即座に複製できます。
 - **あらゆる世界観へスタイル変換**：物理挙動や勝敗ルールを壊さず、題材・キャラクター・配色・スプライト・テクスチャ・BGM を差し替え可能。**DeepSeek** などの高コスパモデルで高速イテレーションを回すのも、**Claude Fable 5.2 / Opus / Codex / Gemini** で本格的な 3D オリジナル作品に挑むのも自由です。
 
 **接続済みの Agent でそのまま試せるプロンプト例：**
@@ -448,7 +512,7 @@ OpenGame はローカル stdio MCP 経由で完全なゲーム開発ツール群
 | **ゲーム実行基盤 & 自動 QA** | Node.js, ネイティブ HTTP, Puppeteer Core / Chrome, 決定論シミュレーター | [game-projects.ts](game-projects.ts) · [shared/game-contract.ts](shared/game-contract.ts) · [server.ts](server.ts) |
 | **MCP & ゲーム Skill** | ローカル stdio MCP サーバー、`openmotion-game` Skill & 18 冊のハンドブック | [mcp.ts](mcp.ts) · [skills/openmotion-game/](skills/openmotion-game/) |
 | **マルチモーダル Gateway** | BYOK モデル検出・非同期ジョブ管理・アセットライブラリ & Web 公開 | [gateway/service.ts](gateway/service.ts) · [gateway/catalog.ts](gateway/catalog.ts) · [docs/assets.md](docs/assets.md) |
-| **内蔵テンプレート** | カバー・メタデータ付き 26 本の独立 HTML5 / Canvas / Three.js ゲーム | [templates/games/](templates/games/) |
+| **内蔵テンプレート** | カバー・メタデータ付き 44 本の独立 HTML5 / Canvas / Three.js ゲーム | [templates/games/](templates/games/) |
 | **トレーラー録画パイプライン** | ヘッドレス実機録画 + HTML コンポジション + FFmpeg MP4 書き出し | [docs/usage.md](docs/usage.md) · [scripts/verify-export.ts](scripts/verify-export.ts) |
 
 <a id="community"></a>

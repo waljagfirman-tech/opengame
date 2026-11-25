@@ -32,15 +32,26 @@ describe('gameCatalog multi-file detection and internal tags', () => {
   });
 
   it('preserves internal top赚钱 tags on bundled templates for downstream category grouping', () => {
-    const tagged = bundledGames.filter(game => game.tags?.includes('top赚钱')).map(game => game.id).sort();
+    const tagged = bundledGames.filter(game => game.tags?.some(tag => tag.trim().toLowerCase() === 'top赚钱')).map(game => game.id).sort();
     expect(tagged).toEqual([
-      'ball-match',
-      'block-blast',
-      'catch-piggy',
-      'mahjong-pairs',
-      'screw-puzzle',
-      'tile-stack',
-      'vice-beach-motor-club',
+          'ball-match',
+          'block-blast',
+          'block-jigsaw-3d',
+          'car-color-jam',
+          'catch-piggy',
+          'classic-jigsaw',
+          'cut-the-rope-mini',
+          'find-the-cow',
+          'kitty-snack-shop',
+          'mahjong-pairs',
+          'meme-spot-diff',
+          'model-jigsaw-3d',
+          'my-burger-bistro',
+          'pixel-block-clear',
+          'screw-puzzle',
+          'tile-stack',
+          'vice-beach-motor-club',
+          'video-jigsaw'
     ]);
   });
 });

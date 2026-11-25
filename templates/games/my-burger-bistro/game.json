@@ -1,0 +1,30 @@
+{
+  "id": "my-burger-bistro",
+  "title": "My Burger Bistro",
+  "description": "Run your own bustling 3D burger restaurant—flip patties, serve sizzling orders, collect cash stacks, hire staff, and expand counters and seating.",
+  "genre": "casual",
+  "style": "3d",
+  "setting": "modern",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Drag anywhere on screen with the virtual joystick to move your chef, pick up freshly grilled burgers, serve customers, collect cash, and unlock upgrades.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "TOP赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "我的汉堡餐厅",
+      "description": "超上头的 3D 模拟经营汉堡店：亲自端盘上汉堡、疯狂收钞票、雇佣员工扩建餐桌和出餐台，把小店干成爆满连锁餐厅！",
+      "controls": "按住屏幕拖动虚拟摇杆控制店长移动，自动取餐、上菜、收钱并踩上解锁区升级扩建店铺。"
+    }
+  }
+}
