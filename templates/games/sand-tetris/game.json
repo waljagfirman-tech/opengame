@@ -1,0 +1,30 @@
+{
+  "id": "sand-tetris",
+  "title": "Sandfall Blocks",
+  "description": "Drop vibrant blocks that shatter into flowing grains of colored sand on impact—connect a single color edge-to-edge to trigger huge cascading clears.",
+  "genre": "casual",
+  "style": "minimal",
+  "setting": "modern",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Drag one of the three sand blocks at the bottom into the playfield; bridge left-to-right with one sand color to clear it.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "top赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "流沙俄罗斯方块",
+      "description": "极致解压的物理落沙消除：方块落地瞬间化作流动的细沙堆叠，只要同色沙层连通左右两边即可整片爽快消除。",
+      "controls": "从底部拖出彩色方块松手下落，利用流沙自然滑落的特性让同色沙子贯通左右两侧即可连消得分。"
+    }
+  }
+}

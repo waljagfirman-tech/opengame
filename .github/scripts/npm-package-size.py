@@ -9,7 +9,7 @@ import tarfile
 
 MIB = 1024 * 1024
 WARNING_GROWTH = MIB
-MAX_BYTES = 40 * MIB  # 26 initial templates (+2.3 MiB, PR #768) plus 7 additional playable templates (+~10 MiB compressed).
+MAX_BYTES = 85 * MIB  # 26 initial + 7 merged (#7) + 12 additional playable templates (Batch 4, 77.57 MiB compressed).
 
 
 def package_files(path):

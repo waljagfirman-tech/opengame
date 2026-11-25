@@ -3,7 +3,7 @@
 <p align="center"><strong>世界初の Super Game Agent —— オープンソース・フルスタック AI ゲームスタジオ</strong></p>
 
 <p align="center">
-  <img src="docs/readme/opengame-hero.webp" width="100%" alt="OpenGame — 世界初の Super Game Agent。22種類のローカル AI Agent と26本の内蔵ゲームテンプレートから、3D・アニメ・ドット絵・9:16 縦型ミニゲームを制作・リミックス・検証・公開。">
+  <img src="docs/readme/opengame-hero.webp" width="100%" alt="OpenGame — 世界初の Super Game Agent。22種類のローカル AI Agent と45本の内蔵ゲームテンプレートから、3D・アニメ・ドット絵・9:16 縦型ミニゲームを制作・リミックス・検証・公開。">
 </p>
 
 <p align="center">
@@ -33,7 +33,7 @@
 
 OpenGame は**世界初のオープンソース・フルスタック Super Game Agent** です。手元のローカルコーディング Agent を**オープンソースの AI 版 Unreal Engine / Unity** かつ本格的なゲームスタジオへと変え、一言のアイデアやヒット作テンプレートから**制作 → 自動プレイテスト検証 → ワンクリック共有 → 公開・収益化**までの全工程を一気通貫で実現します。
 
-- 🎮 **あらゆるゲームをワンクリックでリミックス。** **26 本のプレイ可能な内蔵テンプレート**（3D・ボクセル・ドット絵・アニメ・9:16 縦型ミニゲーム／プレイアブル広告）を搭載し、ソースコードも設計書もすべて編集可能。
+- 🎮 **あらゆるゲームをワンクリックでリミックス。** **45 本のプレイ可能な内蔵テンプレート**（3D・ボクセル・ドット絵・アニメ・9:16 縦型ミニゲーム／プレイアブル広告）を搭載し、ソースコードも設計書もすべて編集可能。
 - 🎨 **あらゆるゲームをワンクリックでスタイル変換。** 検証済みのゲームループを保ったまま、キャラクター・アートスタイル・BGM を瞬時に差し替え。**DeepSeek** などの高コスパモデルで手早く高品質なリスキンを量産でき、**Claude Fable 5.2 / Opus / Codex / Gemini** ならゼロから 3D 大作にも挑めます。
 - 💰 **一気通貫のパイプライン：制作 → 検証 → 配信・収益化。** ロジック検証・バランスシミュレーション・実機プレイテスト・カバー画像撮影・トレーラー録画まで自動化し、Web 共有リンク・9:16 プレイアブル広告・ミニゲームプラットフォーム向け出力に対応。
 - 🔓 **フルスタック・オープンソース（BYOA + BYOK）。** コード・アート・映像・BGM・ボイス・効果音・Three.js 3D まですべてオープンソース。お使いの [ローカル Agent](#agent-wall) と API キー、または [OpenDesign Go](https://go.open-design.ai/?utm_source=github&utm_medium=referral&utm_campaign=opengame&utm_content=readme_ja) を接続して利用できます。
@@ -82,7 +82,7 @@ npm start
 
 ## 🕹️ 内蔵プレイ可能ゲームテンプレート & ショーケース
 
-OpenGame は [`templates/games/`](templates/games/) に**すぐ遊べる 26 本の完全なゲームプロジェクト**を標準搭載しています。すべて HTML5 / Three.js ソースコード、カバーアート、操作ガイド、多言語メタデータ付き。Game Studio 上でそのまま試遊し、ワンクリックで **Remix**、あるいは**世界観・アートスタイル・キャラクターを丸ごと差し替えて**自分だけの作品にできます。
+OpenGame は [`templates/games/`](templates/games/) に**すぐ遊べる 45 本の完全なゲームプロジェクト**を標準搭載しています。すべて HTML5 / Three.js ソースコード、カバーアート、操作ガイド、多言語メタデータ付き。Game Studio 上でそのまま試遊し、ワンクリックで **Remix**、あるいは**世界観・アートスタイル・キャラクターを丸ごと差し替えて**自分だけの作品にできます。
 
 ### 3D・ボクセル・アクションゲーム（16:9 横画面）
 
@@ -229,39 +229,104 @@ OpenGame は [`templates/games/`](templates/games/) に**すぐ遊べる 26 本�
 <a href="templates/games/merge-bakery/">ソース →</a>
 </td>
 </tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<img src="templates/games/arrow-out-3d/cover.webp" width="100%" alt="Arrow Out 3D — 3D 矢印ブロックパズル"><br>
+<strong>Arrow Out 3D</strong><br>
+<code>9:16 · 3D 矢印パズル</code><br>
+3D 矢印ブロックの塊を回転させて、障害物のないピースから順番に弾き出そう。<br>
+<a href="templates/games/arrow-out-3d/">ソース →</a>
+</td>
+<td width="33%" valign="top" align="center">
+<img src="templates/games/yarn-sort-color/cover.webp" width="100%" alt="Yarn Sort Studio — ASMR 毛糸ソートパズル"><br>
+<strong>Yarn Sort Studio</strong><br>
+<code>9:16 · 毛糸ソート</code><br>
+カラフルな毛糸を同じ色 3 本で揃えてドット絵タペストリーを織り上げるパズル。<br>
+<a href="templates/games/yarn-sort-color/">ソース →</a>
+</td>
+<td width="33%" valign="top" align="center">
+<img src="templates/games/sand-tetris/cover.webp" width="100%" alt="Sandfall Blocks — 流砂ブロックパズル"><br>
+<strong>Sandfall Blocks</strong><br>
+<code>9:16 · 流砂パズル</code><br>
+着地すると砂粒になって崩れるブロックを積み上げ、同色で左右をつないで一掃。<br>
+<a href="templates/games/sand-tetris/">ソース →</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<img src="templates/games/rope-untangle-3d/cover.webp" width="100%" alt="Tangle Knot 3D — 3D ロープ解きパズル"><br>
+<strong>Tangle Knot 3D</strong><br>
+<code>9:16 · 3D ロープ解き</code><br>
+真鍮ピンを動かして絡み合った 3D ロープをほどく物理パズル。<br>
+<a href="templates/games/rope-untangle-3d/">ソース →</a>
+</td>
+<td width="33%" valign="top" align="center">
+<img src="templates/games/goods-sort-master/cover.webp" width="100%" alt="Shelf Match Master — 商品棚 3 マッチ"><br>
+<strong>Shelf Match Master</strong><br>
+<code>9:16 · 棚整理 3 マッチ</code><br>
+お菓子やドリンク、ぬいぐるみを同じ 3 つに並べて棚をすっきり消去。<br>
+<a href="templates/games/goods-sort-master/">ソース →</a>
+</td>
+<td width="33%" valign="top" align="center">
+<img src="templates/games/river-pals-sail/cover.webp" width="100%" alt="River Pals Sail — 港ボート乗船パズル"><br>
+<strong>River Pals Sail</strong><br>
+<code>9:16 · 港ボートパズル</code><br>
+混雑した港から色分けされたボートを出発させ、同じ色の動物たちを乗せて出航。<br>
+<a href="templates/games/river-pals-sail/">ソース →</a>
+</td>
+</tr>
 </table>
 
 <details>
-<summary><strong>全 26 本の内蔵プレイ可能テンプレート一覧を開く</strong></summary>
+<summary><strong>全 45 本の内蔵プレイ可能テンプレート一覧を開く</strong></summary>
 
 | ゲーム名 | ジャンル | スタイル | 画面比率 | 概要 | ソース |
 | --- | --- | --- | --- | --- | --- |
+| **Arrow Out 3D** | カジュアル | 3D | 9:16 縦画面 | 3D 矢印ブロックの塊を回転して障害のないブロックを弾き出す立体パズル | [arrow-out-3d](templates/games/arrow-out-3d/) |
+| **Block Blast: Board Sweeper** | カジュアル | ミニマル | 9:16 縦画面 | 8×8 盤面にブロックを配置して縦横ラインを連鎖消去 | [block-blast](templates/games/block-blast/) |
 | **Castle Crush** | カジュアル | アニメ | 9:16 縦画面 | 木材と石造りの4つの砦を崩す物理スリングショット攻城戦 | [castle-crush](templates/games/castle-crush/) |
+| **Catch Kitty 3D** | カジュアル | アニメ | 9:16 縦画面 | 山積みの可愛い子猫や小物から同じ 3 つを見つけて消すパズル | [catch-kitty-3d](templates/games/catch-kitty-3d/) |
+| **Catch Piggy: Toy Pile Match** | カジュアル | アニメ | 9:16 縦画面 | 3D 物理おもちゃの山から同じ 3 つをピックアップするマッチパズル | [catch-piggy](templates/games/catch-piggy/) |
+| **Chroma Pour Lab** | カジュアル | ミニマル | 9:16 縦画面 | 試験管のカラフルな液体を注ぎ分けて単色に揃えるソートパズル | [water-sort-puzzle](templates/games/water-sort-puzzle/) |
 | **Comet Guard** | シューター | ミニマル | 16:9 横画面 | 灼熱の彗星群から宇宙ステーションを守る軌道迎撃シューター | [comet-guard](templates/games/comet-guard/) |
 | **Drift Dash** | レーシング | ボクセル | 9:16 縦画面 | 片手親指で操作するレトロサーキット・ドリフトレース（AI3台対戦） | [drift-dash](templates/games/drift-dash/) |
 | **Gate Legion** | カジュアル | ドット絵 | 9:16 縦画面 | 算数ゲートで軍勢を増やしてボス軍団と戦うヒット系ランナー | [gate-legion](templates/games/gate-legion/) |
 | **Glyph Garden** | カジュアル | アニメ | 16:9 横画面 | 連鎖コンボが爽快なファンタジー調マッチ3パズル | [glyph-garden](templates/games/glyph-garden/) |
 | **Harbor Skirmish** | シューター | 3D | 16:9 横画面 | 二段ジャンプ・スライディング・グラップルを備えた 3D FPS | [harbor-skirmish](templates/games/harbor-skirmish/) |
 | **Hollow Signal** | ホラー | ミニマル | 16:9 横画面 | 正気度が尽きる前にノイズ周波数を合わせるラジオホラー | [hollow-signal](templates/games/hollow-signal/) |
+| **Jelly Ball Chain Pop** | カジュアル | 3D | 9:16 縦画面 | ぷるぷる 3D ゼリーボールをなぞって繋げる爽快コンボパズル | [ball-match](templates/games/ball-match/) |
 | **Jingyang Ridge** | カジュアル | アニメ | 16:9 横画面 | 予備動作を見切り回避・反撃を決める水墨武侠ボス戦 | [jingyang-ridge](templates/games/jingyang-ridge/) |
 | **Lane Turret** | シューター | ドット絵 | 9:16 縦画面 | 強化カード選択付きの自動砲台ウェーブ防衛 | [lane-turret](templates/games/lane-turret/) |
 | **Lantern Hop** | プラットフォーマー | ドット絵 | 16:9 横画面 | 月夜の屋根を駆けるキツネの二段ジャンプ・エンドレスランナー | [lantern-hop](templates/games/lantern-hop/) |
 | **Last Light** | ホラー | ミニマル | 16:9 横画面 | 懐中電灯の光だけで廃校から脱出するサバイバルホラー | [last-light](templates/games/last-light/) |
 | **Lighthouse Log** | ストーリー | アニメ | 16:9 横画面 | 嵐の7日間を燃料管理と無線選択で生き抜く物語サバイバル | [lighthouse-log](templates/games/lighthouse-log/) |
+| **Mahjong Slide & Pair** | カジュアル | ミニマル | 9:16 縦画面 | 麻雀牌をスライドさせて同じペアを揃えるパズル | [mahjong-pairs](templates/games/mahjong-pairs/) |
+| **Mega Melon 3D** | カジュアル | 3D | 9:16 縦画面 | 3D フルーツを落として合体させ巨大スイカを目指す物理パズル | [watermelon-merge-3d](templates/games/watermelon-merge-3d/) |
 | **Merge Bakery** | カジュアル | アニメ | 9:16 縦画面 | 焼成・マージ・時間制限オーダーをこなすベーカリーパズル | [merge-bakery](templates/games/merge-bakery/) |
 | **Neon Drift** | レーシング | 3D | 16:9 横画面 | 雨夜のシンセウェーブ高速道路をすり抜けるブーストレーシング | [neon-drift](templates/games/neon-drift/) |
 | **Night Train Letters** | ストーリー | ミニマル | 16:9 横画面 | 夜行列車で3通の届かぬ手紙を辿る分岐ナラティブ | [night-train](templates/games/night-train/) |
+| **Parking Jam Hero** | カジュアル | 3D | 9:16 縦画面 | 混雑した駐車場の車を正しい順番で脱出させるパズル | [parking-jam-hero](templates/games/parking-jam-hero/) |
 | **Periscope Depth** | シューター | ミニマル | 16:9 横画面 | 潜望鏡で艦隊を魚雷攻撃し爆雷を回避する潜水艦アクション | [periscope-depth](templates/games/periscope-depth/) |
+| **Piggy Farm Escape** | カジュアル | アニメ | 9:16 縦画面 | 牧場にひしめく子ブタたちを進路の空いた順に脱出させるパズル | [piggy-escape-jam](templates/games/piggy-escape-jam/) |
 | **Pin Rescue** | カジュアル | ミニマル | 9:16 縦画面 | 溶岩・水・黄金を操る王道ピン抜き物理パズル | [pin-rescue](templates/games/pin-rescue/) |
+| **River Pals Sail** | カジュアル | 3D | 9:16 縦画面 | 色分けボートを港から動かして同じ色の動物乗客を乗せるパズル | [river-pals-sail](templates/games/river-pals-sail/) |
 | **Rooftop Roast** | カジュアル | ミニマル | 16:9 横画面 | `SHOP` 定数を書き換えるだけでブランド差し替え可能なカフェ販促ゲーム | [rooftop-roast](templates/games/rooftop-roast/) |
+| **Sandfall Blocks** | カジュアル | ミニマル | 9:16 縦画面 | 落下すると砂になって広がるブロックを同色で左右につなぐパズル | [sand-tetris](templates/games/sand-tetris/) |
+| **Save the Pup** | カジュアル | アニメ | 9:16 縦画面 | 一筆書きの物理バリアでハチの群れから子犬を守るお絵描きパズル | [save-the-dog](templates/games/save-the-dog/) |
+| **Screw Jam: Unbolt Everything** | カジュアル | ミニマル | 9:16 縦画面 | 同色のネジを外してパーツを分解していく爽快パズル | [screw-puzzle](templates/games/screw-puzzle/) |
+| **Shelf Match Master** | カジュアル | アニメ | 9:16 縦画面 | 商品棚のお菓子やドリンクを 3 つ揃えて消す整理パズル | [goods-sort-master](templates/games/goods-sort-master/) |
 | **Sky Runner** | レーシング | 3D | 9:16 縦画面 | コイン収集＆ブーストで駆けるサイバーパンク 3D ホバーボードランナー | [sky-runner](templates/games/sky-runner/) |
 | **Skyline Courier** | プラットフォーマー | 3D | 16:9 横画面 | 90秒以内に高層ビルの屋上を駆け抜ける 3D パルクール | [skyline-courier](templates/games/skyline-courier/) |
 | **Slime Swell** | カジュアル | ミニマル | 9:16 縦画面 | 街ごと飲み込んでライバルと競う 60 秒成長アリーナ | [slime-swell](templates/games/slime-swell/) |
 | **Sort Stack** | カジュアル | ミニマル | 9:16 縦画面 | Undo 対応・全5ステージのカラーリング仕分けパズル | [sort-stack](templates/games/sort-stack/) |
 | **Stack the Moon** | カジュアル | ミニマル | 16:9 横画面 | 月夜の天文台を積み上げるワンタップ・タイミングゲーム | [stack-the-moon](templates/games/stack-the-moon/) |
 | **Starlight Bastion** | シューター | ボクセル | 16:9 横画面 | ローグライト強化付き・全5ウェーブのクリスタル防衛戦 | [starlight-bastion](templates/games/starlight-bastion/) |
+| **Tangle Knot 3D** | カジュアル | 3D | 9:16 縦画面 | ピンを動かして絡まった 3D ロープをすべてほどく物理パズル | [rope-untangle-3d](templates/games/rope-untangle-3d/) |
 | **Tidebreaker** | レーシング | 3D | 16:9 横画面 | 嵐の群島で波を跳ね越える 3D スピードボートレース | [tidebreaker](templates/games/tidebreaker/) |
+| **Tile Stack: Can You Beat Lv.2?** | カジュアル | アニメ | 9:16 縦画面 | 重なったタイルを 3 つ揃えて消す高難度ステージ付きスタックパズル | [tile-stack](templates/games/tile-stack/) |
 | **Tilt Temple** | カジュアル | 3D | 9:16 縦画面 | 浮遊迷宮を傾けて鍵を取りポータルへ導く 3D 傾きパズル | [tilt-temple](templates/games/tilt-temple/) |
+| **Vice Beach: Neon Drift Club** | レーシング | ASCII | 16:9 横画面 | ネオン輝く夜の海辺ハイウェイを駆け抜けるレトロドリフトレース | [vice-beach-motor-club](templates/games/vice-beach-motor-club/) |
+| **Yarn Sort Studio** | カジュアル | ミニマル | 9:16 縦画面 | カラフルな毛糸を 3 本揃えてドット絵タペストリーを完成させるパズル | [yarn-sort-color](templates/games/yarn-sort-color/) |
 
 </details>
 
@@ -274,7 +339,7 @@ OpenGame は [`templates/games/`](templates/games/) に**すぐ遊べる 26 本�
 白紙のプロンプトから完成度の高いゲームをゼロから作るのは、最先端モデルにとっても難題です。OpenGame は**検証済みのゲームエンジニアリング基盤**と**世界観・アート・演出コンテンツ**を分離することでこの壁を突破します：
 
 - **すべてが透明で編集可能なソースコード**：`index.html`、決定論的ロジック `logic.js`、3D 向け内蔵 Three.js、さらに構造化設計ドキュメント（`design/plan.md`、`design/style.md`、`design/assets.csv`、`design/verification.md`）で構成されます。
-- **ワンクリックでリミックス**：Game Studio で 26 本のテンプレートから **Remix** を押す（または Agent に指示する）だけで、操作系・パラメータ調整・自動テストフックまで整った編集用ドラフトを即座に複製できます。
+- **ワンクリックでリミックス**：Game Studio で 45 本のテンプレートから **Remix** を押す（または Agent に指示する）だけで、操作系・パラメータ調整・自動テストフックまで整った編集用ドラフトを即座に複製できます。
 - **あらゆる世界観へスタイル変換**：物理挙動や勝敗ルールを壊さず、題材・キャラクター・配色・スプライト・テクスチャ・BGM を差し替え可能。**DeepSeek** などの高コスパモデルで高速イテレーションを回すのも、**Claude Fable 5.2 / Opus / Codex / Gemini** で本格的な 3D オリジナル作品に挑むのも自由です。
 
 **接続済みの Agent でそのまま試せるプロンプト例：**
@@ -448,7 +513,7 @@ OpenGame はローカル stdio MCP 経由で完全なゲーム開発ツール群
 | **ゲーム実行基盤 & 自動 QA** | Node.js, ネイティブ HTTP, Puppeteer Core / Chrome, 決定論シミュレーター | [game-projects.ts](game-projects.ts) · [shared/game-contract.ts](shared/game-contract.ts) · [server.ts](server.ts) |
 | **MCP & ゲーム Skill** | ローカル stdio MCP サーバー、`openmotion-game` Skill & 18 冊のハンドブック | [mcp.ts](mcp.ts) · [skills/openmotion-game/](skills/openmotion-game/) |
 | **マルチモーダル Gateway** | BYOK モデル検出・非同期ジョブ管理・アセットライブラリ & Web 公開 | [gateway/service.ts](gateway/service.ts) · [gateway/catalog.ts](gateway/catalog.ts) · [docs/assets.md](docs/assets.md) |
-| **内蔵テンプレート** | カバー・メタデータ付き 26 本の独立 HTML5 / Canvas / Three.js ゲーム | [templates/games/](templates/games/) |
+| **内蔵テンプレート** | カバー・メタデータ付き 45 本の独立 HTML5 / Canvas / Three.js ゲーム | [templates/games/](templates/games/) |
 | **トレーラー録画パイプライン** | ヘッドレス実機録画 + HTML コンポジション + FFmpeg MP4 書き出し | [docs/usage.md](docs/usage.md) · [scripts/verify-export.ts](scripts/verify-export.ts) |
 
 <a id="community"></a>

@@ -1,0 +1,30 @@
+{
+  "id": "water-sort-puzzle",
+  "title": "Chroma Pour Lab",
+  "description": "Pour luminous colored liquids smoothly between glass test tubes until every vial holds a single pure hue.",
+  "genre": "casual",
+  "style": "minimal",
+  "setting": "modern",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Tap a bottle to lift it, then tap another bottle with matching top color or empty space to pour.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "top赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "倒水排序大师",
+      "description": "全球十亿级爆款液体颜色排序：把五颜六色的分层液体在不同玻璃试管间巧妙倒腾，直到每支试管都装满单一纯色。",
+      "controls": "先点击要倒出的试管，再点击目标试管（顶部同色或空管）即可倾倒液体，支持撤回与加空管。"
+    }
+  }
+}

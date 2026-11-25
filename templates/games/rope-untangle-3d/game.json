@@ -1,0 +1,30 @@
+{
+  "id": "rope-untangle-3d",
+  "title": "Tangle Knot 3D",
+  "description": "Untangle realistic physics-driven braided ropes knotted across brass board pins by moving anchors one slot at a time until every cord hangs free.",
+  "genre": "casual",
+  "style": "3d",
+  "setting": "modern",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Drag rope pins into open board sockets to uncross every tangled cord before running out of moves.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "top赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "3D 绳子解谜",
+      "description": "拟真物理 3D 拆绳挑战：把交错缠绕在木板铜柱上的彩色编织绳逐一挪位解开，丝滑拉直全盘清空。",
+      "controls": "按住绳子端点的圆栓拖拽至空洞插槽，消除所有绳索交叉打结即可过关。"
+    }
+  }
+}

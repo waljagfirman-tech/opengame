@@ -1,0 +1,30 @@
+{
+  "id": "catch-kitty-3d",
+  "title": "Catch Kitty 3D",
+  "description": "Dive into a lively tumbling basket of cute kitties, toys, and treats—pluck matching trios into your tray before it fills up.",
+  "genre": "casual",
+  "style": "anime",
+  "setting": "modern",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Tap matching kitties and trinkets in the pile to collect three of a kind in your bottom slots; use booster props anytime.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "top赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "开心抓猫猫",
+      "description": "超萌抓大鹅同款堆叠找物三消：在满满一筐 Q 弹小猫与可爱杂货堆里眼疾手快揪出三个同款，配齐洗牌、回退与磁铁道具。",
+      "controls": "点击物品堆中的小猫或道具装入下方卡槽，凑齐三个同款立即消除，注意别让卡槽塞满。"
+    }
+  }
+}

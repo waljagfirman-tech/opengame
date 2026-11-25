@@ -33,7 +33,7 @@
 
 OpenGame 是**首个开源全栈 Super Game Agent**——把你本地的编程 Agent 变成一座开源 AI 版虚幻引擎 / Unity 与完整游戏工作室，从一句话创意或爆款游戏模板出发，走完**制作 → 自动化试玩验证 → 一键在线分享 → 上架变现**的端到端全链路。
 
-- 🎮 **一键复刻任何游戏。** 内置 **26 款可玩游戏模板**（3D、体素、像素、动漫及 9:16 爆款小游戏 / 试玩广告），源码与设计文档全部可编辑。
+- 🎮 **一键复刻任何游戏。** 内置 **45 款可玩游戏模板**（3D、体素、像素、动漫及 9:16 爆款小游戏 / 试玩广告），源码与设计文档全部可编辑。
 - 🎨 **一键风格化任何游戏。** 保留成熟玩法骨架，快速替换角色、画风与配乐——**DeepSeek** 可低成本稳定换皮，**Claude Fable 5.2 / Opus / Codex / Gemini** 可从零打造 3D 大作。
 - 💰 **全链路闭环：制作 → 验证 → 发布变现。** 自动完成逻辑校验、仿真试玩、封面截图与实机预告片，一键生成在线链接或 9:16 试玩广告，并衔接小游戏上架路径。
 - 🔓 **全栈开源（BYOA + BYOK）。** 代码、美术、视频、音乐、配音与 Three.js 3D 全部开源；自带 [本地 Agent](#agent-wall) 与 API Key，或接入 [OpenDesign Go](https://go.open-design.ai/?utm_source=github&utm_medium=referral&utm_campaign=opengame&utm_content=readme_zh)。
@@ -82,7 +82,7 @@ npm start
 
 ## 🕹️ 内置可玩游戏模板与示例
 
-OpenGame 在 [`templates/games/`](templates/games/) 中内置了 **26 款开箱即玩的完整游戏工程**，全部包含 HTML5 / Three.js 源码、封面、操控说明与中英双语元数据。在 Game Studio 里可直接试玩，一键 **Remix 复刻**，或**一键换画风 / 换题材 / 换角色**做成属于你的游戏。
+OpenGame 在 [`templates/games/`](templates/games/) 中内置了 **45 款开箱即玩的完整游戏工程**，全部包含 HTML5 / Three.js 源码、封面、操控说明与中英双语元数据。在 Game Studio 里可直接试玩，一键 **Remix 复刻**，或**一键换画风 / 换题材 / 换角色**做成属于你的游戏。
 
 ### 3D、体素与动作游戏（16:9 横屏）
 
@@ -229,10 +229,56 @@ OpenGame 在 [`templates/games/`](templates/games/) 中内置了 **26 款开箱�
 <a href="templates/games/merge-bakery/">查看源码 →</a>
 </td>
 </tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<img src="templates/games/arrow-out-3d/cover.webp" width="100%" alt="3D 箭头消消乐 Arrow Out 3D — 3D 箭头方块解谜"><br>
+<strong>3D 箭头消消乐</strong><br>
+<code>9:16 · 3D 箭头解谜</code><br>
+360° 旋转观察立体箭头方块阵，找准无阻挡突破口逐个弹射清空。<br>
+<a href="templates/games/arrow-out-3d/">查看源码 →</a>
+</td>
+<td width="33%" valign="top" align="center">
+<img src="templates/games/yarn-sort-color/cover.webp" width="100%" alt="毛线排序填色 Yarn Sort Studio — ASMR 毛线整理填色"><br>
+<strong>毛线排序填色</strong><br>
+<code>9:16 · ASMR 毛线填色</code><br>
+把杂乱彩色毛线按同色凑齐三根归槽，一针一线织出隐藏像素画。<br>
+<a href="templates/games/yarn-sort-color/">查看源码 →</a>
+</td>
+<td width="33%" valign="top" align="center">
+<img src="templates/games/sand-tetris/cover.webp" width="100%" alt="流沙俄罗斯方块 Sandfall Blocks — 物理落沙消除"><br>
+<strong>流沙俄罗斯方块</strong><br>
+<code>9:16 · 物理流沙消除</code><br>
+方块落地瞬间化作流动细沙堆叠，同色沙层贯通左右整片爽消。<br>
+<a href="templates/games/sand-tetris/">查看源码 →</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<img src="templates/games/rope-untangle-3d/cover.webp" width="100%" alt="3D 绳子解谜 Tangle Knot 3D — 3D 物理拆绳"><br>
+<strong>3D 绳子解谜</strong><br>
+<code>9:16 · 3D 拆绳解谜</code><br>
+挪动木板铜栓解开交错缠绕的 3D 编织绳，消除所有打结即可过关。<br>
+<a href="templates/games/rope-untangle-3d/">查看源码 →</a>
+</td>
+<td width="33%" valign="top" align="center">
+<img src="templates/games/goods-sort-master/cover.webp" width="100%" alt="货柜消除大师 Shelf Match Master — 货架整理三消"><br>
+<strong>货柜消除大师</strong><br>
+<code>9:16 · 货架三消</code><br>
+整理超市多层货架上的零食饮品与潮玩，凑齐三个同款连击清空。<br>
+<a href="templates/games/goods-sort-master/">查看源码 →</a>
+</td>
+<td width="33%" valign="top" align="center">
+<img src="templates/games/river-pals-sail/cover.webp" width="100%" alt="动物排队上船 River Pals Sail — 港口调度解谜"><br>
+<strong>动物排队上船</strong><br>
+<code>9:16 · 排队上船</code><br>
+调度港口彩色小船驶向登船位，接走对应颜色排队的萌宠乘客。<br>
+<a href="templates/games/river-pals-sail/">查看源码 →</a>
+</td>
+</tr>
 </table>
 
 <details>
-<summary><strong>展开查看全部 26 款内置可玩游戏模板</strong></summary>
+<summary><strong>展开查看全部 45 款内置可玩游戏模板</strong></summary>
 
 | 游戏名称 | 类型 | 画风 | 屏幕方向 | 简介 | 源码目录 |
 | --- | --- | --- | --- | --- | --- |
@@ -262,6 +308,25 @@ OpenGame 在 [`templates/games/`](templates/games/) 中内置了 **26 款开箱�
 | **星辉堡垒 (Starlight Bastion)** | 射击 | 体素 | 16:9 横屏 | 五波体素敌人晶核防卫战 + 局间升级 | [starlight-bastion](templates/games/starlight-bastion/) |
 | **破潮者 (Tidebreaker)** | 竞速 | 3D | 16:9 横屏 | 风暴群岛 3D 快艇跳浪与限时过关竞速 | [tidebreaker](templates/games/tidebreaker/) |
 | **倾斜神庙 (Tilt Temple)** | 休闲 | 3D | 9:16 竖屏 | 3D 悬浮迷宫拖动倾斜滚球，拿钥匙闯三关 | [tilt-temple](templates/games/tilt-temple/) |
+| **3D 箭头消消乐 (Arrow Out 3D)** | 休闲 | 3D | 9:16 竖屏 | 360° 旋转立体箭头方块阵，逐个弹出无遮挡方块清空关卡 | [arrow-out-3d](templates/games/arrow-out-3d/) |
+| **3D 绳子解谜 (Tangle Knot 3D)** | 休闲 | 3D | 9:16 竖屏 | 拟真物理 3D 拆绳挑战，拖拽圆栓解开所有绳索交叉 | [rope-untangle-3d](templates/games/rope-untangle-3d/) |
+| **3D 合成大西瓜 (Mega Melon 3D)** | 休闲 | 3D | 9:16 竖屏 | 3D 物理容器水果投放进化，一路合成终极大西瓜 | [watermelon-merge-3d](templates/games/watermelon-merge-3d/) |
+| **动物排队上船 (River Pals Sail)** | 休闲 | 3D | 9:16 竖屏 | 爆款 Bus Jam 港口版，按颜色调度小船接走排队萌宠 | [river-pals-sail](templates/games/river-pals-sail/) |
+| **倒水排序大师 (Chroma Pour Lab)** | 休闲 | 极简 | 9:16 竖屏 | 经典分层液体颜色排序，把每支玻璃试管装满单一纯色 | [water-sort-puzzle](templates/games/water-sort-puzzle/) |
+| **叠叠消 (Tile Stack)** | 休闲 | 动漫 | 9:16 竖屏 | 多层堆叠三消挑战，体验魔性第二关极限通关 | [tile-stack](templates/games/tile-stack/) |
+| **弹珠连线爆爆乐 (Jelly Ball Chain Pop)** | 休闲 | 3D | 9:16 竖屏 | 3D 果冻弹珠一笔连消，引爆全屏连锁特效 | [ball-match](templates/games/ball-match/) |
+| **方块爆破 (Block Blast)** | 休闲 | 极简 | 9:16 竖屏 | 8×8 棋盘拖拽拼块，触发横竖整行整列爽快连消 | [block-blast](templates/games/block-blast/) |
+| **画线救狗 (Save the Pup)** | 休闲 | 动漫 | 9:16 竖屏 | 一笔画物理护盾防线，挡住狂蜂猛撞守护呆萌狗狗 | [save-the-dog](templates/games/save-the-dog/) |
+| **货柜消除大师 (Shelf Match Master)** | 休闲 | 动漫 | 9:16 竖屏 | 爆款货架整理三消，拖动零食潮玩凑三连击清架 | [goods-sort-master](templates/games/goods-sort-master/) |
+| **进厂打螺丝 (Screw Jam)** | 休闲 | 极简 | 9:16 竖屏 | 按颜色拧下螺丝装入对应工具箱，层层拆解钢板 | [screw-puzzle](templates/games/screw-puzzle/) |
+| **开心抓猫猫 (Catch Kitty 3D)** | 休闲 | 动漫 | 9:16 竖屏 | 抓大鹅同款堆叠找物三消，一筐萌猫杂货中凑三消除 | [catch-kitty-3d](templates/games/catch-kitty-3d/) |
+| **流沙俄罗斯方块 (Sandfall Blocks)** | 休闲 | 极简 | 9:16 竖屏 | 物理落沙方块消除，同色细沙连通左右两边整片清除 | [sand-tetris](templates/games/sand-tetris/) |
+| **毛线排序填色 (Yarn Sort Studio)** | 休闲 | 极简 | 9:16 竖屏 | ASMR 彩色毛线三根归槽排序，织出治愈系像素画作 | [yarn-sort-color](templates/games/yarn-sort-color/) |
+| **挪车超人 (Parking Jam Hero)** | 休闲 | 3D | 9:16 竖屏 | 爆款停车场挪车解谜，按先后顺序把堵死车辆丝滑开出 | [parking-jam-hero](templates/games/parking-jam-hero/) |
+| **挪猪大逃亡 (Piggy Farm Escape)** | 休闲 | 动漫 | 9:16 竖屏 | 超萌农场版方向逃脱，按顺序放飞满栏胖小猪 | [piggy-escape-jam](templates/games/piggy-escape-jam/) |
+| **雀神推牌对对消 (Mahjong Slide & Pair)** | 休闲 | 极简 | 9:16 竖屏 | 滑动麻将牌行与列，撞出相同牌面爽快对对消 | [mahjong-pairs](templates/games/mahjong-pairs/) |
+| **抓小猪 (Catch Piggy)** | 休闲 | 动漫 | 9:16 竖屏 | 3D 物理玩具堆找三消，从满满萌物中精准抓齐三只 | [catch-piggy](templates/games/catch-piggy/) |
+| **罪恶海滩：霓虹夜飙 (Vice Beach)** | 竞速 | ASCII | 16:9 横屏 | 复古霓虹海岸公路夜飙赛车 | [vice-beach-motor-club](templates/games/vice-beach-motor-club/) |
 
 </details>
 
@@ -448,7 +513,7 @@ OpenGame 通过本地 stdio MCP 暴露完整的游戏开发与测试工具集（
 | **游戏运行时与自动 QA** | Node.js, 原生 HTTP, Puppeteer Core / Chrome, 确定性仿真器 | [game-projects.ts](game-projects.ts) · [shared/game-contract.ts](shared/game-contract.ts) · [server.ts](server.ts) |
 | **MCP 与游戏 Skill** | 本地 stdio MCP 服务、`openmotion-game` Skill 及 18 份手册 | [mcp.ts](mcp.ts) · [skills/openmotion-game/](skills/openmotion-game/) |
 | **多模态 Model Gateway** | BYOK 模型发现、异步任务轮询、素材库与在线分享发布 | [gateway/service.ts](gateway/service.ts) · [gateway/catalog.ts](gateway/catalog.ts) · [docs/assets.md](docs/assets.md) |
-| **内置游戏模板库** | 26 款独立可玩 HTML5 / Canvas / Three.js 工程与封面 | [templates/games/](templates/games/) |
+| **内置游戏模板库** | 45 款独立可玩 HTML5 / Canvas / Three.js 工程与封面 | [templates/games/](templates/games/) |
 | **实机预告片管线** | 无头实机录屏 + HTML 合成 + FFmpeg MP4 渲染 | [docs/usage.md](docs/usage.md) · [scripts/verify-export.ts](scripts/verify-export.ts) |
 
 <a id="community"></a>

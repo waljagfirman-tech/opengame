@@ -1,0 +1,30 @@
+{
+  "id": "yarn-sort-color",
+  "title": "Yarn Sort Studio",
+  "description": "Sort cozy bundles of colorful wool yarn into matching trays of three to weave vibrant pixel-art tapestries stitch by stitch.",
+  "genre": "casual",
+  "style": "minimal",
+  "setting": "modern",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Tap yarn slots to pick up and transfer matching wool colors; complete sets of three to weave pixels onto the canvas.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "top赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "毛线排序填色",
+      "description": "超治愈 ASMR 毛线整理填色：把杂乱的彩色毛线按同色凑齐三根归槽，一针一线织出隐藏的像素画作。",
+      "controls": "点击底部毛线槽拾取并转移同色毛线，凑满一组自动为上方像素画填色，支持撤回与整理道具。"
+    }
+  }
+}

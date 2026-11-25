@@ -1,0 +1,30 @@
+{
+  "id": "save-the-dog",
+  "title": "Save the Pup",
+  "description": "Sketch one continuous physics shield in mid-air to shelter an adorable pup from relentless angry honeybees for ten tense seconds.",
+  "genre": "casual",
+  "style": "anime",
+  "setting": "modern",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Hold and drag to draw a single continuous protective line around the dog, then release to test your barrier against the bees.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "top赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "画线救狗",
+      "description": "全球爆火创意物理画线解谜：一笔画出一道坚固防线护住呆萌狗狗，在蜂巢狂蜂猛烈撞击下撑满倒计时即可过关。",
+      "controls": "按住屏幕一笔画出保护罩或遮挡墙，松手后线条自动具备物理碰撞，护住狗狗不被蜜蜂蛰到即可。"
+    }
+  }
+}

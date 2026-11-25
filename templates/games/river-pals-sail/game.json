@@ -1,0 +1,30 @@
+{
+  "id": "river-pals-sail",
+  "title": "River Pals Sail",
+  "description": "Send color-coded animal boats out of a crowded harbor pier so waiting passengers can board their matching vessel and set sail.",
+  "genre": "casual",
+  "style": "3d",
+  "setting": "modern",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Tap unblocked colored boats to move them to the boarding dock where matching animal passengers climb aboard.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "top赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "动物排队上船",
+      "description": "海内外飙升榜爆款 Bus Jam 港口版：调度挤在码头的各色小船驶向登船位，接走对应颜色排队的萌宠乘客扬帆起航。",
+      "controls": "点击前方无阻挡的彩色小船驶入码头停泊位，对应颜色的小动物会自动登船，坐满即发船清空。"
+    }
+  }
+}

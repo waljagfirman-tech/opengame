@@ -1,0 +1,30 @@
+{
+  "id": "parking-jam-hero",
+  "title": "Parking Jam Hero",
+  "description": "Unclog chaotic city parking lots by choosing the right exit order for gridlocked cars without scraping bumpers.",
+  "genre": "casual",
+  "style": "3d",
+  "setting": "modern",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Tap or swipe vehicles along their lane direction to drive them safely out of the crowded lot.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "top赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "挪车超人",
+      "description": "微信畅玩榜常驻爆款挪车解谜：面对纵横交错堵死出口的停车场，理清先后顺序依次把每辆小车丝滑开出马路。",
+      "controls": "点击或顺着车身方向滑动车辆，只要前方通道无遮挡即可顺利驶出停车场。"
+    }
+  }
+}

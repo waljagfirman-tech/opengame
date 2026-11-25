@@ -1,0 +1,30 @@
+{
+  "id": "arrow-out-3d",
+  "title": "Arrow Out 3D",
+  "description": "Rotate and inspect a floating 3D cluster of directional arrow blocks, tapping unobstructed pieces to launch them free until the entire structure vanishes.",
+  "genre": "casual",
+  "style": "3d",
+  "setting": "modern",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Tap any unblocked arrow cube to slide it out in its pointing direction; drag to orbit the 3D puzzle cluster.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "top赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "3D 箭头消消乐",
+      "description": "旋转观察悬浮在空中的 3D 立体箭头方块阵，找准毫无遮挡的突破口逐个弹射清空，解压又烧脑。",
+      "controls": "点击前方无阻挡的箭头方块即可沿方向弹出，单指拖动可 360° 旋转视角观察结构。"
+    }
+  }
+}

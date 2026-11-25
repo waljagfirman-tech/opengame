@@ -1,0 +1,30 @@
+{
+  "id": "piggy-escape-jam",
+  "title": "Piggy Farm Escape",
+  "description": "Clear a bustling pasture packed with chubby piggies facing every direction—tap each animal in the right order to let the whole herd dash free.",
+  "genre": "casual",
+  "style": "anime",
+  "setting": "fantasy",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Tap any piggy with a clear path ahead to send it dashing out of the farmyard pen.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "top赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "挪猪大逃亡",
+      "description": "超萌农场版方向逃脱：牧场栅栏里挤满了朝向各异的胖小猪，找准突破口按顺序放飞全场小猪即可通关。",
+      "controls": "点击前方没有其它小猪挡路的猪猪，它会沿面向方向一路冲出牧场。"
+    }
+  }
+}

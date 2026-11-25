@@ -1,0 +1,30 @@
+{
+  "id": "goods-sort-master",
+  "title": "Shelf Match Master",
+  "description": "Organize bustling boutique supermarket shelves by dragging snacks, drinks, and plushies into neat matching trios before the clock winds down.",
+  "genre": "casual",
+  "style": "anime",
+  "setting": "modern",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Drag goods between shelf slots to line up three identical items on the same shelf and clear them in combos.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "top赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "货柜消除大师",
+      "description": "海内外爆款货架整理三消：在琳琅满目的多层货柜中挪动零食、饮品与潮玩，凑齐三个同款连击清空整排货架。",
+      "controls": "拖动任意商品到空位货架，同一格凑齐三个完全相同的商品即可自动消除，连消触发高倍加分。"
+    }
+  }
+}

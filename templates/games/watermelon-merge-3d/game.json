@@ -1,0 +1,30 @@
+{
+  "id": "watermelon-merge-3d",
+  "title": "Mega Melon 3D",
+  "description": "Aim and drop bouncy 3D fruits into a physics container—collide identical fruits to evolve them step by step into a colossal watermelon.",
+  "genre": "casual",
+  "style": "3d",
+  "setting": "modern",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Drag left or right to position the next fruit and release to drop; match identical fruits to merge bigger ones.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "top赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "3D 合成大西瓜",
+      "description": "现象级 Suika 水果物理合成 3D 升级版：瞄准落点投下 Q 弹水果，两个相同水果相撞进化升级，一路合成终极大西瓜。",
+      "controls": "按住屏幕左右拖动瞄准落点，松手落下水果；相同水果碰撞自动合成更大一级水果。"
+    }
+  }
+}
