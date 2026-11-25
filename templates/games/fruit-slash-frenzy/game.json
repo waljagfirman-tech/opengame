@@ -1,0 +1,30 @@
+{
+  "id": "fruit-slash-frenzy",
+  "title": "Fruit Slash Frenzy",
+  "description": "Swipe across flying watermelons, pineapples, and citrus in crisp arcade slicing combos—trigger multi-fruit juicy bursts while dodging sudden bombs.",
+  "genre": "casual",
+  "style": "anime",
+  "setting": "modern",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Press and drag rapidly across the screen to slice airborne fruits into combos while avoiding black bombs.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "landscape",
+  "tags": [
+    "TOP赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "疯狂切水果",
+      "description": "经典爆汁街机切水果狂潮：手起刀落一刀连切西瓜菠萝满屏飙汁，灵巧避开突袭炸弹刷新极限连击得分！",
+      "controls": "按住屏幕快速滑动挥出刀光切开飞起的水果，连切多个水果触发高分暴击，注意躲开黑色炸弹。"
+    }
+  }
+}

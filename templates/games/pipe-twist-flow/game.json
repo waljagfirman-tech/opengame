@@ -1,0 +1,30 @@
+{
+  "id": "pipe-twist-flow",
+  "title": "Pipe Twist Flow",
+  "description": "Rotate elbows, junctions, and straight conduits on a crisp puzzle grid to build a sealed circuit and send pressurized water rushing from source to outlet.",
+  "genre": "casual",
+  "style": "minimal",
+  "setting": "modern",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Tap any pipe segment to rotate it 90 degrees until every branch links cleanly into one leak-free flow path.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "TOP赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "转个水管",
+      "description": "经典解压逻辑接水管闯关：轻点旋转弯管与三通节点，严丝合缝接通整条水路瞬间畅通无阻，百玩不腻越玩越上头！",
+      "controls": "点击关卡中的任意水管片段旋转 90 度，将起点与终点的所有管路完整连通即可通关。"
+    }
+  }
+}

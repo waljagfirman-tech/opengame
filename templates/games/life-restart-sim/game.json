@@ -1,0 +1,30 @@
+{
+  "id": "life-restart-sim",
+  "title": "Life Restart Sim",
+  "description": "Roll wild starting talents, allocate your core attributes, and tap through hilarious year-by-year life twists from humble beginnings to billionaire mogul or cosmic legend.",
+  "genre": "story",
+  "style": "minimal",
+  "setting": "modern",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Tap to draw random talents, assign your starting stats (Charm, Intelligence, Physique, Wealth), and click through each year of your unpredictable life.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "TOP赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "人生重开模拟器",
+      "description": "国民级爆火文字模拟神作：随机十连抽逆天天赋、自由分配颜值智力体质家境，一键重开解锁暴富修仙等百种奇葩结局！",
+      "controls": "点击抽取开局天赋并分配初始属性，连续点击推进每年随机人生事件直至解锁结局成就。"
+    }
+  }
+}

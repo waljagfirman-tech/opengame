@@ -1,0 +1,30 @@
+{
+  "id": "cube-chain-2048",
+  "title": "Cube Chain 2048",
+  "description": "Aim and fire bouncing 3D numbered cubes down a physics runway—collide matching blocks to trigger bouncy chain-reaction merges all the way past 2048.",
+  "genre": "casual",
+  "style": "3d",
+  "setting": "modern",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Hold and drag horizontally to aim your cube along the lane, then release to launch it into matching numbered cubes.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "TOP赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "3D 方块 2048",
+      "description": "爆款物理弹射合成 2048：拉线发射 Q 弹 3D 数字方块，碰撞相同数字触发连环弹跳合成暴击，根本停不下来！",
+      "controls": "按住屏幕左右滑动瞄准发射位置，松手弹射方块撞击相同数字方块触发连锁升级合成。"
+    }
+  }
+}

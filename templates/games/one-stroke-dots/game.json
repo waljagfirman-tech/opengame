@@ -1,0 +1,30 @@
+{
+  "id": "one-stroke-dots",
+  "title": "One Stroke Dots",
+  "description": "Trace a single unbroken glowing line across every tile on the board without lifting your finger or retracing your path across hundreds of clever brain-teasers.",
+  "genre": "casual",
+  "style": "minimal",
+  "setting": "modern",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Drag smoothly from the starting tile across adjacent squares to fill the entire grid in one continuous stroke.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "TOP赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "一笔画连点成线",
+      "description": "抖音超火烧脑一笔画完：从起点出发不回头不重复，一笔串联点亮全场所有格子，看似简单却专治各种不服！",
+      "controls": "从起点方块按住滑动，连续不间断经过并填满地图上的每一个格子即可过关。"
+    }
+  }
+}

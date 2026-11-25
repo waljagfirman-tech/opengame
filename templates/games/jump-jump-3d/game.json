@@ -1,0 +1,30 @@
+{
+  "id": "jump-jump-3d",
+  "title": "Jump Jump 3D",
+  "description": "Hold to charge your leap and release to land squarely on the next floating 3D pillar—chain bullseye center landings for skyrocketing combo multipliers.",
+  "genre": "platformer",
+  "style": "3d",
+  "setting": "modern",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Press and hold anywhere on screen to charge your jump power, then release at the exact moment to hop onto the center of the next block.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "TOP赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "跳一跳 3D",
+      "description": "国民经典一指蓄力跳跃：长按蓄力、松手精准飞跃落到下一个方块中心，连续正中靶心狂飙翻倍连击高分！",
+      "controls": "按住屏幕蓄力控制跳跃距离，松手让小人跃向下一个方块，精准落中中心点触发高倍连击加分。"
+    }
+  }
+}

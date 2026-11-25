@@ -1,0 +1,30 @@
+{
+  "id": "chinese-chess-solo",
+  "title": "Chinese Chess Solo",
+  "description": "Match wits against a built-in offline Xiangqi AI across classic wooden boards—command chariots, cannons, and knights to outflank the rival general and deliver checkmate.",
+  "genre": "casual",
+  "style": "minimal",
+  "setting": "medieval",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Tap any red piece to highlight valid moves across the board, then tap a target intersection to advance or capture.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "TOP赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "中国象棋单机版",
+      "description": "国民国粹经典单机中国象棋：随时随地离线开局楚河汉界博弈，车马炮步步为营挑战智能电脑棋手绝杀将死！",
+      "controls": "点击红方棋子查看可落子位置，再点击目标交叉点完成走棋、吃子或将军。"
+    }
+  }
+}

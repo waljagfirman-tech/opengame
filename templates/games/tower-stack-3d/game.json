@@ -1,0 +1,30 @@
+{
+  "id": "tower-stack-3d",
+  "title": "Tower Stack 3D",
+  "description": "Time every tap to stack sliding neon 3D slabs sky-high—slice away overhangs with razor precision or chain perfect snaps to expand your towering skyscraper.",
+  "genre": "casual",
+  "style": "3d",
+  "setting": "modern",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Tap anywhere at the exact moment the moving slab aligns with the tower beneath it to lock it cleanly in place.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "TOP赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "3D 叠高楼",
+      "description": "极简魔性节奏堆塔神作：看准时机一键定格滑行方块，切掉多余边角或触发完美重合冲击直插云霄的摩天高塔！",
+      "controls": "当移动方块与下方高塔重合瞬间点击屏幕即可落下堆叠，连续完美对齐可触发连击特效。"
+    }
+  }
+}

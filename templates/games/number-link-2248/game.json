@@ -1,0 +1,30 @@
+{
+  "id": "number-link-2248",
+  "title": "Number Link 2248",
+  "description": "Swipe across chains of matching and escalating number bubbles in all eight directions to fuse massive combos and chase endlessly higher powers of two.",
+  "genre": "casual",
+  "style": "minimal",
+  "setting": "modern",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Press and drag across adjacent matching number circles (horizontal, vertical, or diagonal) to merge them into a larger number.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "TOP赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "数字连线 2248",
+      "description": "极度丝滑的 2248 数字连线合成：八方向一笔画串联相同及递增数字泡泡，瞬间合出超大倍数组合超级解压！",
+      "controls": "按住屏幕上下左右及斜向滑动连接相邻相同数字，连得越长合成的数字倍数越高。"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "soccer-blitz-2d",
+  "title": "Soccer Blitz 2D",
+  "description": "Jump into fast-paced 2D arcade soccer duels—sprint, leap for power kicks, outmaneuver your rival on a lively stadium pitch, and smash goals before the buzzer.",
+  "genre": "casual",
+  "style": "anime",
+  "setting": "modern",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Use on-screen movement, jump, and kick controls (or keyboard arrows/buttons) to dribble, volley, and score past the rival.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "landscape",
+  "tags": [
+    "TOP赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "足球快斗",
+      "description": "快节奏 2D 街机足球大乱斗：一分钟一局随时开踢，腾空倒钩大力抽射破门，体验拳拳到肉的爆爽绿茵对决！",
+      "controls": "点击屏幕左右移动、跳跃与射门按钮，抢断凌空抽射攻破对手球门。"
+    }
+  }
+}
