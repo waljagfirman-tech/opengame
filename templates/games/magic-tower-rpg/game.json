@@ -1,0 +1,30 @@
+{
+  "id": "magic-tower-rpg",
+  "title": "Magic Tower Classic",
+  "description": "Plan every step through a multi-floor fantasy dungeon tower—collect colored keys, drink ruby potions, upgrade your blade, and calculate every monster duel.",
+  "genre": "story",
+  "style": "pixel",
+  "setting": "fantasy",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Use the on-screen directional pad or arrow/WASD keys to move, unlock color-coded doors, collect treasures, and battle monsters.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "TOP赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "魔塔经典版",
+      "description": "经典数值策略地牢爬塔：精打细算每把红黄蓝钥匙、每一瓶血药与攻防宝石，步步为营挑战层层强敌。",
+      "controls": "使用屏幕方向键或键盘方向键移动角色，拾取钥匙与装备，贴近怪物自动展开回合战斗。"
+    }
+  }
+}

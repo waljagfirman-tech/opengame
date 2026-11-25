@@ -1,0 +1,30 @@
+{
+  "id": "chill-puzzle-300",
+  "title": "300 Relax Puzzles",
+  "description": "Unwind with a huge collection of crisp tactile puzzle stages—slide directional blocks, untangle neat geometric paths, and pop clean clears at your own pace.",
+  "genre": "casual",
+  "style": "minimal",
+  "setting": "modern",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Tap unobstructed arrows and pieces to clear the board step by step across hundreds of handcrafted stages.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "TOP赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "全面解压 300 关",
+      "description": "300 关海量轻解压消除合集：每一关都是精致清爽的几何逻辑谜题，顺着方向逐一弹出清空，随时随地放空大脑。",
+      "controls": "点击无阻挡的方向块依次移出棋盘，按顺序拆解所有关卡布局。"
+    }
+  }
+}

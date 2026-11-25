@@ -1,0 +1,30 @@
+{
+  "id": "alien-sniper-3d",
+  "title": "Alien Sniper Watch",
+  "description": "Scan bustling city scenes with your visor, spot disguised extraterrestrials hiding in plain sight, and line up clean sniper shots without hitting civilians.",
+  "genre": "shooter",
+  "style": "3d",
+  "setting": "modern",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Toggle scanner vision to expose hidden aliens, drag to aim your sniper scope, and release to fire.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "TOP赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "狙击外星人",
+      "description": "爆款都市识破伪装狙击：开启扫描仪揪出混在人群里的外星卧底，稳准开镜一枪命中，千万别误伤路人。",
+      "controls": "切换扫描视角识别伪装外星人，按住拖动瞄准镜锁定目标后松手开火。"
+    }
+  }
+}

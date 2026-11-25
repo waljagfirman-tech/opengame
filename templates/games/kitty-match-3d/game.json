@@ -1,0 +1,30 @@
+{
+  "id": "kitty-match-3d",
+  "title": "Kitty Match 3D",
+  "description": "Dig through an adorable pastel pile of chubby 3D kittens and cozy cat toys, picking three matching cuties at a time to clear every level.",
+  "genre": "casual",
+  "style": "3d",
+  "setting": "modern",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Tap matching 3D cat figures and toys to collect triplets into the bottom dock before it fills up.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "TOP赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "3D 喵喵消除",
+      "description": "软萌治愈系 3D 猫咪堆叠三消：在满满一桌胖嘟嘟小猫与猫玩具里揪出三只同款配对消除，萌化强迫症。",
+      "controls": "点击三只相同的 3D 猫咪或玩具放进底部卡槽完成三消，清空全场即可晋级下一关。"
+    }
+  }
+}

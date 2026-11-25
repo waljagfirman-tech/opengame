@@ -1,0 +1,30 @@
+{
+  "id": "mahjong-meld-pop",
+  "title": "Mahjong Meld Pop",
+  "description": "Pick glossy 3D mahjong tiles from stacked boards and snap matching triplets together in fast-paced chain combos before your tray fills up.",
+  "genre": "casual",
+  "style": "3d",
+  "setting": "retro",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Tap available 3D mahjong tiles to send them to your tray; match three identical tiles to pop them and use booster tools when stuck.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "TOP赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "麻将吃碰消不停",
+      "description": "清脆带感的 3D 麻将三消连碰：从立体牌堆中眼疾手快挑出三张同花色麻将，一碰即爆爽快清场。",
+      "controls": "点击可拾取的 3D 麻将牌放入下方槽位，凑齐三张相同牌自动碰消，支持撤回与洗牌道具。"
+    }
+  }
+}

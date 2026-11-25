@@ -1,0 +1,30 @@
+{
+  "id": "kitty-block-jam",
+  "title": "Kitty Block Jam",
+  "description": "Slide plump cat-shaped polyomino blocks across cozy puzzle boards to clear pathways and match every kitty with its exit.",
+  "genre": "casual",
+  "style": "anime",
+  "setting": "modern",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Drag cat blocks horizontally or vertically to untangle the grid and guide each kitty to its matching color gate.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "TOP赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "猫咪玩方块",
+      "description": "软萌猫咪主题滑块拼图：挪动圆滚滚的猫咪积木块腾出通路，把每只小猫顺利送进对应的彩色出口。",
+      "controls": "按住拖动猫咪方块在棋盘内滑动，规划挪动顺序消除全部猫咪方块即可通关。"
+    }
+  }
+}

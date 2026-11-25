@@ -1,0 +1,97 @@
+
+FX_xin.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1
+  rotate: false
+  xy: 871, 25
+  size: 68, 68
+  orig: 68, 68
+  offset: 0, 0
+  index: -1
+2
+  rotate: false
+  xy: 395, 67
+  size: 68, 68
+  orig: 68, 68
+  offset: 0, 0
+  index: -1
+3
+  rotate: false
+  xy: 465, 67
+  size: 68, 68
+  orig: 68, 68
+  offset: 0, 0
+  index: -1
+4
+  rotate: false
+  xy: 941, 25
+  size: 68, 68
+  orig: 68, 68
+  offset: 0, 0
+  index: -1
+5
+  rotate: false
+  xy: 535, 67
+  size: 68, 68
+  orig: 68, 68
+  offset: 0, 0
+  index: -1
+B_0
+  rotate: false
+  xy: 254, 151
+  size: 375, 101
+  orig: 375, 101
+  offset: 0, 0
+  index: -1
+B_1
+  rotate: true
+  xy: 631, 18
+  size: 234, 238
+  orig: 256, 256
+  offset: 11, 9
+  index: -1
+B_2
+  rotate: false
+  xy: 2, 2
+  size: 250, 250
+  orig: 256, 256
+  offset: 3, 3
+  index: -1
+B_4
+  rotate: true
+  xy: 871, 95
+  size: 157, 93
+  orig: 157, 93
+  offset: 0, 0
+  index: -1
+B_G1
+  rotate: true
+  xy: 966, 116
+  size: 136, 10
+  orig: 136, 10
+  offset: 0, 0
+  index: -1
+B_G2
+  rotate: false
+  xy: 254, 137
+  size: 300, 5
+  orig: 306, 5
+  offset: 6, 0
+  index: -1
+B_G3
+  rotate: false
+  xy: 254, 144
+  size: 365, 5
+  orig: 371, 5
+  offset: 3, 0
+  index: -1
+GUAN
+  rotate: false
+  xy: 254, 27
+  size: 139, 108
+  orig: 139, 108
+  offset: 0, 0
+  index: -1

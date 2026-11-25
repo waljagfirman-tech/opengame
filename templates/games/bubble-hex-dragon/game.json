@@ -1,0 +1,30 @@
+{
+  "id": "bubble-hex-dragon",
+  "title": "Hex Bubble Dragon",
+  "description": "Aim, bounce bank shots off the walls, and pop dazzling hexagonal clusters of crystal bubbles with your trusty little dragon launcher.",
+  "genre": "casual",
+  "style": "anime",
+  "setting": "fantasy",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Drag to aim your dotted trajectory line (bank off side walls for trick shots) and release to launch colorful hex bubbles.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "TOP赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "泡泡六角龙",
+      "description": "经典泡泡龙全面升级：拉线瞄准反弹发射六角晶莹泡泡，连爆三消引发整片雪崩掉落，轻松冲刺高分纪录。",
+      "controls": "按住屏幕拖动虚线瞄准发射角度（支持墙壁反弹），松手射出同色泡泡凑齐三个以上即可消除。"
+    }
+  }
+}

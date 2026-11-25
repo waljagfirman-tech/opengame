@@ -1,0 +1,48 @@
+
+P_wenzi.png
+size: 2048,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Amazing
+  rotate: false
+  xy: 2, 14
+  size: 659, 167
+  orig: 659, 167
+  offset: 0, 0
+  index: -1
+Excellent
+  rotate: false
+  xy: 933, 166
+  size: 718, 152
+  orig: 718, 152
+  offset: 0, 0
+  index: -1
+Good
+  rotate: false
+  xy: 517, 183
+  size: 414, 135
+  orig: 414, 135
+  offset: 0, 0
+  index: -1
+Great
+  rotate: false
+  xy: 67, 184
+  size: 448, 134
+  orig: 448, 134
+  offset: 0, 0
+  index: -1
+Unbeliveable
+  rotate: false
+  xy: 663, 2
+  size: 998, 162
+  orig: 998, 162
+  offset: 0, 0
+  index: -1
+xinxin
+  rotate: false
+  xy: 2, 255
+  size: 63, 63
+  orig: 67, 67
+  offset: 2, 2
+  index: -1

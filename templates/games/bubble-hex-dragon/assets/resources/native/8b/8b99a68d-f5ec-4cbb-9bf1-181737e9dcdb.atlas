@@ -1,0 +1,132 @@
+
+P_paoji.png
+size: 364,848
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+F_01
+  rotate: false
+  xy: 159, 184
+  size: 136, 194
+  orig: 136, 194
+  offset: 0, 0
+  index: -1
+F_02
+  rotate: true
+  xy: 211, 653
+  size: 192, 129
+  orig: 192, 132
+  offset: 0, 0
+  index: -1
+F_L1
+  rotate: true
+  xy: 258, 380
+  size: 41, 46
+  orig: 41, 46
+  offset: 0, 0
+  index: -1
+F_L2
+  rotate: false
+  xy: 194, 153
+  size: 34, 29
+  orig: 34, 29
+  offset: 0, 0
+  index: -1
+F_R1
+  rotate: true
+  xy: 206, 380
+  size: 41, 50
+  orig: 41, 50
+  offset: 0, 0
+  index: -1
+F_R2
+  rotate: false
+  xy: 159, 150
+  size: 33, 32
+  orig: 33, 32
+  offset: 0, 0
+  index: -1
+H_01
+  rotate: false
+  xy: 2, 380
+  size: 202, 235
+  orig: 202, 235
+  offset: 0, 0
+  index: -1
+H_02
+  rotate: true
+  xy: 206, 423
+  size: 192, 144
+  orig: 192, 144
+  offset: 0, 0
+  index: -1
+H_03
+  rotate: true
+  xy: 259, 73
+  size: 84, 81
+  orig: 84, 81
+  offset: 0, 0
+  index: -1
+H_L
+  rotate: true
+  xy: 259, 2
+  size: 69, 39
+  orig: 69, 39
+  offset: 0, 0
+  index: -1
+H_R1
+  rotate: false
+  xy: 297, 191
+  size: 57, 61
+  orig: 57, 61
+  offset: 0, 0
+  index: -1
+P_01
+  rotate: true
+  xy: 2, 617
+  size: 228, 207
+  orig: 228, 207
+  offset: 0, 0
+  index: -1
+P_02
+  rotate: false
+  xy: 2, 149
+  size: 155, 229
+  orig: 155, 229
+  offset: 0, 0
+  index: -1
+P_03
+  rotate: true
+  xy: 297, 254
+  size: 124, 64
+  orig: 124, 65
+  offset: 0, 0
+  index: -1
+P_04
+  rotate: false
+  xy: 2, 7
+  size: 255, 140
+  orig: 255, 140
+  offset: 0, 0
+  index: -1
+P_05A
+  rotate: true
+  xy: 211, 625
+  size: 26, 137
+  orig: 27, 138
+  offset: 1, 0
+  index: -1
+P_05B
+  rotate: false
+  xy: 230, 159
+  size: 103, 23
+  orig: 104, 24
+  offset: 0, 0
+  index: -1
+P_05C
+  rotate: false
+  xy: 335, 171
+  size: 12, 18
+  orig: 12, 18
+  offset: 0, 0
+  index: -1

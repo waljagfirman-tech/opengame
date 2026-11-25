@@ -1,0 +1,30 @@
+{
+  "id": "pipe-ball-sort",
+  "title": "Coin Stack Sort",
+  "description": "Sort and stack matching numbered coins across slotted trays, merge full stacks into higher-value chips, and unlock fresh slots in a deeply satisfying tactile sorting puzzle.",
+  "genre": "casual",
+  "style": "3d",
+  "setting": "modern",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Tap a coin stack to pick up matching chips and move them onto another matching or empty tray; deal fresh coins and tap Merge when a slot is full.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "TOP赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "超级解压管",
+      "description": "超丝滑硬币筹码归槽合成：把同面额硬币整齐码进同一卡槽，集满一键合成高阶筹码、解锁全新槽位，解压到停不下来。",
+      "controls": "点击筹码槽选择同面额硬币移入对应槽位，点「发牌」补充筹码，满槽点「合成」升级解锁更高目标。"
+    }
+  }
+}

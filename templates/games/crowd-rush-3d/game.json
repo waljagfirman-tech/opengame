@@ -1,0 +1,30 @@
+{
+  "id": "crowd-rush-3d",
+  "title": "Crowd Rush 3D",
+  "description": "Lead a growing 3D squad down sky-high obstacle tracks, choosing the highest multiplier gates to storm rival forces and smash the fortress.",
+  "genre": "casual",
+  "style": "3d",
+  "setting": "modern",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Drag left and right to steer your crowd through multiplier gates, dodge traps, and overwhelm enemy squads.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "TOP赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "兄弟跟我冲",
+      "description": "超爽 3D 人海冲锋跑酷：左右滑动挑选最大倍率增益门，避开旋转机关，带着满屏小弟一路推平终极城堡。",
+      "controls": "按住屏幕左右滑动控制队伍走位，穿过倍率门扩充人数并冲垮沿途守军。"
+    }
+  }
+}

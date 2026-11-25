@@ -1,0 +1,30 @@
+{
+  "id": "word-card-sort",
+  "title": "Word & Pic Solitaire",
+  "description": "Flip, drag, and group mixed word and picture cards by shared topic into target category slots in a clever solitaire-style sorting puzzle.",
+  "genre": "casual",
+  "style": "minimal",
+  "setting": "modern",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Drag matching word or picture cards onto their category cards or empty sorting slots; tap the deck to flip fresh cards.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "TOP赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "词图归类消消乐",
+      "description": "纸牌接龙 × 联想分类脑洞玩法：翻开桌面词卡与图卡，把同一主题的卡片成组归位收齐，越排越上头。",
+      "controls": "拖动同主题词卡或图卡叠放归类，将类别卡放进目标槽并凑齐全部子卡即可清空；点击牌堆可翻新牌。"
+    }
+  }
+}

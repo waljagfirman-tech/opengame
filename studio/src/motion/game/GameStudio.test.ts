@@ -31,16 +31,31 @@ describe('gameCatalog multi-file detection and internal tags', () => {
     expect(needsGameService('<!doctype html><script>console.log("inline")</script>')).toBe(false);
   });
 
-  it('preserves internal top赚钱 tags on bundled templates for downstream category grouping', () => {
-    const tagged = bundledGames.filter(game => game.tags?.includes('top赚钱')).map(game => game.id).sort();
+  it('preserves featured TOP赚钱 tags on bundled templates for downstream category grouping', () => {
+    const tagged = bundledGames
+      .filter(game => game.tags?.some(tag => tag.toLowerCase() === 'top赚钱'))
+      .map(game => game.id)
+      .sort();
     expect(tagged).toEqual([
+      'alien-sniper-3d',
       'ball-match',
       'block-blast',
+      'bubble-hex-dragon',
       'catch-piggy',
+      'chamber-block-clear',
+      'chill-puzzle-300',
+      'crowd-rush-3d',
+      'kitty-block-jam',
+      'kitty-match-3d',
+      'magic-tower-rpg',
+      'mahjong-meld-pop',
       'mahjong-pairs',
+      'pipe-ball-sort',
       'screw-puzzle',
       'tile-stack',
       'vice-beach-motor-club',
+      'word-card-sort',
+      'word-tower-defense',
     ]);
   });
 });

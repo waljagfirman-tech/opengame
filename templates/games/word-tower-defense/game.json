@@ -1,0 +1,30 @@
+{
+  "id": "word-tower-defense",
+  "title": "Ink Word Defense",
+  "description": "Deploy and upgrade ink-calligraphy defense towers across a scroll battlefield to hold back escalating waves of shadowy invaders.",
+  "genre": "shooter",
+  "style": "minimal",
+  "setting": "medieval",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Tap build tiles to place and upgrade word towers along the winding lane, and spend earned gold to strengthen your defense.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "TOP赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "文字塔防",
+      "description": "极简国风创意文字塔防：在卷轴战场上排兵布阵、构筑特色文字炮塔并合成升级，迎战一波波文字军团入侵。",
+      "controls": "点击地图空位建造并升级各类文字防御塔，合理搭配技能与阵型抵御全部波次进攻。"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+
+BONUS TIME.png
+size: 1196,140
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+BONUS TIME
+  rotate: false
+  xy: 2, 2
+  size: 900, 136
+  orig: 900, 136
+  offset: 0, 0
+  index: -1
+h00
+  rotate: false
+  xy: 904, 20
+  size: 71, 20
+  orig: 73, 20
+  offset: 2, 0
+  index: -1
+h01
+  rotate: true
+  xy: 1002, 43
+  size: 95, 94
+  orig: 120, 121
+  offset: 12, 14
+  index: -1
+h02
+  rotate: false
+  xy: 904, 42
+  size: 96, 96
+  orig: 121, 121
+  offset: 13, 13
+  index: -1
+h03
+  rotate: true
+  xy: 1098, 43
+  size: 95, 94
+  orig: 120, 121
+  offset: 12, 14
+  index: -1

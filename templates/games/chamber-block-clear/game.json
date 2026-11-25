@@ -1,0 +1,30 @@
+{
+  "id": "chamber-block-clear",
+  "title": "Chamber Block Clear",
+  "description": "Outsmart tight stone-chamber puzzles by sliding interlocking jewel blocks toward matching exits before the move counter runs out.",
+  "genre": "casual",
+  "style": "3d",
+  "setting": "medieval",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Drag colored chamber blocks across the grid to match them with same-color perimeter exits and clear every tile.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "TOP赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "密室方块大消除",
+      "description": "烧脑华容道式密室推块消除：在狭小机关密室里巧挪异形彩块，对准边缘同色出口逐个粉碎清屏。",
+      "controls": "手指拖动彩色方块在棋盘内移动，贴近同色边缘出口即可消除，清空所有方块过关。"
+    }
+  }
+}
