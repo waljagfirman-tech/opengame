@@ -3,7 +3,7 @@
 <p align="center"><strong>世界初の Super Game Agent —— オープンソース・フルスタック AI ゲームスタジオ</strong></p>
 
 <p align="center">
-  <img src="docs/readme/opengame-hero.webp" width="100%" alt="OpenGame — 世界初の Super Game Agent。22種類のローカル AI Agent と26本の内蔵ゲームテンプレートから、3D・アニメ・ドット絵・9:16 縦型ミニゲームを制作・リミックス・検証・公開。">
+  <img src="docs/readme/opengame-hero.webp" width="100%" alt="OpenGame — 世界初の Super Game Agent。22種類のローカル AI Agent と36本の内蔵ゲームテンプレートから、3D・アニメ・ドット絵・9:16 縦型ミニゲームを制作・リミックス・検証・公開。">
 </p>
 
 <p align="center">
@@ -33,7 +33,7 @@
 
 OpenGame は**世界初のオープンソース・フルスタック Super Game Agent** です。手元のローカルコーディング Agent を**オープンソースの AI 版 Unreal Engine / Unity** かつ本格的なゲームスタジオへと変え、一言のアイデアやヒット作テンプレートから**制作 → 自動プレイテスト検証 → ワンクリック共有 → 公開・収益化**までの全工程を一気通貫で実現します。
 
-- 🎮 **あらゆるゲームをワンクリックでリミックス。** **26 本のプレイ可能な内蔵テンプレート**（3D・ボクセル・ドット絵・アニメ・9:16 縦型ミニゲーム／プレイアブル広告）を搭載し、ソースコードも設計書もすべて編集可能。
+- 🎮 **あらゆるゲームをワンクリックでリミックス。** **36 本のプレイ可能な内蔵テンプレート**（3D・ボクセル・ドット絵・アニメ・9:16 縦型ミニゲーム／プレイアブル広告）を搭載し、ソースコードも設計書もすべて編集可能。
 - 🎨 **あらゆるゲームをワンクリックでスタイル変換。** 検証済みのゲームループを保ったまま、キャラクター・アートスタイル・BGM を瞬時に差し替え。**DeepSeek** などの高コスパモデルで手早く高品質なリスキンを量産でき、**Claude Fable 5.2 / Opus / Codex / Gemini** ならゼロから 3D 大作にも挑めます。
 - 💰 **一気通貫のパイプライン：制作 → 検証 → 配信・収益化。** ロジック検証・バランスシミュレーション・実機プレイテスト・カバー画像撮影・トレーラー録画まで自動化し、Web 共有リンク・9:16 プレイアブル広告・ミニゲームプラットフォーム向け出力に対応。
 - 🔓 **フルスタック・オープンソース（BYOA + BYOK）。** コード・アート・映像・BGM・ボイス・効果音・Three.js 3D まですべてオープンソース。お使いの [ローカル Agent](#agent-wall) と API キー、または [OpenDesign Go](https://go.open-design.ai/?utm_source=github&utm_medium=referral&utm_campaign=opengame&utm_content=readme_ja) を接続して利用できます。
@@ -82,7 +82,7 @@ npm start
 
 ## 🕹️ 内蔵プレイ可能ゲームテンプレート & ショーケース
 
-OpenGame は [`templates/games/`](templates/games/) に**すぐ遊べる 26 本の完全なゲームプロジェクト**を標準搭載しています。すべて HTML5 / Three.js ソースコード、カバーアート、操作ガイド、多言語メタデータ付き。Game Studio 上でそのまま試遊し、ワンクリックで **Remix**、あるいは**世界観・アートスタイル・キャラクターを丸ごと差し替えて**自分だけの作品にできます。
+OpenGame は [`templates/games/`](templates/games/) に**すぐ遊べる 36 本の完全なゲームプロジェクト**を標準搭載しています。すべて HTML5 / Three.js ソースコード、カバーアート、操作ガイド、多言語メタデータ付き。Game Studio 上でそのまま試遊し、ワンクリックで **Remix**、あるいは**世界観・アートスタイル・キャラクターを丸ごと差し替えて**自分だけの作品にできます。
 
 ### 3D・ボクセル・アクションゲーム（16:9 横画面）
 
@@ -127,6 +127,34 @@ OpenGame は [`templates/games/`](templates/games/) に**すぐ遊べる 26 本�
 <strong>Harbor Skirmish（ハーバー・スカーミッシュ）</strong> · <code>3D FPS · グラップル &amp; スライド</code><br>
 二段ジャンプ・スライディング・ダッシュ・グラップリングフックを駆使して戦うスタイライズド 3D FPS。<br>
 <a href="templates/games/harbor-skirmish/">ソースを見る →</a>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<img src="templates/games/shanghai-vice/cover.webp" width="100%" alt="Shanghai Vice: Bund Outlaw — 3D ネオン外灘オープンシティレース"><br>
+<strong>Shanghai Vice: Bund Outlaw</strong> · <code>3D · レーシング · Three.js</code><br>
+ネオン輝く外灘の街を駆け抜け、車を乗り換えながら追跡を振り切るオープンシティ 3D レーシング。<br>
+<a href="templates/games/shanghai-vice/">ソースを見る →</a>
+</td>
+<td width="50%" valign="top">
+<img src="templates/games/kazehane/cover.webp" width="100%" alt="Kazehane: Skywing Bay — 3D アニメ調グライダー冒険"><br>
+<strong>Kazehane: Skywing Bay</strong> · <code>3D · アニメ · プラットフォーマー</code><br>
+海風の上昇気流に乗って島々を滑空し、崖の社を巡って黄金の羽を集める 3D アドベンチャー。<br>
+<a href="templates/games/kazehane/">ソースを見る →</a>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<img src="templates/games/vice-beach-motor-club/cover.webp" width="100%" alt="Vice Beach Motor Club — 3D ASCII レトロ海辺レーシング"><br>
+<strong>Vice Beach Motor Club</strong> · <code>ASCII · レーシング · レトロ</code><br>
+3D ASCII オープンカーで海辺と都市を疾走。ドリフト充電・ニトロ加速・ガレージ強化を搭載。<br>
+<a href="templates/games/vice-beach-motor-club/">ソースを見る →</a>
+</td>
+<td width="50%" valign="top">
+<img src="templates/games/vice-beach-golf-club/cover.webp" width="100%" alt="Vice Beach: Coastal Nine Golf — レトロ海辺9ホールゴルフ"><br>
+<strong>Vice Beach: Coastal Nine Golf</strong> · <code>ASCII · ゴルフ · レトロ</code><br>
+海風を読み、フェードやドローを打ち分けて9つの海辺コースを攻略するレトロゴルフ。<br>
+<a href="templates/games/vice-beach-golf-club/">ソースを見る →</a>
 </td>
 </tr>
 </table>
@@ -229,14 +257,63 @@ OpenGame は [`templates/games/`](templates/games/) に**すぐ遊べる 26 本�
 <a href="templates/games/merge-bakery/">ソース →</a>
 </td>
 </tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<img src="templates/games/block-blast/cover.webp" width="100%" alt="Block Blast Master — 8×8 ブロック消しパズル"><br>
+<strong>Block Blast Master</strong><br>
+<code>9:16 · ブロックパズル</code><br>
+8×8 盤面にブロックを配置し、縦横ラインを一気に消してコンボ高得点を狙う王道パズル。<br>
+<a href="templates/games/block-blast/">ソース →</a>
+</td>
+<td width="33%" valign="top" align="center">
+<img src="templates/games/screw-puzzle/cover.webp" width="100%" alt="Screw Puzzle — 色分けネジ外しパズル"><br>
+<strong>Screw Puzzle</strong><br>
+<code>9:16 · ネジ外しパズル</code><br>
+重なったアクリル板から色付きネジを外して同色ボックスへ仕分けるヒット系パズル。<br>
+<a href="templates/games/screw-puzzle/">ソース →</a>
+</td>
+<td width="33%" valign="top" align="center">
+<img src="templates/games/tile-stack/cover.webp" width="100%" alt="Tile Stack — 多層3マッチタイルパズル"><br>
+<strong>Tile Stack</strong><br>
+<code>9:16 · 多層3マッチ</code><br>
+重なり合う農場タイルから同じ柄を3枚揃えて消すパズル。戻す・退避・シャッフル対応。<br>
+<a href="templates/games/tile-stack/">ソース →</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<img src="templates/games/mahjong-pairs/cover.webp" width="100%" alt="Mahjong Pairs — スライド麻雀ペア消し"><br>
+<strong>Mahjong Pairs</strong><br>
+<code>9:16 · 麻雀スライド消し</code><br>
+麻雀牌の列をスライドして同じ牌を隣り合わせ、全牌クリアを目指す爽快パズル。<br>
+<a href="templates/games/mahjong-pairs/">ソース →</a>
+</td>
+<td width="33%" valign="top" align="center">
+<img src="templates/games/ball-match/cover.webp" width="100%" alt="Ball Match — 3D カラフルボール連鎖パズル"><br>
+<strong>Ball Match</strong><br>
+<code>9:16 · 3D 連鎖ポップ</code><br>
+同じ色の 3D ボールをなぞって繋ぎ、ボム連鎖で制限手数内に目標を達成。<br>
+<a href="templates/games/ball-match/">ソース →</a>
+</td>
+<td width="33%" valign="top" align="center">
+<img src="templates/games/catch-piggy/cover.webp" width="100%" alt="Catch Piggy — 物理パイル3マッチ"><br>
+<strong>Catch Piggy</strong><br>
+<code>9:16 · 物理山積み3マッチ</code><br>
+山積みの子ブタやおもちゃから同じ3つを選んでトレイで消す制限時間パズル。<br>
+<a href="templates/games/catch-piggy/">ソース →</a>
+</td>
+</tr>
 </table>
 
 <details>
-<summary><strong>全 26 本の内蔵プレイ可能テンプレート一覧を開く</strong></summary>
+<summary><strong>全 36 本の内蔵プレイ可能テンプレート一覧を開く</strong></summary>
 
 | ゲーム名 | ジャンル | スタイル | 画面比率 | 概要 | ソース |
 | --- | --- | --- | --- | --- | --- |
+| **Ball Match** | カジュアル | 3D | 9:16 縦画面 | 同色の 3D ボールを繋いで連鎖ボムを起こすステージ制パズル | [ball-match](templates/games/ball-match/) |
+| **Block Blast Master** | カジュアル | ミニマル | 9:16 縦画面 | 8×8 盤面にブロックを配置し行列コンボ消去を狙うパズル | [block-blast](templates/games/block-blast/) |
 | **Castle Crush** | カジュアル | アニメ | 9:16 縦画面 | 木材と石造りの4つの砦を崩す物理スリングショット攻城戦 | [castle-crush](templates/games/castle-crush/) |
+| **Catch Piggy** | カジュアル | アニメ | 9:16 縦画面 | 物理演算で積まれた子ブタと玩具から同じ3つを揃えて消す | [catch-piggy](templates/games/catch-piggy/) |
 | **Comet Guard** | シューター | ミニマル | 16:9 横画面 | 灼熱の彗星群から宇宙ステーションを守る軌道迎撃シューター | [comet-guard](templates/games/comet-guard/) |
 | **Drift Dash** | レーシング | ボクセル | 9:16 縦画面 | 片手親指で操作するレトロサーキット・ドリフトレース（AI3台対戦） | [drift-dash](templates/games/drift-dash/) |
 | **Gate Legion** | カジュアル | ドット絵 | 9:16 縦画面 | 算数ゲートで軍勢を増やしてボス軍団と戦うヒット系ランナー | [gate-legion](templates/games/gate-legion/) |
@@ -244,16 +321,20 @@ OpenGame は [`templates/games/`](templates/games/) に**すぐ遊べる 26 本�
 | **Harbor Skirmish** | シューター | 3D | 16:9 横画面 | 二段ジャンプ・スライディング・グラップルを備えた 3D FPS | [harbor-skirmish](templates/games/harbor-skirmish/) |
 | **Hollow Signal** | ホラー | ミニマル | 16:9 横画面 | 正気度が尽きる前にノイズ周波数を合わせるラジオホラー | [hollow-signal](templates/games/hollow-signal/) |
 | **Jingyang Ridge** | カジュアル | アニメ | 16:9 横画面 | 予備動作を見切り回避・反撃を決める水墨武侠ボス戦 | [jingyang-ridge](templates/games/jingyang-ridge/) |
+| **Kazehane: Skywing Bay** | プラットフォーマー | アニメ | 16:9 横画面 | 海風に乗って島々を滑空し黄金の羽を集める 3D 冒険 | [kazehane](templates/games/kazehane/) |
 | **Lane Turret** | シューター | ドット絵 | 9:16 縦画面 | 強化カード選択付きの自動砲台ウェーブ防衛 | [lane-turret](templates/games/lane-turret/) |
 | **Lantern Hop** | プラットフォーマー | ドット絵 | 16:9 横画面 | 月夜の屋根を駆けるキツネの二段ジャンプ・エンドレスランナー | [lantern-hop](templates/games/lantern-hop/) |
 | **Last Light** | ホラー | ミニマル | 16:9 横画面 | 懐中電灯の光だけで廃校から脱出するサバイバルホラー | [last-light](templates/games/last-light/) |
 | **Lighthouse Log** | ストーリー | アニメ | 16:9 横画面 | 嵐の7日間を燃料管理と無線選択で生き抜く物語サバイバル | [lighthouse-log](templates/games/lighthouse-log/) |
+| **Mahjong Pairs** | カジュアル | ミニマル | 9:16 縦画面 | 麻雀牌の行・列をスライドしてペア消去する爽快パズル | [mahjong-pairs](templates/games/mahjong-pairs/) |
 | **Merge Bakery** | カジュアル | アニメ | 9:16 縦画面 | 焼成・マージ・時間制限オーダーをこなすベーカリーパズル | [merge-bakery](templates/games/merge-bakery/) |
 | **Neon Drift** | レーシング | 3D | 16:9 横画面 | 雨夜のシンセウェーブ高速道路をすり抜けるブーストレーシング | [neon-drift](templates/games/neon-drift/) |
 | **Night Train Letters** | ストーリー | ミニマル | 16:9 横画面 | 夜行列車で3通の届かぬ手紙を辿る分岐ナラティブ | [night-train](templates/games/night-train/) |
 | **Periscope Depth** | シューター | ミニマル | 16:9 横画面 | 潜望鏡で艦隊を魚雷攻撃し爆雷を回避する潜水艦アクション | [periscope-depth](templates/games/periscope-depth/) |
 | **Pin Rescue** | カジュアル | ミニマル | 9:16 縦画面 | 溶岩・水・黄金を操る王道ピン抜き物理パズル | [pin-rescue](templates/games/pin-rescue/) |
 | **Rooftop Roast** | カジュアル | ミニマル | 16:9 横画面 | `SHOP` 定数を書き換えるだけでブランド差し替え可能なカフェ販促ゲーム | [rooftop-roast](templates/games/rooftop-roast/) |
+| **Screw Puzzle** | カジュアル | ミニマル | 9:16 縦画面 | 重なった板から色付きネジを外して同色ボックスへ仕分ける | [screw-puzzle](templates/games/screw-puzzle/) |
+| **Shanghai Vice: Bund Outlaw** | レーシング | 3D | 16:9 横画面 | ネオン輝く外灘の街を駆け抜けるオープンシティ 3D レーシング | [shanghai-vice](templates/games/shanghai-vice/) |
 | **Sky Runner** | レーシング | 3D | 9:16 縦画面 | コイン収集＆ブーストで駆けるサイバーパンク 3D ホバーボードランナー | [sky-runner](templates/games/sky-runner/) |
 | **Skyline Courier** | プラットフォーマー | 3D | 16:9 横画面 | 90秒以内に高層ビルの屋上を駆け抜ける 3D パルクール | [skyline-courier](templates/games/skyline-courier/) |
 | **Slime Swell** | カジュアル | ミニマル | 9:16 縦画面 | 街ごと飲み込んでライバルと競う 60 秒成長アリーナ | [slime-swell](templates/games/slime-swell/) |
@@ -261,7 +342,10 @@ OpenGame は [`templates/games/`](templates/games/) に**すぐ遊べる 26 本�
 | **Stack the Moon** | カジュアル | ミニマル | 16:9 横画面 | 月夜の天文台を積み上げるワンタップ・タイミングゲーム | [stack-the-moon](templates/games/stack-the-moon/) |
 | **Starlight Bastion** | シューター | ボクセル | 16:9 横画面 | ローグライト強化付き・全5ウェーブのクリスタル防衛戦 | [starlight-bastion](templates/games/starlight-bastion/) |
 | **Tidebreaker** | レーシング | 3D | 16:9 横画面 | 嵐の群島で波を跳ね越える 3D スピードボートレース | [tidebreaker](templates/games/tidebreaker/) |
+| **Tile Stack** | カジュアル | アニメ | 9:16 縦画面 | 多層タイルから同じ柄を3枚揃える農場パズル（道具3種付き） | [tile-stack](templates/games/tile-stack/) |
 | **Tilt Temple** | カジュアル | 3D | 9:16 縦画面 | 浮遊迷宮を傾けて鍵を取りポータルへ導く 3D 傾きパズル | [tilt-temple](templates/games/tilt-temple/) |
+| **Vice Beach Motor Club** | レーシング | ASCII | 16:9 横画面 | ドリフト・ニトロ・強化対応の 3D ASCII レトロ海辺レーシング | [vice-beach-motor-club](templates/games/vice-beach-motor-club/) |
+| **Vice Beach: Coastal Nine Golf** | カジュアル | ASCII | 16:9 横画面 | 風向きと弾道を操るレトロ海辺9ホールゴルフ | [vice-beach-golf-club](templates/games/vice-beach-golf-club/) |
 
 </details>
 
@@ -274,7 +358,7 @@ OpenGame は [`templates/games/`](templates/games/) に**すぐ遊べる 26 本�
 白紙のプロンプトから完成度の高いゲームをゼロから作るのは、最先端モデルにとっても難題です。OpenGame は**検証済みのゲームエンジニアリング基盤**と**世界観・アート・演出コンテンツ**を分離することでこの壁を突破します：
 
 - **すべてが透明で編集可能なソースコード**：`index.html`、決定論的ロジック `logic.js`、3D 向け内蔵 Three.js、さらに構造化設計ドキュメント（`design/plan.md`、`design/style.md`、`design/assets.csv`、`design/verification.md`）で構成されます。
-- **ワンクリックでリミックス**：Game Studio で 26 本のテンプレートから **Remix** を押す（または Agent に指示する）だけで、操作系・パラメータ調整・自動テストフックまで整った編集用ドラフトを即座に複製できます。
+- **ワンクリックでリミックス**：Game Studio で 36 本のテンプレートから **Remix** を押す（または Agent に指示する）だけで、操作系・パラメータ調整・自動テストフックまで整った編集用ドラフトを即座に複製できます。
 - **あらゆる世界観へスタイル変換**：物理挙動や勝敗ルールを壊さず、題材・キャラクター・配色・スプライト・テクスチャ・BGM を差し替え可能。**DeepSeek** などの高コスパモデルで高速イテレーションを回すのも、**Claude Fable 5.2 / Opus / Codex / Gemini** で本格的な 3D オリジナル作品に挑むのも自由です。
 
 **接続済みの Agent でそのまま試せるプロンプト例：**
@@ -448,7 +532,7 @@ OpenGame はローカル stdio MCP 経由で完全なゲーム開発ツール群
 | **ゲーム実行基盤 & 自動 QA** | Node.js, ネイティブ HTTP, Puppeteer Core / Chrome, 決定論シミュレーター | [game-projects.ts](game-projects.ts) · [shared/game-contract.ts](shared/game-contract.ts) · [server.ts](server.ts) |
 | **MCP & ゲーム Skill** | ローカル stdio MCP サーバー、`openmotion-game` Skill & 18 冊のハンドブック | [mcp.ts](mcp.ts) · [skills/openmotion-game/](skills/openmotion-game/) |
 | **マルチモーダル Gateway** | BYOK モデル検出・非同期ジョブ管理・アセットライブラリ & Web 公開 | [gateway/service.ts](gateway/service.ts) · [gateway/catalog.ts](gateway/catalog.ts) · [docs/assets.md](docs/assets.md) |
-| **内蔵テンプレート** | カバー・メタデータ付き 26 本の独立 HTML5 / Canvas / Three.js ゲーム | [templates/games/](templates/games/) |
+| **内蔵テンプレート** | カバー・メタデータ付き 36 本の独立 HTML5 / Canvas / Three.js ゲーム | [templates/games/](templates/games/) |
 | **トレーラー録画パイプライン** | ヘッドレス実機録画 + HTML コンポジション + FFmpeg MP4 書き出し | [docs/usage.md](docs/usage.md) · [scripts/verify-export.ts](scripts/verify-export.ts) |
 
 <a id="community"></a>

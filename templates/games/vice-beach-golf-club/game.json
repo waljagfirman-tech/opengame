@@ -1,0 +1,29 @@
+{
+  "id": "vice-beach-golf-club",
+  "title": "Vice Beach: Coastal Nine Golf",
+  "description": "Tee off along nine sunlit Miami-bay links holes! Hold Space to nail the gold sweet spot, curve drives over tidal inlets, and outplay three rivals under palm-fringed sunset skies.",
+  "genre": "casual",
+  "style": "ascii",
+  "setting": "retro",
+  "orientation": "landscape",
+  "multiplayer": false,
+  "status": "published",
+  "cover": "cover.webp",
+  "controls": "Drag / WASD or Arrows aim, Q/E or Scroll switch club, F shot type, hold & release Space to swing, Shift preview, R reset.",
+  "i18n": {
+    "zh-CN": {
+      "title": "罪恶海滩：滨海九洞高尔夫",
+      "description": "面朝碧海棕榈挥杆打满九洞！按住空格蓄力卡准金色完美区，一杆飞越海湾潮口、果岭精准推杆，还能随时和三位电脑对手同场比杆。",
+      "controls": "拖拽或 WASD/方向键瞄准，滚轮或 Q/E 换杆，F 切球路，按住空格蓄力松手击球，Shift 预览落点，右上角可切换中英文。"
+    }
+  },
+  "tags": [
+    "top赚钱"
+  ],
+  "createdAt": "2026-11-25T03:30:00.000Z",
+  "updatedAt": "2026-11-25T03:30:00.000Z",
+  "views": 0,
+  "plays": 0,
+  "remixes": 0,
+  "source": "template"
+}

@@ -33,7 +33,7 @@
 
 OpenGame 是**首个开源全栈 Super Game Agent**——把你本地的编程 Agent 变成一座开源 AI 版虚幻引擎 / Unity 与完整游戏工作室，从一句话创意或爆款游戏模板出发，走完**制作 → 自动化试玩验证 → 一键在线分享 → 上架变现**的端到端全链路。
 
-- 🎮 **一键复刻任何游戏。** 内置 **26 款可玩游戏模板**（3D、体素、像素、动漫及 9:16 爆款小游戏 / 试玩广告），源码与设计文档全部可编辑。
+- 🎮 **一键复刻任何游戏。** 内置 **36 款可玩游戏模板**（3D、体素、像素、动漫及 9:16 爆款小游戏 / 试玩广告），源码与设计文档全部可编辑。
 - 🎨 **一键风格化任何游戏。** 保留成熟玩法骨架，快速替换角色、画风与配乐——**DeepSeek** 可低成本稳定换皮，**Claude Fable 5.2 / Opus / Codex / Gemini** 可从零打造 3D 大作。
 - 💰 **全链路闭环：制作 → 验证 → 发布变现。** 自动完成逻辑校验、仿真试玩、封面截图与实机预告片，一键生成在线链接或 9:16 试玩广告，并衔接小游戏上架路径。
 - 🔓 **全栈开源（BYOA + BYOK）。** 代码、美术、视频、音乐、配音与 Three.js 3D 全部开源；自带 [本地 Agent](#agent-wall) 与 API Key，或接入 [OpenDesign Go](https://go.open-design.ai/?utm_source=github&utm_medium=referral&utm_campaign=opengame&utm_content=readme_zh)。
@@ -82,7 +82,7 @@ npm start
 
 ## 🕹️ 内置可玩游戏模板与示例
 
-OpenGame 在 [`templates/games/`](templates/games/) 中内置了 **26 款开箱即玩的完整游戏工程**，全部包含 HTML5 / Three.js 源码、封面、操控说明与中英双语元数据。在 Game Studio 里可直接试玩，一键 **Remix 复刻**，或**一键换画风 / 换题材 / 换角色**做成属于你的游戏。
+OpenGame 在 [`templates/games/`](templates/games/) 中内置了 **36 款开箱即玩的完整游戏工程**，全部包含 HTML5 / Three.js 源码、封面、操控说明与中英双语元数据。在 Game Studio 里可直接试玩，一键 **Remix 复刻**，或**一键换画风 / 换题材 / 换角色**做成属于你的游戏。
 
 ### 3D、体素与动作游戏（16:9 横屏）
 
@@ -127,6 +127,34 @@ OpenGame 在 [`templates/games/`](templates/games/) 中内置了 **26 款开箱�
 <strong>海港突击 · Harbor Skirmish</strong> · <code>3D FPS · 抓钩与滑铲</code><br>
 风格化 3D 第一人称海岛射击，支持二段跳、滑铲、冲刺与抓钩机动。<br>
 <a href="templates/games/harbor-skirmish/">查看源码 →</a>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<img src="templates/games/shanghai-vice/cover.webp" width="100%" alt="罪恶魔都：外滩狂飙 Shanghai Vice — 3D 外滩飙车"><br>
+<strong>罪恶魔都：外滩狂飙 · Shanghai Vice</strong> · <code>3D · 竞速 · Three.js</code><br>
+穿梭霓虹外滩与老街巷，随时换乘超跑甩开追捕，体验开放街区 3D 飙车。<br>
+<a href="templates/games/shanghai-vice/">查看源码 →</a>
+</td>
+<td width="50%" valign="top">
+<img src="templates/games/kazehane/cover.webp" width="100%" alt="风羽屿：振翅御风 Kazehane — 3D 滑翔探索"><br>
+<strong>风羽屿：振翅御风 · Kazehane</strong> · <code>3D · 动漫 · 平台探索</code><br>
+乘海风热气流振翅滑翔，穿梭悬崖神社与碧海岛屿，收集散落金羽。<br>
+<a href="templates/games/kazehane/">查看源码 →</a>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<img src="templates/games/vice-beach-motor-club/cover.webp" width="100%" alt="罪恶海滩赛车俱乐部 Vice Beach Motor Club — 3D 字符美学复古竞速"><br>
+<strong>罪恶海滩赛车俱乐部 · Vice Beach Motor Club</strong> · <code>字符美学 · 竞速 · 复古</code><br>
+驾驶 3D 字符风敞篷车驰骋罪恶海滩双赛道，体验漂移充能、氮气加速与车库改装。<br>
+<a href="templates/games/vice-beach-motor-club/">查看源码 →</a>
+</td>
+<td width="50%" valign="top">
+<img src="templates/games/vice-beach-golf-club/cover.webp" width="100%" alt="罪恶海滩：滨海九洞高尔夫 Vice Beach Golf — 复古滨海九洞高尔夫"><br>
+<strong>罪恶海滩：滨海九洞高尔夫 · Vice Beach Golf</strong> · <code>字符美学 · 高尔夫 · 复古</code><br>
+顺应海风走位、拉出左曲右曲弧线，在九洞滨海复古球场挑战抓鸟老鹰球。<br>
+<a href="templates/games/vice-beach-golf-club/">查看源码 →</a>
 </td>
 </tr>
 </table>
@@ -229,14 +257,63 @@ OpenGame 在 [`templates/games/`](templates/games/) 中内置了 **26 款开箱�
 <a href="templates/games/merge-bakery/">查看源码 →</a>
 </td>
 </tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<img src="templates/games/block-blast/cover.webp" width="100%" alt="方块爆破大师 Block Blast Master — 8×8 连消方块"><br>
+<strong>方块爆破大师 · Block Blast</strong><br>
+<code>9:16 · 经典方块连消</code><br>
+把多彩方块拖进 8×8 棋盘，凑齐整行整列爆破得分，爽快连消冲刺高分。<br>
+<a href="templates/games/block-blast/">查看源码 →</a>
+</td>
+<td width="33%" valign="top" align="center">
+<img src="templates/games/screw-puzzle/cover.webp" width="100%" alt="打螺丝 Screw Puzzle — 叠层拆螺丝解谜"><br>
+<strong>打螺丝 · Screw Puzzle</strong><br>
+<code>9:16 · 爆款拆螺丝</code><br>
+拧下叠层亚克力板上的彩色螺丝装入同色盒子，巧用空槽拆光木板通关。<br>
+<a href="templates/games/screw-puzzle/">查看源码 →</a>
+</td>
+<td width="33%" valign="top" align="center">
+<img src="templates/games/tile-stack/cover.webp" width="100%" alt="叠叠消 Tile Stack — 多层堆叠三消"><br>
+<strong>叠叠消 · Tile Stack</strong><br>
+<code>9:16 · 多层堆叠三消</code><br>
+从层叠牌堆挑出三张相同图案放进 7 格卡槽消除，支持移出、撤回与洗牌。<br>
+<a href="templates/games/tile-stack/">查看源码 →</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<img src="templates/games/mahjong-pairs/cover.webp" width="100%" alt="雀神对对消 Mahjong Pairs — 推牌麻将对对消"><br>
+<strong>雀神对对消 · Mahjong Pairs</strong><br>
+<code>9:16 · 推牌麻将消除</code><br>
+推动麻将牌行或列让相同牌面相邻成对消除，巧用洗牌提示清空整盘。<br>
+<a href="templates/games/mahjong-pairs/">查看源码 →</a>
+</td>
+<td width="33%" valign="top" align="center">
+<img src="templates/games/ball-match/cover.webp" width="100%" alt="球球消消乐 Ball Match — 3D 彩球连线消除"><br>
+<strong>球球消消乐 · Ball Match</strong><br>
+<code>9:16 · 3D 连线爆破</code><br>
+滑动连接同色立体彩球触发炸弹连击，在限定步数内完成收集目标。<br>
+<a href="templates/games/ball-match/">查看源码 →</a>
+</td>
+<td width="33%" valign="top" align="center">
+<img src="templates/games/catch-piggy/cover.webp" width="100%" alt="抓小猪 Catch Piggy — 物理堆叠找物三消"><br>
+<strong>抓小猪 · Catch Piggy</strong><br>
+<code>9:16 · 物理堆叠三消</code><br>
+在物理堆叠的萌趣玩具与小猪堆里挑出三个相同物品凑对消除，限时冲关。<br>
+<a href="templates/games/catch-piggy/">查看源码 →</a>
+</td>
+</tr>
 </table>
 
 <details>
-<summary><strong>展开查看全部 26 款内置可玩游戏模板</strong></summary>
+<summary><strong>展开查看全部 36 款内置可玩游戏模板</strong></summary>
 
 | 游戏名称 | 类型 | 画风 | 屏幕方向 | 简介 | 源码目录 |
 | --- | --- | --- | --- | --- | --- |
+| **球球消消乐 (Ball Match)** | 休闲 | 3D | 9:16 竖屏 | 连线消除同色立体彩球，触发炸弹与连击完成关卡目标 | [ball-match](templates/games/ball-match/) |
+| **方块爆破大师 (Block Blast Master)** | 休闲 | 极简 | 9:16 竖屏 | 拖入多彩方块填满 8×8 行列爆破得分，爽快连消冲高分 | [block-blast](templates/games/block-blast/) |
 | **弹弓攻城 (Castle Crush)** | 休闲 | 动漫 | 9:16 竖屏 | 弹弓拉弓投石击倒木石城塔，每关三发共四关 | [castle-crush](templates/games/castle-crush/) |
+| **抓小猪 (Catch Piggy)** | 休闲 | 动漫 | 9:16 竖屏 | 在物理堆叠的玩具与小猪堆里挑出三同消除，限时闯关 | [catch-piggy](templates/games/catch-piggy/) |
 | **彗星守卫 (Comet Guard)** | 射击 | 极简 | 16:9 横屏 | 驾驶拦截机击碎熔岩彗星，守护轨道空间站 | [comet-guard](templates/games/comet-guard/) |
 | **像素漂移冲刺 (Drift Dash)** | 竞速 | 体素 | 9:16 竖屏 | 单手按住左右漂移，三圈击败三辆 AI 赛车 | [drift-dash](templates/games/drift-dash/) |
 | **草原军团 (Gate Legion)** | 休闲 | 像素 | 9:16 竖屏 | 爆款算术门军团倍增与终点决战 | [gate-legion](templates/games/gate-legion/) |
@@ -244,16 +321,20 @@ OpenGame 在 [`templates/games/`](templates/games/) 中内置了 **26 款开箱�
 | **海港突击 (Harbor Skirmish)** | 射击 | 3D | 16:9 横屏 | 手绘风格 3D 第一人称海岛射击，带滑铲与抓钩 | [harbor-skirmish](templates/games/harbor-skirmish/) |
 | **空镇回声 (Hollow Signal)** | 恐怖 | 极简 | 16:9 横屏 | 在理智耗尽前穿越静电噪音锁定四段信号 | [hollow-signal](templates/games/hollow-signal/) |
 | **景阳冈 (Jingyang Ridge)** | 休闲 | 动漫 | 16:9 横屏 | 水墨武松打虎 Boss 战：识破招式前摇、闪避反击 | [jingyang-ridge](templates/games/jingyang-ridge/) |
+| **风羽屿：振翅御风 (Kazehane: Skywing Bay)** | 平台 | 动漫 | 16:9 横屏 | 乘海风热气流振翅滑翔，穿梭悬崖神社收集金羽的 3D 冒险 | [kazehane](templates/games/kazehane/) |
 | **星港三线炮台 (Lane Turret)** | 射击 | 像素 | 9:16 竖屏 | 三线炮台瞄准射击、收集卡牌坚守十波 | [lane-turret](templates/games/lane-turret/) |
 | **灯笼跳跃 (Lantern Hop)** | 平台 | 像素 | 16:9 横屏 | 像素狐狸月夜屋檐无尽二段跳跑酷 | [lantern-hop](templates/games/lantern-hop/) |
 | **最后的光 (Last Light)** | 恐怖 | 极简 | 16:9 横屏 | 废弃校园手电筒寻钥逃生 | [last-light](templates/games/last-light/) |
 | **灯塔手记 (Lighthouse Log)** | 叙事 | 动漫 | 16:9 横屏 | 七个暴风雨夜的燃料分配与电台道德抉择 | [lighthouse-log](templates/games/lighthouse-log/) |
+| **雀神对对消 (Mahjong Pairs)** | 休闲 | 极简 | 9:16 竖屏 | 推动麻将牌行或列对齐同牌成对消除，巧用道具清空整盘 | [mahjong-pairs](templates/games/mahjong-pairs/) |
 | **合成小烘焙 (Merge Bakery)** | 休闲 | 动漫 | 9:16 竖屏 | 烘焙面团、拖拽合成点心并在 90 秒内完成订单 | [merge-bakery](templates/games/merge-bakery/) |
 | **霓虹漂移 (Neon Drift)** | 竞速 | 3D | 16:9 横屏 | 赛博霓虹雨夜高架车流穿梭与氮气加速 | [neon-drift](templates/games/neon-drift/) |
 | **夜行列车的信 (Night Train Letters)** | 叙事 | 极简 | 16:9 横屏 | 雨夜海滨列车的温情分支文字冒险 | [night-train](templates/games/night-train/) |
 | **潜望深渊 (Periscope Depth)** | 射击 | 极简 | 16:9 横屏 | 潜艇巡航：潜望镜发射鱼雷，下潜躲避声呐深水炸弹 | [periscope-depth](templates/games/periscope-depth/) |
 | **熔金拔针 (Pin Rescue)** | 休闲 | 极简 | 9:16 竖屏 | 拔针混合水火、避开岩浆赢取金币的五关解谜 | [pin-rescue](templates/games/pin-rescue/) |
 | **屋顶咖啡 (Rooftop Roast)** | 休闲 | 极简 | 16:9 横屏 | 可一键换品牌的门店营销小游戏（修改一个 `SHOP` 对象即可换皮） | [rooftop-roast](templates/games/rooftop-roast/) |
+| **打螺丝 (Screw Puzzle)** | 休闲 | 极简 | 9:16 竖屏 | 拧下叠层亚克力板彩色螺丝装入同色盒，避开满槽通关 | [screw-puzzle](templates/games/screw-puzzle/) |
+| **罪恶魔都：外滩狂飙 (Shanghai Vice: Bund Outlaw)** | 竞速 | 3D | 16:9 横屏 | 穿梭霓虹外滩街区、随时换乘超跑甩开追捕的开放 3D 飙车 | [shanghai-vice](templates/games/shanghai-vice/) |
 | **霓虹天际跑者 (Sky Runner)** | 竞速 | 3D | 9:16 竖屏 | 赛博 3D 悬浮滑板变道跑酷与吃币加速 | [sky-runner](templates/games/sky-runner/) |
 | **天际快递员 (Skyline Courier)** | 平台 | 3D | 16:9 横屏 | 3D 赛博楼顶蹬墙跳与 90 秒限时派送 | [skyline-courier](templates/games/skyline-courier/) |
 | **史莱姆膨胀城 (Slime Swell)** | 休闲 | 极简 | 9:16 竖屏 | 60 秒吞噬城市物品、击败三名对手史莱姆 | [slime-swell](templates/games/slime-swell/) |
@@ -261,7 +342,10 @@ OpenGame 在 [`templates/games/`](templates/games/) 中内置了 **26 款开箱�
 | **叠叠月 (Stack the Moon)** | 休闲 | 极简 | 16:9 横屏 | 单指精准叠起月光天文台，连击完美落位 | [stack-the-moon](templates/games/stack-the-moon/) |
 | **星辉堡垒 (Starlight Bastion)** | 射击 | 体素 | 16:9 横屏 | 五波体素敌人晶核防卫战 + 局间升级 | [starlight-bastion](templates/games/starlight-bastion/) |
 | **破潮者 (Tidebreaker)** | 竞速 | 3D | 16:9 横屏 | 风暴群岛 3D 快艇跳浪与限时过关竞速 | [tidebreaker](templates/games/tidebreaker/) |
+| **叠叠消 (Tile Stack)** | 休闲 | 动漫 | 9:16 竖屏 | 多层堆叠三消益智玩法，支持移出、撤回与洗牌道具 | [tile-stack](templates/games/tile-stack/) |
 | **倾斜神庙 (Tilt Temple)** | 休闲 | 3D | 9:16 竖屏 | 3D 悬浮迷宫拖动倾斜滚球，拿钥匙闯三关 | [tilt-temple](templates/games/tilt-temple/) |
+| **罪恶海滩赛车俱乐部 (Vice Beach Motor Club)** | 竞速 | 字符 | 16:9 横屏 | 3D 字符美学复古敞篷车竞速，带漂移充能、氮气与车库改装 | [vice-beach-motor-club](templates/games/vice-beach-motor-club/) |
+| **罪恶海滩：滨海九洞高尔夫 (Vice Beach: Coastal Nine Golf)** | 休闲 | 字符 | 16:9 横屏 | 复古滨海九洞高尔夫，结合风速判断、弧线击球与推杆进洞 | [vice-beach-golf-club](templates/games/vice-beach-golf-club/) |
 
 </details>
 
@@ -448,7 +532,7 @@ OpenGame 通过本地 stdio MCP 暴露完整的游戏开发与测试工具集（
 | **游戏运行时与自动 QA** | Node.js, 原生 HTTP, Puppeteer Core / Chrome, 确定性仿真器 | [game-projects.ts](game-projects.ts) · [shared/game-contract.ts](shared/game-contract.ts) · [server.ts](server.ts) |
 | **MCP 与游戏 Skill** | 本地 stdio MCP 服务、`openmotion-game` Skill 及 18 份手册 | [mcp.ts](mcp.ts) · [skills/openmotion-game/](skills/openmotion-game/) |
 | **多模态 Model Gateway** | BYOK 模型发现、异步任务轮询、素材库与在线分享发布 | [gateway/service.ts](gateway/service.ts) · [gateway/catalog.ts](gateway/catalog.ts) · [docs/assets.md](docs/assets.md) |
-| **内置游戏模板库** | 26 款独立可玩 HTML5 / Canvas / Three.js 工程与封面 | [templates/games/](templates/games/) |
+| **内置游戏模板库** | 36 款独立可玩 HTML5 / Canvas / Three.js 工程与封面 | [templates/games/](templates/games/) |
 | **实机预告片管线** | 无头实机录屏 + HTML 合成 + FFmpeg MP4 渲染 | [docs/usage.md](docs/usage.md) · [scripts/verify-export.ts](scripts/verify-export.ts) |
 
 <a id="community"></a>

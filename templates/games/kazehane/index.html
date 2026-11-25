@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>风羽屿 · Kazehane</title>
+    <script>(function(){function makeStore(){var m=Object.create(null);return{getItem:function(k){return Object.prototype.hasOwnProperty.call(m,k)?m[k]:null;},setItem:function(k,v){m[String(k)]=String(v);},removeItem:function(k){delete m[String(k)];},clear:function(){m=Object.create(null);},key:function(i){return Object.keys(m)[i]||null;},get length(){return Object.keys(m).length;}};}['localStorage','sessionStorage'].forEach(function(n){try{var s=window[n];s.setItem('__om_t','1');s.removeItem('__om_t');}catch(_){try{Object.defineProperty(window,n,{value:makeStore(),configurable:true});}catch(__){}}});})();</script>
+    <script>(function(){var M={"models/hero.glb":["models/hero.glb.part0","models/hero.glb.part1"],"models/wings.glb":["models/wings.glb.part0","models/wings.glb.part1","models/wings.glb.part2"]};
+function resolveParts(u){if(!u||typeof u!=='string')return null;var clean=u.split('?')[0].split('#')[0];for(var k in M){if(clean===k||clean==='./'+k||clean.endsWith('/'+k))return{key:k,parts:M[k]};}return null;}
+var origFetch=window.fetch.bind(window);
+function fetchMerged(info){return Promise.all(info.parts.map(function(p){return origFetch('./'+p).then(function(r){if(!r.ok)throw new Error('HTTP '+r.status+' '+p);return r.arrayBuffer();});})).then(function(bufs){var total=bufs.reduce(function(s,b){return s+b.byteLength;},0);var out=new Uint8Array(total);var off=0;for(var i=0;i<bufs.length;i++){out.set(new Uint8Array(bufs[i]),off);off+=bufs[i].byteLength;}return out;});}
+window.fetch=function(input,init){var u=typeof input==='string'?input:(input&&input.url)||'';var hit=resolveParts(u);if(!hit)return origFetch(input,init);return fetchMerged(hit).then(function(bytes){var mime=hit.key.endsWith('.glb')?'model/gltf-binary':'application/octet-stream';return new Response(bytes,{status:200,headers:{'Content-Type':mime,'Content-Length':String(bytes.byteLength)}});});};
+var XHR=window.XMLHttpRequest;
+var origOpen=XHR.prototype.open;
+var origSend=XHR.prototype.send;
+XHR.prototype.open=function(method,url){this.__omChunk=resolveParts(typeof url==='string'?url:String(url||''));return origOpen.apply(this,arguments);};
+XHR.prototype.send=function(){if(!this.__omChunk)return origSend.apply(this,arguments);var self=this;var hit=this.__omChunk;fetchMerged(hit).then(function(bytes){var resp=self.responseType==='blob'?new Blob([bytes]):(self.responseType==='text'||self.responseType==='')?new TextDecoder().decode(bytes):bytes.buffer;Object.defineProperty(self,'readyState',{value:4,configurable:true});Object.defineProperty(self,'status',{value:200,configurable:true});Object.defineProperty(self,'statusText',{value:'OK',configurable:true});Object.defineProperty(self,'response',{value:resp,configurable:true});if(self.responseType===''||self.responseType==='text'){Object.defineProperty(self,'responseText',{value:resp,configurable:true});}if(typeof self.onload==='function')self.onload(new ProgressEvent('load',{loaded:bytes.byteLength,total:bytes.byteLength}));self.dispatchEvent(new ProgressEvent('load',{loaded:bytes.byteLength,total:bytes.byteLength}));}).catch(function(err){Object.defineProperty(self,'readyState',{value:4,configurable:true});Object.defineProperty(self,'status',{value:500,configurable:true});if(typeof self.onerror==='function')self.onerror(err);});};
+})();</script>
+    <link rel="preload" as="image" href="./splash/kazehane-keyart.jpg" fetchpriority="high" />
+    <link rel="stylesheet" href="./app.css" />
+  </head>
+  <body class="m-0 overflow-hidden bg-[#0e1726] text-white select-none antialiased">
+    <div id="root"></div>
+    <script>(function(){Promise.all(["app.part0.js","app.part1.js","app.part2.js","app.part3.js"].map(function(p){return fetch('./'+p).then(function(r){if(!r.ok)throw new Error('HTTP '+r.status+' '+p);return r.text();});})).then(function(t){(0,eval)(t.join(''));}).catch(function(e){console.error('Kazehane boot failed:',e);});})();</script>
+  </body>
+</html>

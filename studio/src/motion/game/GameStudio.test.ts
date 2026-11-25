@@ -37,9 +37,12 @@ describe('gameCatalog multi-file detection and internal tags', () => {
       'ball-match',
       'block-blast',
       'catch-piggy',
+      'kazehane',
       'mahjong-pairs',
       'screw-puzzle',
+      'shanghai-vice',
       'tile-stack',
+      'vice-beach-golf-club',
       'vice-beach-motor-club',
     ]);
   });

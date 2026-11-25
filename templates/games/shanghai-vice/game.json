@@ -1,0 +1,29 @@
+{
+  "id": "shanghai-vice",
+  "title": "Shanghai Vice: Bund Outlaw",
+  "description": "Tear through twilight Shanghai along the Bund in a crimson supercar, dodge 6-star police chases, and transform mid-battle into a towering skyline mecha!",
+  "genre": "racing",
+  "style": "3d",
+  "setting": "modern",
+  "orientation": "landscape",
+  "multiplayer": false,
+  "status": "published",
+  "cover": "cover.webp",
+  "controls": "WASD move & drive, F hijack/enter vehicle, Right-Click aim, V transform mecha, 5 beam rifle, Tab switch protagonists.",
+  "i18n": {
+    "zh-CN": {
+      "title": "罪恶魔都：外滩狂飙",
+      "description": "落日外滩开上红色超跑横冲直撞！6 星警车全城围堵、街头激战飙车，随时还能一键变身巨型机甲横扫魔都天际线。",
+      "controls": "WASD 移动驾驶，F 抢车互动，鼠标右键瞄准，V 切换机甲形态，5 光束步枪，Tab 切换双主角。"
+    }
+  },
+  "tags": [
+    "top赚钱"
+  ],
+  "createdAt": "2026-11-25T03:30:00.000Z",
+  "updatedAt": "2026-11-25T03:30:00.000Z",
+  "views": 0,
+  "plays": 0,
+  "remixes": 0,
+  "source": "template"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "kazehane",
+  "title": "Kazehane: Skywing Bay",
+  "description": "Spread glowing sky-wings over a sunlit anime seaside bay! Glide beside the ocean tram, dive past shrine torii gates, shatter parallel worlds, and rewind time on a whim.",
+  "genre": "platformer",
+  "style": "anime",
+  "setting": "fantasy",
+  "orientation": "landscape",
+  "multiplayer": false,
+  "status": "published",
+  "cover": "cover.webp",
+  "controls": "WASD roam, F spread wings & fly, E ride the ocean tram, Tab shatter parallel worlds, Mouse look.",
+  "i18n": {
+    "zh-CN": {
+      "title": "风羽屿：振翅御风",
+      "description": "闯进新海诚风蔚蓝海湾！展开光翼掠过海上电车与红鸟居山坡，自由滑翔冲刺，还能一键触发平行世界破坏与时光倒流。",
+      "controls": "WASD 漫游，F 振翅飞行，E 乘海上电车，Tab 平行世界破坏，鼠标控制视角。"
+    }
+  },
+  "tags": [
+    "top赚钱"
+  ],
+  "createdAt": "2026-11-25T03:30:00.000Z",
+  "updatedAt": "2026-11-25T03:30:00.000Z",
+  "views": 0,
+  "plays": 0,
+  "remixes": 0,
+  "source": "template"
+}

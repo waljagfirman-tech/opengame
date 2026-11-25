@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<script>(function(){function makeStore(){var m=Object.create(null);return{getItem:function(k){return Object.prototype.hasOwnProperty.call(m,k)?m[k]:null;},setItem:function(k,v){m[String(k)]=String(v);},removeItem:function(k){delete m[String(k)];},clear:function(){m=Object.create(null);},key:function(i){return Object.keys(m)[i]||null;},get length(){return Object.keys(m).length;}};}['localStorage','sessionStorage'].forEach(function(n){try{var s=window[n];s.setItem('__om_t','1');s.removeItem('__om_t');}catch(_){try{Object.defineProperty(window,n,{value:makeStore(),configurable:true});}catch(__){}}});})();</script>
+<script>(function(){var M={"assets/anims/idle.fbx":["assets/anims/idle.fbx.part0","assets/anims/idle.fbx.part1"],"assets/anims/terrified.fbx":["assets/anims/terrified.fbx.part0","assets/anims/terrified.fbx.part1","assets/anims/terrified.fbx.part2"],"assets/models/gundam_rigged.glb":["assets/models/gundam_rigged.glb.part0","assets/models/gundam_rigged.glb.part1","assets/models/gundam_rigged.glb.part2","assets/models/gundam_rigged.glb.part3"],"assets/models/real_woman1.glb":["assets/models/real_woman1.glb.part0","assets/models/real_woman1.glb.part1"],"assets/models/car_ferrari.glb":["assets/models/car_ferrari.glb.part0","assets/models/car_ferrari.glb.part1","assets/models/car_ferrari.glb.part2","assets/models/car_ferrari.glb.part3","assets/models/car_ferrari.glb.part4"]};
+function resolveParts(u){if(!u||typeof u!=='string')return null;var clean=u.split('?')[0].split('#')[0];for(var k in M){if(clean===k||clean==='./'+k||clean.endsWith('/'+k))return{key:k,parts:M[k]};}return null;}
+var origFetch=window.fetch.bind(window);
+function fetchMerged(info){return Promise.all(info.parts.map(function(p){return origFetch('./'+p).then(function(r){if(!r.ok)throw new Error('HTTP '+r.status+' '+p);return r.arrayBuffer();});})).then(function(bufs){var total=bufs.reduce(function(s,b){return s+b.byteLength;},0);var out=new Uint8Array(total);var off=0;for(var i=0;i<bufs.length;i++){out.set(new Uint8Array(bufs[i]),off);off+=bufs[i].byteLength;}return out;});}
+window.fetch=function(input,init){var u=typeof input==='string'?input:(input&&input.url)||'';var hit=resolveParts(u);if(!hit)return origFetch(input,init);return fetchMerged(hit).then(function(bytes){var mime=hit.key.endsWith('.glb')?'model/gltf-binary':'application/octet-stream';return new Response(bytes,{status:200,headers:{'Content-Type':mime,'Content-Length':String(bytes.byteLength)}});});};
+var XHR=window.XMLHttpRequest;
+var origOpen=XHR.prototype.open;
+var origSend=XHR.prototype.send;
+XHR.prototype.open=function(method,url){this.__omChunk=resolveParts(typeof url==='string'?url:String(url||''));return origOpen.apply(this,arguments);};
+XHR.prototype.send=function(){if(!this.__omChunk)return origSend.apply(this,arguments);var self=this;var hit=this.__omChunk;fetchMerged(hit).then(function(bytes){var resp=self.responseType==='blob'?new Blob([bytes]):(self.responseType==='text'||self.responseType==='')?new TextDecoder().decode(bytes):bytes.buffer;Object.defineProperty(self,'readyState',{value:4,configurable:true});Object.defineProperty(self,'status',{value:200,configurable:true});Object.defineProperty(self,'statusText',{value:'OK',configurable:true});Object.defineProperty(self,'response',{value:resp,configurable:true});if(self.responseType===''||self.responseType==='text'){Object.defineProperty(self,'responseText',{value:resp,configurable:true});}if(typeof self.onload==='function')self.onload(new ProgressEvent('load',{loaded:bytes.byteLength,total:bytes.byteLength}));self.dispatchEvent(new ProgressEvent('load',{loaded:bytes.byteLength,total:bytes.byteLength}));}).catch(function(err){Object.defineProperty(self,'readyState',{value:4,configurable:true});Object.defineProperty(self,'status',{value:500,configurable:true});if(typeof self.onerror==='function')self.onerror(err);});};
+})();</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>罪恶魔都 · GTA: Shanghai Vice</title>
+  <link rel="preload" as="image" href="./assets/splash/shanghai-vice-keyart.jpg" fetchpriority="high" />
+  <meta property="og:title" content="罪恶魔都 · GTA: Shanghai Vice" />
+  <meta property="og:description" content="外滩落日 · 魔都实车飙车 · 6星目击通缉 · 人类/高达双形态切换" />
+  <meta property="og:image" content="./assets/splash/shanghai-vice-keyart.jpg" />
+  <link rel="stylesheet" href="./styles.css" />
+  
+</head>
+<body>
+  <div id="game-root">
+    <canvas id="scene-canvas"></canvas>
+
+    <!-- Focus Mode & Cinematic Overlays -->
+    <div id="focus-vignette" class="hidden"></div>
+    <div id="damage-flash"></div>
+    <div id="wanted-pulse"></div>
+    <div id="crosshair" class="hidden">
+      <span class="ch-bar ch-top"></span>
+      <span class="ch-bar ch-bottom"></span>
+      <span class="ch-bar ch-left"></span>
+      <span class="ch-bar ch-right"></span>
+      <span class="ch-dot"></span>
+      <span id="hitmarker" class="hidden"></span>
+    </div>
+
+    <!-- 3D Projected World Tactical Markers (Focus Mode & Witness/Interact) -->
+    <div id="world-markers"></div>
+
+    <!-- Full-Bleed High-Fidelity Entrance & Real-Time Loading Screen (罪恶魔都 · GTA: Shanghai Vice) -->
+    <div id="title-screen" class="entrance-screen">
+      <!-- Full-bleed Key Art with gentle living-sky Ken Burns motion -->
+      <img
+        src="./assets/splash/shanghai-vice-keyart.jpg"
+        alt="罪恶魔都 · GTA: Shanghai Vice"
+        fetchpriority="high"
+        decoding="async"
+        class="entrance-keyart"
+      />
+
+      <!-- Feathered upper-left twilight scrim & subtle bottom micro-scrim (leaves Ferrari, protagonists, Gundam & skyline 100% vivid) -->
+      <div class="entrance-scrim" aria-hidden="true"></div>
+
+      <!-- Subtle drifting sunset-neon twilight bokeh embers across the Bund breeze -->
+      <div class="entrance-motes" aria-hidden="true">
+        <span class="mote coral" style="left:52%;top:48%;--dur:9.2s;--delay:0s;--sz:7px"></span>
+        <span class="mote cyan" style="left:64%;top:56%;--dur:10.6s;--delay:1.7s;--sz:6px"></span>
+        <span class="mote gold" style="left:46%;top:62%;--dur:8.8s;--delay:3.1s;--sz:5px"></span>
+        <span class="mote coral" style="left:72%;top:42%;--dur:11.4s;--delay:4.2s;--sz:8px"></span>
+        <span class="mote cyan" style="left:58%;top:70%;--dur:9.6s;--delay:0.8s;--sz:5px"></span>
+        <span class="mote gold" style="left:82%;top:54%;--dur:10.2s;--delay:2.5s;--sz:6px"></span>
+        <span class="mote pink" style="left:40%;top:52%;--dur:12.0s;--delay:5.0s;--sz:6px"></span>
+        <span class="mote cyan" style="left:76%;top:68%;--dur:8.9s;--delay:3.6s;--sz:5px"></span>
+      </div>
+
+      <!-- Upper-Left Editorial Emblem + Real Asset Loading Progress -> Explicit Enter CTA -->
+      <div class="entrance-layout">
+        <div class="entrance-hero">
+          <!-- Bespoke GTA Sunset-Chrome Emblem Crest -->
+          <div class="entrance-crest">
+            <svg width="68" height="24" viewBox="0 0 68 24" fill="none" aria-hidden="true" class="crest-svg">
+              <defs>
+                <linearGradient id="gtaViceGrad" x1="0" y1="0" x2="68" y2="24" gradientUnits="userSpaceOnUse">
+                  <stop offset="0%" stop-color="#ffd166" />
+                  <stop offset="48%" stop-color="#ff5e8e" />
+                  <stop offset="100%" stop-color="#2cf3ff" />
+                </linearGradient>
+              </defs>
+              <rect x="1" y="2" width="66" height="20" rx="5" fill="rgba(12, 10, 28, 0.62)" stroke="url(#gtaViceGrad)" stroke-width="1.4" />
+              <text x="34" y="16" text-anchor="middle" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" font-weight="900" letter-spacing="2.4">GTA</text>
+            </svg>
+            <span class="crest-rule"></span>
+            <span class="crest-series">GRAND THEFT AUTO</span>
+          </div>
+
+          <!-- Game Title -->
+          <h1 class="entrance-title">罪恶魔都</h1>
+          <div class="entrance-subtitle">SHANGHAI VICE</div>
+
+          <!-- Fixed-Height Action Slot: Real Loading Bar -> Explicit Enter CTA (zero layout jitter) -->
+          <div class="entrance-action-slot">
+            <div id="loading-block" class="loading-block">
+              <div class="loading-track">
+                <div id="loading-bar" class="loading-fill" style="width: 10%"></div>
+              </div>
+              <div class="loading-meta">
+                <span id="loading-stage">正在唤醒外滩霓虹天际线…</span>
+                <span id="loading-pct" class="loading-pct">10%</span>
+              </div>
+            </div>
+
+            <button id="btn-start" type="button" class="entrance-cta hidden">
+              <span>踏入罪恶魔都</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true" class="cta-arrow">
+                <path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Quiet Single-Line Bottom Micro-Hint -->
+        <div class="entrance-hint">
+          电脑键鼠最佳 · WASD 移动驾驶 · F 抢车互动 · 右键瞄准 · V 切换高达 · 5 光束步枪 · Tab 切双主角
+        </div>
+      </div>
+    </div>
+
+    <!-- Main HUD -->
+    <div id="hud" class="hidden">
+      <!-- Top Center Banner (District / Alerts / Heist) -->
+      <div id="top-center">
+        <div id="district-banner" class="hidden">
+          <div id="district-cn">外滩 · 中山东一路</div>
+          <div id="district-en">THE BUND WATERFRONT</div>
+        </div>
+        <div id="event-toast" class="hidden"></div>
+        <div id="heist-bar-wrap" class="hidden">
+          <div class="heist-label">
+            <span id="heist-title">威慑收银员中</span>
+            <span id="heist-pct">0%</span>
+          </div>
+          <div class="heist-track"><div id="heist-fill"></div></div>
+        </div>
+      </div>
+
+      <!-- Top Right: Duo Pill + Cash + 6-Star Wanted + GTA 6 Suspect Description -->
+      <div id="top-right">
+        <div class="status-row">
+          <button id="hud-char-pill" class="char-pill" title="按 Tab 切换主角">
+            <span class="char-dot" id="char-dot"></span>
+            <span id="char-name">阿杰 JIE</span>
+            <span class="char-bond" id="char-bond">默契 82%</span>
+          </button>
+          <div class="cash-pill" id="hud-cash">¥ 12,800</div>
+        </div>
+
+        <div id="wanted-panel" class="hidden">
+          <div id="wanted-stars" aria-label="通缉星级">
+            <span class="star" data-i="1">★</span>
+            <span class="star" data-i="2">★</span>
+            <span class="star" data-i="3">★</span>
+            <span class="star" data-i="4">★</span>
+            <span class="star" data-i="5">★</span>
+            <span class="star" data-i="6">★</span>
+          </div>
+          <div id="wanted-state-line">
+            <span id="wanted-state-text">警方搜索中</span>
+            <span id="wanted-cooldown"></span>
+          </div>
+          <!-- GTA 6 Signature Suspect Description Tracking Icons -->
+          <div id="suspect-profile">
+            <div class="sp-chip" id="sp-sight" title="目击/监控暴露">
+              <span class="sp-ico">◉</span><span>视线</span>
+            </div>
+            <div class="sp-chip" id="sp-outfit" title="衣着特征已记录（买手店换装可清除）">
+              <span class="sp-ico">❖</span><span>衣着</span>
+            </div>
+            <div class="sp-chip" id="sp-vehicle" title="车牌特征已记录（换车或改车行换漆可清除）">
+              <span class="sp-ico">▣</span><span>车牌</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Left: 2D/3D Switchable Minimap + Core Bars -->
+      <div id="bottom-left">
+        <div id="minimap-shell" class="mode-3d">
+          <canvas id="minimap-canvas" width="210" height="210"></canvas>
+          <div class="minimap-compass">N</div>
+          <button id="btn-map-mode" class="minimap-badge" title="按 M 切换 2D/3D 雷达">3D</button>
+        </div>
+        <div class="vitals-bars">
+          <div class="vital-track"><div id="bar-hp" class="vital-fill hp"></div></div>
+          <div class="vital-track"><div id="bar-armor" class="vital-fill armor"></div></div>
+          <div class="vital-track"><div id="bar-focus" class="vital-fill focus"></div></div>
+        </div>
+      </div>
+
+      <!-- Bottom Center: Contextual Interaction Prompt & GTA 6 NPC Target Bar -->
+      <div id="interact-prompt" class="hidden">
+        <kbd id="interact-key">F</kbd>
+        <span id="interact-text">抢车</span>
+      </div>
+
+      <div id="npc-interact-bar" class="hidden">
+        <div class="npc-bar-head">
+          <span id="npc-bar-name">外滩打卡博主</span>
+          <span id="npc-bar-mood">活跃</span>
+        </div>
+        <div class="npc-bar-actions">
+          <button id="btn-npc-greet" class="npc-act"><kbd>E</kbd><span id="npc-greet-label">搭讪</span></button>
+          <button id="btn-npc-antag" class="npc-act warn"><kbd>X</kbd><span>挑衅</span></button>
+          <button id="btn-npc-rob" class="npc-act danger"><kbd>R</kbd><span>打劫</span></button>
+        </div>
+      </div>
+
+      <!-- Bottom Right: Contextual Weapon / Vehicle Telemetry -->
+      <div id="bottom-right">
+        <!-- On-foot Weapon Strip -->
+        <div id="weapon-hud">
+          <div class="weapon-slots">
+            <div class="w-slot active" data-slot="0"><kbd>1</kbd><span>威慑</span></div>
+            <div class="w-slot" data-slot="1"><kbd>2</kbd><span>消音手枪</span></div>
+            <div class="w-slot" data-slot="2"><kbd>3</kbd><span>冲锋枪</span></div>
+            <div class="w-slot locked" data-slot="3"><kbd>4</kbd><span>霰弹·后备箱</span></div>
+            <div class="w-slot mecha-slot locked" data-slot="4"><kbd>5</kbd><span>高达光束</span></div>
+          </div>
+          <div class="ammo-readout" id="hud-ammo">∞</div>
+        </div>
+
+        <!-- In-vehicle Telemetry -->
+        <div id="vehicle-hud" class="hidden">
+          <div class="veh-top">
+            <span id="veh-plate" class="plate-badge ev">沪A·D6888</span>
+            <span id="veh-name">蔚蓝 GT 电跑</span>
+          </div>
+          <div class="veh-main">
+            <div class="speed-block">
+              <span id="veh-speed">0</span>
+              <span class="speed-unit">KM/H</span>
+            </div>
+            <div class="veh-meters">
+              <div class="meter-row">
+                <span id="fuel-label">电量</span>
+                <div class="meter-bar"><div id="veh-fuel-fill"></div></div>
+              </div>
+              <div class="meter-row">
+                <span>车况</span>
+                <div class="meter-bar"><div id="veh-hp-fill"></div></div>
+              </div>
+            </div>
+          </div>
+          <div class="radio-strip" id="hud-radio">FM 98.6 · 沪上合成波</div>
+        </div>
+
+        <!-- Minimal Corner Action Triggers -->
+        <div class="quick-bar">
+          <button id="btn-gundam" class="q-btn mecha" title="一键切换高达形态 (V)">高达 [V]</button>
+          <button id="btn-time" class="q-btn" title="切换时段 (T)">黄昏</button>
+          <button id="btn-radio" class="q-btn" title="切电台 (R)">电台</button>
+          <button id="btn-phone" class="q-btn" title="魔都手机 (P)">手机<span id="phone-dot" class="dot hidden"></span></button>
+          <button id="btn-help" class="q-btn" title="按键说明 (H)">键位</button>
+        </div>
+      </div>
+
+      <!-- Social Feed Mini Toast (GTA 6 Viral Alert) -->
+      <div id="viral-toast" class="hidden">
+        <div class="viral-tag">MODUTOK · 沪上热搜</div>
+        <div id="viral-text"></div>
+      </div>
+    </div>
+
+    <!-- GTA 6 Smartphone Overlay (P) -->
+    <aside id="phone-drawer" class="hidden" aria-label="魔都手机">
+      <div class="phone-notch">
+        <span id="phone-clock">20:48</span>
+        <span class="phone-carrier">魔都 5G</span>
+      </div>
+      <div class="phone-tabs">
+        <button class="p-tab active" data-tab="feed">热搜</button>
+        <button class="p-tab" data-tab="profile">档案</button>
+        <button class="p-tab" data-tab="apps">工具</button>
+      </div>
+
+      <div class="phone-body">
+        <!-- Tab 1: ModuTok Social Feed -->
+        <div class="p-pane active" id="pane-feed">
+          <div id="social-feed-list"></div>
+        </div>
+
+        <!-- Tab 2: Criminal Profile & Duo -->
+        <div class="p-pane" id="pane-profile">
+          <div class="profile-card">
+            <div class="profile-tier" id="cp-tier">街头新星 · 职业克制</div>
+            <div class="profile-bar-labels">
+              <span>职业克制</span>
+              <span>魔都悍匪</span>
+            </div>
+            <div class="profile-spectrum">
+              <div id="cp-marker"></div>
+            </div>
+            <div class="profile-stats">
+              <div><span>劫案得手</span><strong id="st-heists">0</strong></div>
+              <div><span>甩警脱身</span><strong id="st-escapes">0</strong></div>
+              <div><span>飞车特技</span><strong id="st-stunts">0</strong></div>
+              <div><span>热搜曝光</span><strong id="st-viral">0</strong></div>
+            </div>
+          </div>
+          <div class="duo-card">
+            <div class="duo-head">
+              <span>搭档协作</span>
+              <strong id="duo-mode-label">随行掩护</strong>
+            </div>
+            <div class="duo-actions">
+              <button id="btn-duo-switch" class="p-action">切换主角 (Tab)</button>
+              <button id="btn-duo-order" class="p-action secondary">切换待命/跟随</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 3: Quick Utility Apps -->
+        <div class="p-pane" id="pane-apps">
+          <button id="app-summon-car" class="app-row">
+            <span class="app-ico cyan">⚡</span>
+            <span class="app-meta"><strong>申城快车调度</strong><small>¥500 · 呼叫满电轿跑至附近路口</small></span>
+          </button>
+          <button id="app-outfit" class="app-row">
+            <span class="app-ico magenta">❖</span>
+            <span class="app-meta"><strong>同城闪送换装</strong><small>¥300 · 更换外装清除警方衣着追踪</small></span>
+          </button>
+          <button id="app-focus-boost" class="app-row">
+            <span class="app-ico gold">☕</span>
+            <span class="app-meta"><strong>手冲特调外卖</strong><small>¥150 · 立即回满生命与专注值</small></span>
+          </button>
+          <button id="app-clear-wanted" class="app-row">
+            <span class="app-ico violet">📡</span>
+            <span class="app-meta"><strong>小露黑入天网</strong><small>¥1,500 · 干扰监控并降 2 颗通缉星</small></span>
+          </button>
+        </div>
+      </div>
+
+      <button id="btn-phone-close" class="phone-home-bar" title="收起手机 (P)"></button>
+    </aside>
+
+    <!-- Controls Reference Modal (H) -->
+    <div id="help-modal" class="hidden">
+      <div class="help-card">
+        <div class="help-header">
+          <span>操作指南 · 罪恶魔都 SHANGHAI VICE</span>
+          <button id="btn-help-close">✕</button>
+        </div>
+        <div class="help-grid">
+          <div><kbd>W A S D</kbd><span>步行移动 / 驾驶加减速转向</span></div>
+          <div><kbd>鼠标移动</kbd><span>转动镜头（点击画面可锁定视角）</span></div>
+          <div><kbd>左键 / 右键</kbd><span>开火射击 / 按住右键越肩战术瞄准</span></div>
+          <div><kbd>F</kbd><span>抢车 / 上下车 / 地标互动</span></div>
+          <div><kbd>E / X / R</kbd><span>靠近 NPC 搭讪 / 挑衅 / 打劫（车内 R 切电台）</span></div>
+          <div><kbd>Space</kbd><span>手刹漂移（开车）/ 翻滚跳跃</span></div>
+          <div><kbd>Shift</kbd><span>冲刺（步行）/ 氮气加速（开车）</span></div>
+          <div><kbd>Tab</kbd><span>无缝切换双主角（阿杰 ⇄ 小露）</span></div>
+          <div><kbd>V</kbd><span>主角双形态一键切换（人类 ⇄ 高达机甲）</span></div>
+          <div><kbd>Q</kbd><span>Focus 专注模式（慢动作 + 透视警力/CCTV）</span></div>
+          <div><kbd>G</kbd><span>靠近车尾打开后备箱取放霰弹枪</span></div>
+          <div><kbd>1 - 5</kbd><span>切换武器槽位（高达形态按 5 切换并发射光束步枪）</span></div>
+          <div><kbd>P</kbd><span>掏出魔都手机（热搜/档案/叫车/黑客）</span></div>
+          <div><kbd>M / T / R</kbd><span>切 2D·3D雷达 / 昼夜时段 / 车载电台</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- WASTED / BUSTED Cinematic Overlay -->
+    <div id="cinematic-overlay" class="hidden">
+      <div id="cinematic-title">WASTED</div>
+      <div id="cinematic-sub">仁济医院急救出院 · 医疗费 -¥500</div>
+    </div>
+  </div>
+
+  <script>(function(){Promise.all(["app.part0.js","app.part1.js"].map(function(p){return fetch('./'+p).then(function(r){if(!r.ok)throw new Error('HTTP '+r.status+' '+p);return r.text();});})).then(function(t){(0,eval)(t.join(''));}).catch(function(e){console.error('Shanghai Vice boot failed:',e);});})();</script>
+</body>
+</html>
