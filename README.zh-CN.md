@@ -33,7 +33,7 @@
 
 OpenGame 是**首个开源全栈 Super Game Agent**——把你本地的编程 Agent 变成一座开源 AI 版虚幻引擎 / Unity 与完整游戏工作室，从一句话创意或爆款游戏模板出发，走完**制作 → 自动化试玩验证 → 一键在线分享 → 上架变现**的端到端全链路。
 
-- 🎮 **一键复刻任何游戏。** 内置 **45 款可玩游戏模板**（3D、体素、像素、动漫及 9:16 爆款小游戏 / 试玩广告），源码与设计文档全部可编辑。
+- 🎮 **一键复刻任何游戏。** 内置 **26 款可玩游戏模板**（3D、体素、像素、动漫及 9:16 爆款小游戏 / 试玩广告），源码与设计文档全部可编辑。
 - 🎨 **一键风格化任何游戏。** 保留成熟玩法骨架，快速替换角色、画风与配乐——**DeepSeek** 可低成本稳定换皮，**Claude Fable 5.2 / Opus / Codex / Gemini** 可从零打造 3D 大作。
 - 💰 **全链路闭环：制作 → 验证 → 发布变现。** 自动完成逻辑校验、仿真试玩、封面截图与实机预告片，一键生成在线链接或 9:16 试玩广告，并衔接小游戏上架路径。
 - 🔓 **全栈开源（BYOA + BYOK）。** 代码、美术、视频、音乐、配音与 Three.js 3D 全部开源；自带 [本地 Agent](#agent-wall) 与 API Key，或接入 [OpenDesign Go](https://go.open-design.ai/?utm_source=github&utm_medium=referral&utm_campaign=opengame&utm_content=readme_zh)。
@@ -82,7 +82,7 @@ npm start
 
 ## 🕹️ 内置可玩游戏模板与示例
 
-OpenGame 在 [`templates/games/`](templates/games/) 中内置了 **45 款开箱即玩的完整游戏工程**，全部包含 HTML5 / Three.js 源码、封面、操控说明与中英双语元数据。在 Game Studio 里可直接试玩，一键 **Remix 复刻**，或**一键换画风 / 换题材 / 换角色**做成属于你的游戏。
+OpenGame 在 [`templates/games/`](templates/games/) 中内置了 **26 款开箱即玩的完整游戏工程**，全部包含 HTML5 / Three.js 源码、封面、操控说明与中英双语元数据。在 Game Studio 里可直接试玩，一键 **Remix 复刻**，或**一键换画风 / 换题材 / 换角色**做成属于你的游戏。
 
 ### 3D、体素与动作游戏（16:9 横屏）
 
@@ -229,56 +229,10 @@ OpenGame 在 [`templates/games/`](templates/games/) 中内置了 **45 款开箱�
 <a href="templates/games/merge-bakery/">查看源码 →</a>
 </td>
 </tr>
-<tr>
-<td width="33%" valign="top" align="center">
-<img src="templates/games/magic-tower-rpg/cover.webp" width="100%" alt="魔塔经典版 Magic Tower Classic — 策略地牢爬塔 RPG"><br>
-<strong>魔塔经典版</strong><br>
-<code>9:16 · 策略地牢 RPG</code><br>
-精打细算红黄蓝钥匙、血药与攻防宝石，步步为营挑战经典多层魔塔。<br>
-<a href="templates/games/magic-tower-rpg/">查看源码 →</a>
-</td>
-<td width="33%" valign="top" align="center">
-<img src="templates/games/alien-sniper-3d/cover.webp" width="100%" alt="狙击外星人 Alien Sniper Watch — 都市识破伪装狙击"><br>
-<strong>狙击外星人</strong><br>
-<code>9:16 · 3D 识破狙击</code><br>
-开启扫描仪揪出混在人群里的外星卧底，稳准开镜一枪命中不伤路人。<br>
-<a href="templates/games/alien-sniper-3d/">查看源码 →</a>
-</td>
-<td width="33%" valign="top" align="center">
-<img src="templates/games/word-tower-defense/cover.webp" width="100%" alt="文字塔防 Ink Word Defense — 国风创意文字塔防"><br>
-<strong>文字塔防</strong><br>
-<code>9:16 · 国风文字塔防</code><br>
-在卷轴战场上构筑特色文字防御塔并升级阵型，击退波次文字军团。<br>
-<a href="templates/games/word-tower-defense/">查看源码 →</a>
-</td>
-</tr>
-<tr>
-<td width="33%" valign="top" align="center">
-<img src="templates/games/pipe-ball-sort/cover.webp" width="100%" alt="超级解压管 Coin Stack Sort — 硬币筹码归槽合成"><br>
-<strong>超级解压管</strong><br>
-<code>9:16 · 硬币归槽合成</code><br>
-把同面额硬币整齐码进同一卡槽，集满一键合成升级高阶筹码。<br>
-<a href="templates/games/pipe-ball-sort/">查看源码 →</a>
-</td>
-<td width="33%" valign="top" align="center">
-<img src="templates/games/kitty-match-3d/cover.webp" width="100%" alt="3D 喵喵消除 Kitty Match 3D — 3D 萌猫堆叠三消"><br>
-<strong>3D 喵喵消除</strong><br>
-<code>9:16 · 3D 萌猫三消</code><br>
-在满满一桌软萌 3D 小猫和猫玩具里揪出三只同款配对消除。<br>
-<a href="templates/games/kitty-match-3d/">查看源码 →</a>
-</td>
-<td width="33%" valign="top" align="center">
-<img src="templates/games/bubble-hex-dragon/cover.webp" width="100%" alt="泡泡六角龙 Hex Bubble Dragon — 六角泡泡龙消除"><br>
-<strong>泡泡六角龙</strong><br>
-<code>9:16 · 六角泡泡龙</code><br>
-拉线瞄准反弹发射晶莹六角泡泡，连爆三消引发整片雪崩掉落。<br>
-<a href="templates/games/bubble-hex-dragon/">查看源码 →</a>
-</td>
-</tr>
 </table>
 
 <details>
-<summary><strong>展开查看全部 45 款内置可玩游戏模板</strong></summary>
+<summary><strong>展开查看全部 26 款内置可玩游戏模板</strong></summary>
 
 | 游戏名称 | 类型 | 画风 | 屏幕方向 | 简介 | 源码目录 |
 | --- | --- | --- | --- | --- | --- |
@@ -308,25 +262,6 @@ OpenGame 在 [`templates/games/`](templates/games/) 中内置了 **45 款开箱�
 | **星辉堡垒 (Starlight Bastion)** | 射击 | 体素 | 16:9 横屏 | 五波体素敌人晶核防卫战 + 局间升级 | [starlight-bastion](templates/games/starlight-bastion/) |
 | **破潮者 (Tidebreaker)** | 竞速 | 3D | 16:9 横屏 | 风暴群岛 3D 快艇跳浪与限时过关竞速 | [tidebreaker](templates/games/tidebreaker/) |
 | **倾斜神庙 (Tilt Temple)** | 休闲 | 3D | 9:16 竖屏 | 3D 悬浮迷宫拖动倾斜滚球，拿钥匙闯三关 | [tilt-temple](templates/games/tilt-temple/) |
-| **3D 喵喵消除 (Kitty Match 3D)** | 休闲 | 3D | 9:16 竖屏 | 软萌 3D 猫咪与猫玩具堆叠找三消，萌化强迫症 | [kitty-match-3d](templates/games/kitty-match-3d/) |
-| **超级解压管 (Coin Stack Sort)** | 休闲 | 3D | 9:16 竖屏 | 硬币筹码归槽排序合成，满槽一键升级解锁更多槽位 | [pipe-ball-sort](templates/games/pipe-ball-sort/) |
-| **词图归类消消乐 (Word & Pic Solitaire)** | 休闲 | 极简 | 9:16 竖屏 | 纸牌接龙结合主题联想分类，把词卡与图卡成组收齐 | [word-card-sort](templates/games/word-card-sort/) |
-| **叠叠消 (Tile Stack)** | 休闲 | 动漫 | 9:16 竖屏 | 多层堆叠三消挑战，体验魔性第二关极限通关 | [tile-stack](templates/games/tile-stack/) |
-| **弹珠连线爆爆乐 (Jelly Ball Chain Pop)** | 休闲 | 3D | 9:16 竖屏 | 3D 果冻弹珠一笔连消，引爆全屏连锁特效 | [ball-match](templates/games/ball-match/) |
-| **方块爆破 (Block Blast)** | 休闲 | 极简 | 9:16 竖屏 | 8×8 棋盘拖拽拼块，触发横竖整行整列爽快连消 | [block-blast](templates/games/block-blast/) |
-| **进厂打螺丝 (Screw Jam)** | 休闲 | 极简 | 9:16 竖屏 | 按颜色拧下螺丝装入对应工具箱，层层拆解钢板 | [screw-puzzle](templates/games/screw-puzzle/) |
-| **狙击外星人 (Alien Sniper Watch)** | 射击 | 3D | 9:16 竖屏 | 都市扫描识破伪装外星卧底，稳准开镜一枪命中 | [alien-sniper-3d](templates/games/alien-sniper-3d/) |
-| **麻将吃碰消不停 (Mahjong Meld Pop)** | 休闲 | 3D | 9:16 竖屏 | 3D 麻将牌堆眼疾手快凑三连碰，爽快连击清场 | [mahjong-meld-pop](templates/games/mahjong-meld-pop/) |
-| **猫咪玩方块 (Kitty Block Jam)** | 休闲 | 动漫 | 9:16 竖屏 | 软萌猫咪异形积木滑块拼图，送每只小猫进对应出口 | [kitty-block-jam](templates/games/kitty-block-jam/) |
-| **密室方块大消除 (Chamber Block Clear)** | 休闲 | 3D | 9:16 竖屏 | 华容道式密室推块消除，对准同色边缘出口清屏 | [chamber-block-clear](templates/games/chamber-block-clear/) |
-| **魔塔经典版 (Magic Tower Classic)** | 剧情 | 像素 | 9:16 竖屏 | 经典数值策略地牢爬塔，精算钥匙血药挑战多层强敌 | [magic-tower-rpg](templates/games/magic-tower-rpg/) |
-| **泡泡六角龙 (Hex Bubble Dragon)** | 休闲 | 动漫 | 9:16 竖屏 | 拉线反弹发射六角晶莹泡泡，三消连爆雪崩冲分 | [bubble-hex-dragon](templates/games/bubble-hex-dragon/) |
-| **全面解压 300 关 (300 Relax Puzzles)** | 休闲 | 极简 | 9:16 竖屏 | 300 关轻解压几何方向消除合集，随时放空大脑 | [chill-puzzle-300](templates/games/chill-puzzle-300/) |
-| **雀神推牌对对消 (Mahjong Slide & Pair)** | 休闲 | 极简 | 9:16 竖屏 | 滑动麻将牌行与列，撞出相同牌面爽快对对消 | [mahjong-pairs](templates/games/mahjong-pairs/) |
-| **文字塔防 (Ink Word Defense)** | 射击 | 极简 | 9:16 竖屏 | 国风卷轴创意文字炮塔布阵，升级抵御波次进攻 | [word-tower-defense](templates/games/word-tower-defense/) |
-| **兄弟跟我冲 (Crowd Rush 3D)** | 休闲 | 3D | 9:16 竖屏 | 3D 人海冲锋跑酷，穿倍率门扩编小弟推平城堡 | [crowd-rush-3d](templates/games/crowd-rush-3d/) |
-| **抓小猪 (Catch Piggy)** | 休闲 | 动漫 | 9:16 竖屏 | 3D 物理玩具堆找三消，从满满萌物中精准抓齐三只 | [catch-piggy](templates/games/catch-piggy/) |
-| **罪恶海滩：霓虹夜飙 (Vice Beach)** | 竞速 | ASCII | 16:9 横屏 | 复古霓虹海岸公路夜飙赛车 | [vice-beach-motor-club](templates/games/vice-beach-motor-club/) |
 
 </details>
 
@@ -513,7 +448,7 @@ OpenGame 通过本地 stdio MCP 暴露完整的游戏开发与测试工具集（
 | **游戏运行时与自动 QA** | Node.js, 原生 HTTP, Puppeteer Core / Chrome, 确定性仿真器 | [game-projects.ts](game-projects.ts) · [shared/game-contract.ts](shared/game-contract.ts) · [server.ts](server.ts) |
 | **MCP 与游戏 Skill** | 本地 stdio MCP 服务、`openmotion-game` Skill 及 18 份手册 | [mcp.ts](mcp.ts) · [skills/openmotion-game/](skills/openmotion-game/) |
 | **多模态 Model Gateway** | BYOK 模型发现、异步任务轮询、素材库与在线分享发布 | [gateway/service.ts](gateway/service.ts) · [gateway/catalog.ts](gateway/catalog.ts) · [docs/assets.md](docs/assets.md) |
-| **内置游戏模板库** | 45 款独立可玩 HTML5 / Canvas / Three.js 工程与封面 | [templates/games/](templates/games/) |
+| **内置游戏模板库** | 26 款独立可玩 HTML5 / Canvas / Three.js 工程与封面 | [templates/games/](templates/games/) |
 | **实机预告片管线** | 无头实机录屏 + HTML 合成 + FFmpeg MP4 渲染 | [docs/usage.md](docs/usage.md) · [scripts/verify-export.ts](scripts/verify-export.ts) |
 
 <a id="community"></a>
