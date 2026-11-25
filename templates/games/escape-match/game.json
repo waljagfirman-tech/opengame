@@ -1,0 +1,30 @@
+{
+  "id": "escape-match",
+  "title": "Royal Chamber Escape",
+  "description": "Match glowing gems and blast obstacles to rescue the stranded young king from dungeon spike traps across escalating puzzle chambers.",
+  "genre": "casual",
+  "style": "3d",
+  "setting": "medieval",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Tap or swap matching blocks to trigger combos, clear chamber hazards, and rescue the king before moves run out.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "top赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "密室消除",
+      "description": "经典国王密室营救消除玩法：在机关重重的地牢里连消宝石破除尖刺陷阱，争分夺秒救出被困国王。",
+      "controls": "点击或滑动交换相邻宝石触发连消与炸弹，在步数耗尽前清除障碍营救国王。"
+    }
+  }
+}

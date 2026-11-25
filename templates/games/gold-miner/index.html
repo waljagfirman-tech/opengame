@@ -1,0 +1,536 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>黄金矿工</title>
+<script>
+(function(){
+  function mem(){var s=Object.create(null);return{get length(){return Object.keys(s).length;},key:function(i){return Object.keys(s)[i]||null;},getItem:function(k){k=String(k);return Object.prototype.hasOwnProperty.call(s,k)?s[k]:null;},setItem:function(k,v){s[String(k)]=String(v);},removeItem:function(k){delete s[String(k)];},clear:function(){for(var k in s)delete s[k];}};}
+  ['localStorage','sessionStorage'].forEach(function(n){try{void window[n];}catch(e){try{Object.defineProperty(window,n,{value:mem(),configurable:true});}catch(_){}}});
+})();
+</script>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0;user-select:none;-webkit-user-select:none;-webkit-tap-highlight-color:transparent;}
+  html,body{width:100%;height:100%;overflow:hidden;background:#1b120c;font-family:'PingFang SC','Microsoft YaHei',system-ui,-apple-system,sans-serif;}
+  #wrap{position:relative;width:100%;height:100%;display:flex;align-items:center;justify-content:center;}
+  canvas{display:block;max-width:100%;max-height:100%;aspect-ratio:1136/640;box-shadow:0 12px 48px rgba(0,0,0,.65);cursor:pointer;touch-action:none;}
+  .overlay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(14,8,4,.72);backdrop-filter:blur(4px);z-index:10;transition:opacity .2s;}
+  .overlay.hidden{display:none;}
+  .card{width:min(92%,460px);background:linear-gradient(180deg,#4c2c16 0%,#2d180a 100%);border:3px solid #f2b749;border-radius:20px;padding:24px 26px;color:#fff6df;text-align:center;box-shadow:0 18px 40px rgba(0,0,0,.6),inset 0 1px 0 rgba(255,235,170,.35);}
+  .card h1{font-size:32px;font-weight:900;color:#ffd452;text-shadow:0 3px 0 #5e2c04;letter-spacing:2px;margin-bottom:8px;}
+  .card p{font-size:15px;line-height:1.55;color:#f3dec0;margin-bottom:16px;}
+  .goal-box{background:rgba(0,0,0,.32);border:1px solid rgba(255,212,82,.35);border-radius:12px;padding:12px 14px;margin-bottom:18px;display:flex;justify-content:space-around;font-size:15px;}
+  .goal-box strong{display:block;font-size:24px;color:#ffd452;margin-top:2px;}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 30px;border:none;border-radius:999px;background:linear-gradient(180deg,#ffdb58 0%,#f09b1a 100%);color:#3b1a00;font-size:18px;font-weight:900;cursor:pointer;box-shadow:0 5px 0 #9e5600,0 8px 18px rgba(0,0,0,.35);transition:transform .08s;}
+  .btn:active{transform:translateY(3px);box-shadow:0 2px 0 #9e5600;}
+  .shop-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:12px 0 18px;}
+  .shop-item{background:rgba(0,0,0,.35);border:1.5px solid rgba(255,212,82,.3);border-radius:12px;padding:10px;cursor:pointer;text-align:left;transition:border-color .15s,background .15s;}
+  .shop-item:hover:not(.bought){border-color:#ffd452;background:rgba(255,212,82,.12);}
+  .shop-item.bought{opacity:.45;cursor:default;}
+  .shop-item .stitle{font-weight:800;font-size:14px;color:#ffd452;}
+  .shop-item .sdesc{font-size:12px;color:#e7cfa8;margin:3px 0 6px;}
+  .shop-item .sprice{font-weight:900;font-size:13px;color:#7dff9a;}
+  .hud-btn{position:absolute;right:18px;top:14px;z-index:5;background:rgba(36,19,8,.82);border:2px solid #f2b749;color:#ffd452;font-weight:800;border-radius:12px;padding:7px 14px;font-size:14px;cursor:pointer;display:flex;align-items:center;gap:6px;}
+  .hud-btn:hover{background:#522c12;}
+  #dynBtn{right:18px;top:auto;bottom:18px;background:linear-gradient(180deg,#ff6a45,#c82412);color:#fff;border-color:#ffd452;font-size:15px;padding:9px 16px;box-shadow:0 4px 14px rgba(0,0,0,.45);}
+  #dynBtn:disabled{opacity:.35;cursor:not-allowed;}
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="1136" height="640"></canvas>
+  <button id="muteBtn" class="hud-btn" type="button">🔊 音效</button>
+  <button id="dynBtn" class="hud-btn" type="button" disabled>🧨 炸药 (1) [E]</button>
+
+  <div id="modal" class="overlay">
+    <div class="card" id="modalCard">
+      <h1>黄金矿工</h1>
+      <p>瞄准摇摆铁爪，点击屏幕或按空格键抓起大金块与钻石！抓到巨石时可按 <b>E</b> 或右下角炸药炸毁。</p>
+      <div class="goal-box">
+        <div>第 1 关目标<strong id="mGoal">$650</strong></div>
+        <div>历史最高<strong id="mBest">$0</strong></div>
+      </div>
+      <button class="btn" id="startBtn" type="button">开始挖矿</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  const W = 1136, H = 640;
+  const PIVOT_X = 568, PIVOT_Y = 154;
+  const LEVELS_DATA = [[{"t":"GoldBig","x":360.5,"y":103},{"t":"GoldBig","x":492.2,"y":249},{"t":"GoldBig","x":840.8,"y":273.6},{"t":"GoldMed","x":500.9,"y":125.5},{"t":"GoldSmall","x":381,"y":317},{"t":"StoneBig","x":646.9,"y":250.1},{"t":"StoneSmall","x":772.6,"y":192.7},{"t":"StoneSmall","x":627.8,"y":354.7},{"t":"GoldSmall","x":349.8,"y":289.4},{"t":"GoldSmall","x":558.8,"y":308.4},{"t":"GoldSmall","x":945,"y":275},{"t":"GoldSmall","x":935,"y":164},{"t":"GoldSmall","x":143.9,"y":256.3},{"t":"GoldMed","x":291.9,"y":215.2},{"t":"StoneSmall","x":248.4,"y":346.1},{"t":"StoneBig","x":234.9,"y":140.2},{"t":"StoneBig","x":121,"y":216},{"t":"StoneBig","x":662.5,"y":154.1},{"t":"GoldSmall","x":307.1,"y":303.5},{"t":"GoldSmall","x":134.5,"y":141.1},{"t":"GoldSmall","x":965,"y":98},{"t":"GoldSmall","x":885.3,"y":365.3},{"t":"GoldMed","x":1025,"y":173},{"t":"StoneBig","x":1049.3,"y":335.1},{"t":"GoldMed","x":1060.8,"y":281.6}],[{"t":"GoldBig","x":360.5,"y":103},{"t":"GoldBig","x":507,"y":370.9},{"t":"GoldBig","x":843.2,"y":297},{"t":"GoldMed","x":500.9,"y":125.5},{"t":"GoldSmall","x":381,"y":317},{"t":"MoneyPack","x":632,"y":119.5},{"t":"MoneyPack","x":174.3,"y":332.5},{"t":"StoneBig","x":585.3,"y":240.3},{"t":"StoneBig","x":670.5,"y":265},{"t":"StoneSmall","x":764,"y":306},{"t":"StoneSmall","x":627.8,"y":354.7},{"t":"GoldSmall","x":420,"y":317.7},{"t":"GoldSmall","x":588.3,"y":340.5},{"t":"GoldSmall","x":945,"y":275},{"t":"GoldSmall","x":935,"y":164},{"t":"GoldSmall","x":143.9,"y":256.3},{"t":"GoldMed","x":291.9,"y":215.2},{"t":"StoneSmall","x":241,"y":293.5},{"t":"StoneSmall","x":289,"y":358.4},{"t":"StoneSmall","x":866,"y":249},{"t":"StoneBig","x":234.9,"y":140.2},{"t":"StoneBig","x":121,"y":216},{"t":"StoneBig","x":807.9,"y":98.7},{"t":"GoldSmall","x":408.5,"y":344.8},{"t":"GoldSmall","x":134.5,"y":141.1},{"t":"StoneBig","x":440.7,"y":223.3},{"t":"StoneSmall","x":831,"y":176},{"t":"GoldSmall","x":965,"y":98},{"t":"GoldSmall","x":955.5,"y":344.3},{"t":"GoldMed","x":1025,"y":173},{"t":"StoneBig","x":1085,"y":340},{"t":"GoldMed","x":1060.8,"y":281.6},{"t":"Diamond","x":505.3,"y":212.5}],[{"t":"GoldBig","x":360.5,"y":103},{"t":"GoldBig","x":643.8,"y":125.3},{"t":"GoldMed","x":500.9,"y":125.5},{"t":"GoldSmall","x":381,"y":317},{"t":"MoneyPack","x":577.2,"y":173.1},{"t":"StoneBig","x":585.3,"y":240.3},{"t":"StoneBig","x":706.1,"y":234.9},{"t":"StoneBig","x":1028.1,"y":341.5},{"t":"StoneSmall","x":672.4,"y":331.9},{"t":"StoneSmall","x":627.8,"y":354.7},{"t":"GoldSmall","x":566.5,"y":335},{"t":"GoldSmall","x":628.2,"y":274.7},{"t":"GoldSmall","x":945,"y":275},{"t":"GoldSmall","x":935,"y":164},{"t":"GoldSmall","x":203.1,"y":235.8},{"t":"GoldMed","x":329.6,"y":223.8},{"t":"StoneSmall","x":241,"y":293.5},{"t":"StoneSmall","x":289,"y":358.4},{"t":"StoneSmall","x":866,"y":249},{"t":"StoneBig","x":169.2,"y":90.6},{"t":"StoneBig","x":128.5,"y":170.8},{"t":"StoneBig","x":807.9,"y":98.7},{"t":"GoldSmall","x":514.1,"y":287.7},{"t":"GoldSmall","x":283.2,"y":199.3},{"t":"StoneBig","x":440.7,"y":223.3},{"t":"StoneSmall","x":831,"y":176},{"t":"GoldSmall","x":965,"y":98},{"t":"GoldSmall","x":955.5,"y":344.3},{"t":"GoldMed","x":1025,"y":173},{"t":"StoneBig","x":971.9,"y":215.1},{"t":"GoldMed","x":1060.8,"y":281.6},{"t":"GoldMed","x":760.3,"y":267.6},{"t":"GoldMed","x":828.1,"y":313.9}],[{"t":"GoldBig","x":342.9,"y":85.4},{"t":"GoldBig","x":643.8,"y":125.3},{"t":"GoldBig","x":611.7,"y":331.2},{"t":"GoldMed","x":500.9,"y":125.5},{"t":"GoldSmall","x":381,"y":317},{"t":"MoneyPack","x":95.4,"y":230.8},{"t":"StoneBig","x":417,"y":132.3},{"t":"StoneBig","x":706.1,"y":234.9},{"t":"StoneBig","x":417.1,"y":221.4},{"t":"StoneBig","x":183.9,"y":94.4},{"t":"StoneBig","x":1028.1,"y":271.5},{"t":"StoneBig","x":797.6,"y":299.3},{"t":"StoneBig","x":1008.8,"y":311.3},{"t":"StoneSmall","x":723.9,"y":330.6},{"t":"StoneSmall","x":435.7,"y":301.9},{"t":"GoldSmall","x":516.3,"y":321.1},{"t":"GoldSmall","x":562.9,"y":264.7},{"t":"GoldSmall","x":976.4,"y":258.1},{"t":"GoldSmall","x":935,"y":164},{"t":"GoldSmall","x":203.1,"y":235.8},{"t":"GoldMed","x":329.6,"y":223.8},{"t":"StoneSmall","x":297.5,"y":147.8},{"t":"StoneSmall","x":243.5,"y":257},{"t":"StoneSmall","x":199.4,"y":154.4},{"t":"StoneSmall","x":277.7,"y":311.9},{"t":"StoneSmall","x":883.3,"y":235.4},{"t":"StoneBig","x":259.7,"y":110.7},{"t":"StoneBig","x":149.9,"y":290.1},{"t":"StoneBig","x":807.9,"y":98.7},{"t":"Diamond","x":613,"y":187},{"t":"GoldMed","x":816.3,"y":163.2},{"t":"MoneyPack","x":1060.3,"y":142.7},{"t":"StoneSmall","x":930.3,"y":93.6},{"t":"GoldMed","x":916.6,"y":295},{"t":"GoldMed","x":1068.6,"y":196},{"t":"GoldMed","x":84.2,"y":136.4},{"t":"GoldMed","x":511.1,"y":215.7},{"t":"Diamond","x":809.7,"y":245.8}],[{"t":"GoldBig","x":701.4,"y":210.9},{"t":"GoldBig","x":699.3,"y":141},{"t":"GoldMed","x":500.9,"y":125.5},{"t":"GoldSmall","x":381,"y":317},{"t":"GoldSmall","x":219.3,"y":139.6},{"t":"GoldSmall","x":805.9,"y":289.2},{"t":"GoldSmall","x":983.3,"y":254.2},{"t":"GoldSmall","x":1021.9,"y":263.9},{"t":"GoldSmall","x":1058.2,"y":261.5},{"t":"MoneyPack","x":78.3,"y":238.9},{"t":"MoneyPack","x":1040.3,"y":98.8},{"t":"StoneBig","x":1028.1,"y":341.5},{"t":"StoneSmall","x":672.4,"y":331.9},{"t":"StoneSmall","x":638.7,"y":311.2},{"t":"GoldSmall","x":566.5,"y":335},{"t":"GoldSmall","x":628.2,"y":274.7},{"t":"GoldSmall","x":945,"y":275},{"t":"GoldSmall","x":935,"y":164},{"t":"GoldSmall","x":203.1,"y":235.8},{"t":"GoldMed","x":329.6,"y":223.8},{"t":"StoneSmall","x":297.5,"y":147.8},{"t":"StoneSmall","x":243.5,"y":257},{"t":"StoneSmall","x":277.7,"y":311.9},{"t":"StoneSmall","x":866,"y":249},{"t":"Diamond","x":439,"y":190.9},{"t":"Diamond","x":603.2,"y":184.8},{"t":"Diamond","x":839.8,"y":151.1},{"t":"Diamond","x":1022,"y":151.1},{"t":"Diamond","x":132.4,"y":124.5}]];
+  const STAGE_GOALS = [650, 1450, 2450, 3700, 5200];
+
+  const ITEM_CFG = {
+    GoldBig:    { img: 'mo_big_gold',    r: 44, w: 108, h: 72, mass: 320, val: 500, label: '大金块' },
+    GoldMed:    { img: 'mo_med_gold',    r: 30, w: 72,  h: 53, mass: 195, val: 250, label: '金块' },
+    GoldSmall:  { img: 'mo_small_gold',  r: 18, w: 42,  h: 34, mass: 95,  val: 100, label: '小金块' },
+    Diamond:    { img: 'mo_diamond',     r: 20, w: 48,  h: 37, mass: 80,  val: 600, label: '钻石' },
+    MoneyPack:  { img: 'mo_money',       r: 24, w: 46,  h: 60, mass: 115, val: 0,   label: '神秘钱袋' },
+    StoneBig:   { img: 'mo_big_stone',   r: 34, w: 78,  h: 56, mass: 460, val: 25,  label: '巨石' },
+    StoneSmall: { img: 'mo_med_stone',   r: 22, w: 48,  h: 38, mass: 290, val: 12,  label: '石头' },
+  };
+
+  const canvas = document.getElementById('game');
+  const ctx = canvas.getContext('2d');
+  const modal = document.getElementById('modal');
+  const modalCard = document.getElementById('modalCard');
+  const muteBtn = document.getElementById('muteBtn');
+  const dynBtn = document.getElementById('dynBtn');
+
+  let muted = false;
+  let actx = null;
+  function ensureAudio() {
+    if (!actx) {
+      const AC = window.AudioContext || window.webkitAudioContext;
+      if (AC) actx = new AC();
+    }
+    if (actx && actx.state === 'suspended') actx.resume().catch(()=>{});
+  }
+  function beep(freq, dur, type='sine', vol=0.14, freq2=null) {
+    if (muted) return;
+    try {
+      ensureAudio();
+      if (!actx) return;
+      const o = actx.createOscillator(), g = actx.createGain();
+      o.type = type;
+      o.frequency.setValueAtTime(freq, actx.currentTime);
+      if (freq2) o.frequency.exponentialRampToValueAtTime(freq2, actx.currentTime + dur);
+      g.gain.setValueAtTime(vol, actx.currentTime);
+      g.gain.exponentialRampToValueAtTime(0.001, actx.currentTime + dur);
+      o.connect(g); g.connect(actx.destination);
+      o.start(); o.stop(actx.currentTime + dur);
+    } catch {}
+  }
+  function sfxShoot(){ beep(340, 0.12, 'triangle', 0.12, 180); }
+  function sfxGrab(isRock, isDiamond){
+    if (isDiamond) { beep(880, 0.12, 'sine', 0.16, 1320); setTimeout(()=>beep(1320, 0.16, 'sine', 0.14, 1760), 70); }
+    else if (isRock) { beep(120, 0.18, 'sawtooth', 0.14, 70); }
+    else { beep(520, 0.12, 'triangle', 0.15, 780); }
+  }
+  function sfxScore(val){
+    beep(587, 0.1, 'triangle', 0.15);
+    setTimeout(()=>beep(val >= 400 ? 1175 : 880, 0.18, 'sine', 0.16), 80);
+  }
+  function sfxBoom(){ beep(150, 0.35, 'sawtooth', 0.22, 35); beep(90, 0.4, 'square', 0.14, 28); }
+  function sfxWin(){ [523,659,784,1046].forEach((f,i)=>setTimeout(()=>beep(f,0.18,'triangle',0.16),i*90)); }
+  function sfxLose(){ [392,349,311,262].forEach((f,i)=>setTimeout(()=>beep(f,0.22,'sawtooth',0.12),i*110)); }
+
+  const imgs = {};
+  const names = [
+    'bg','sky','car','clock','hook_open','hook_close','hook_rope',
+    'mo_big_gold','mo_med_gold','mo_small_gold','mo_diamond','mo_big_stone','mo_med_stone','mo_money',
+    'explosion/explosion_01','explosion/explosion_02','explosion/explosion_03','explosion/explosion_04',
+    'explosion/explosion_05','explosion/explosion_06','explosion/explosion_07','explosion/explosion_08'
+  ];
+  let loaded = 0;
+  names.forEach(n => {
+    const im = new Image();
+    im.onload = () => { loaded++; };
+    im.src = 'assets/' + n + '.png';
+    imgs[n] = im;
+  });
+
+  const state = {
+    mode: 'menu', // menu | play | shop | gameover
+    level: 1,
+    score: 0,
+    best: Number(localStorage.getItem('gm_best') || 0),
+    goal: STAGE_GOALS[0],
+    timeLeft: 60,
+    dynamites: 1,
+    strength: false,
+    clover: false,
+    diamondPolish: false,
+    items: [],
+    floats: [],
+    booms: [],
+    shake: 0,
+    hook: {
+      angle: 0,
+      swingPhase: 0,
+      len: 48,
+      st: 'swing', // swing | shoot | pull
+      caught: null,
+    }
+  };
+  document.getElementById('mBest').textContent = '$' + state.best;
+
+  function goalForLevel(lv) {
+    if (lv <= STAGE_GOALS.length) return STAGE_GOALS[lv - 1];
+    return STAGE_GOALS[STAGE_GOALS.length - 1] + (lv - STAGE_GOALS.length) * 1650;
+  }
+
+  function buildLevelItems(lv) {
+    if (lv <= LEVELS_DATA.length) {
+      return LEVELS_DATA[lv - 1].map((it, idx) => {
+        const cfg = ITEM_CFG[it.t] || ITEM_CFG.GoldMed;
+        // Convert Cocos Y-up underground coords (85..371) cleanly to canvas Y-down (215..595)
+        const cx = Math.max(58, Math.min(W - 58, it.x));
+        const cy = Math.max(210, Math.min(H - 46, 635 - it.y * 1.08));
+        return { id: idx, type: it.t, x: cx, y: cy, ...cfg, alive: true, sparkle: Math.random() * 6.28 };
+      });
+    }
+    // Endless procedural levels 6+
+    const out = [];
+    const pool = [
+      ['GoldBig', 3], ['GoldMed', 5], ['GoldSmall', 6],
+      ['Diamond', 3 + Math.min(4, lv - 5)], ['MoneyPack', 2],
+      ['StoneBig', 4], ['StoneSmall', 5]
+    ];
+    let id = 0;
+    for (const [t, cnt] of pool) {
+      const cfg = ITEM_CFG[t];
+      for (let i = 0; i < cnt; i++) {
+        let px = 70 + Math.random() * (W - 140);
+        let py = 225 + Math.random() * (H - 275);
+        for (let tries = 0; tries < 25; tries++) {
+          const candX = 70 + Math.random() * (W - 140);
+          const candY = 225 + Math.random() * (H - 275);
+          if (out.every(o => Math.hypot(o.x - candX, o.y - candY) > (o.r + cfg.r) * 0.92)) {
+            px = candX; py = candY; break;
+          }
+        }
+        out.push({ id: id++, type: t, x: px, y: py, ...cfg, alive: true, sparkle: Math.random() * 6.28 });
+      }
+    }
+    return out;
+  }
+
+  function startLevel(lv) {
+    state.level = lv;
+    state.goal = goalForLevel(lv);
+    state.timeLeft = 60;
+    state.items = buildLevelItems(lv);
+    state.floats = [];
+    state.booms = [];
+    state.hook = { angle: 0, swingPhase: 0, len: 48, st: 'swing', caught: null };
+    state.mode = 'play';
+    modal.classList.add('hidden');
+    updateDynBtn();
+  }
+
+  function updateDynBtn() {
+    dynBtn.textContent = '🧨 炸药 (' + state.dynamites + ') [E]';
+    dynBtn.disabled = !(state.mode === 'play' && state.hook.st === 'pull' && state.hook.caught && state.dynamites > 0);
+  }
+
+  function launchHook() {
+    if (state.mode !== 'play') return;
+    if (state.hook.st !== 'swing') return;
+    state.hook.st = 'shoot';
+    sfxShoot();
+  }
+
+  function useDynamite() {
+    if (state.mode !== 'play' || state.hook.st !== 'pull' || !state.hook.caught || state.dynamites <= 0) return;
+    state.dynamites--;
+    const hx = PIVOT_X + Math.sin(state.hook.angle) * state.hook.len;
+    const hy = PIVOT_Y + Math.cos(state.hook.angle) * state.hook.len;
+    state.booms.push({ x: hx, y: hy, t: 0, dur: 0.48 });
+    state.shake = 0.28;
+    state.hook.caught = null;
+    sfxBoom();
+    updateDynBtn();
+  }
+
+  function showShop() {
+    state.mode = 'shop';
+    state.strength = false;
+    state.clover = false;
+    state.diamondPolish = false;
+    const shopItems = [
+      { id: 'dyn', title: '🧨 炸药 +1', desc: '抓到石头时一键炸毁省时间', price: 180, buy(){ state.dynamites++; } },
+      { id: 'str', title: '💪 大力药水', desc: '下一关拉取重物速度翻倍', price: 240, buy(){ state.strength = true; } },
+      { id: 'clo', title: '🍀 幸运草', desc: '神秘钱袋必出高额金币或炸药', price: 150, buy(){ state.clover = true; } },
+      { id: 'dia', title: '💎 钻石抛光剂', desc: '下一关所有钻石价值升至 $900', price: 320, buy(){ state.diamondPolish = true; } },
+    ];
+    const bought = new Set();
+    function renderShop() {
+      modalCard.innerHTML = `
+        <h1>🎉 第 ${state.level} 关过关！</h1>
+        <p>当前资金：<b style="color:#7dff9a;font-size:20px;">$${state.score}</b>　|　下一关目标：<b style="color:#ffd452;">$${goalForLevel(state.level + 1)}</b></p>
+        <div class="shop-grid">
+          ${shopItems.map(it => `
+            <div class="shop-item ${bought.has(it.id) || state.score < it.price ? 'bought' : ''}" data-id="${it.id}">
+              <div class="stitle">${it.title}</div>
+              <div class="sdesc">${it.desc}</div>
+              <div class="sprice">${bought.has(it.id) ? '已购买 ✓' : '$' + it.price}</div>
+            </div>
+          `).join('')}
+        </div>
+        <button class="btn" id="nextLvBtn" type="button">进入第 ${state.level + 1} 关 →</button>
+      `;
+      modalCard.querySelectorAll('.shop-item').forEach(el => {
+        el.onclick = () => {
+          const it = shopItems.find(x => x.id === el.dataset.id);
+          if (!it || bought.has(it.id) || state.score < it.price) return;
+          state.score -= it.price;
+          it.buy();
+          bought.add(it.id);
+          sfxScore(500);
+          renderShop();
+        };
+      });
+      document.getElementById('nextLvBtn').onclick = () => startLevel(state.level + 1);
+    }
+    renderShop();
+    modal.classList.remove('hidden');
+    updateDynBtn();
+  }
+
+  function showGameOver() {
+    state.mode = 'gameover';
+    if (state.score > state.best) {
+      state.best = state.score;
+      localStorage.setItem('gm_best', String(state.best));
+    }
+    sfxLose();
+    modalCard.innerHTML = `
+      <h1>⛏️ 时间到！</h1>
+      <p>第 ${state.level} 关目标 $${state.goal}，还差一点点就能达成啦！</p>
+      <div class="goal-box">
+        <div>本局得分<strong>$${state.score}</strong></div>
+        <div>历史最高<strong>$${state.best}</strong></div>
+      </div>
+      <button class="btn" id="retryBtn" type="button">再来一局</button>
+    `;
+    document.getElementById('retryBtn').onclick = () => {
+      state.score = 0;
+      state.dynamites = 1;
+      state.strength = false;
+      state.clover = false;
+      state.diamondPolish = false;
+      startLevel(1);
+    };
+    modal.classList.remove('hidden');
+    updateDynBtn();
+  }
+
+  function endStageCheck() {
+    if (state.score >= state.goal) {
+      if (state.score > state.best) {
+        state.best = state.score;
+        localStorage.setItem('gm_best', String(state.best));
+      }
+      sfxWin();
+      showShop();
+    } else {
+      showGameOver();
+    }
+  }
+
+  let lastTs = performance.now();
+  function update(dt) {
+    if (state.shake > 0) state.shake = Math.max(0, state.shake - dt);
+    state.floats.forEach(f => { f.y -= 54 * dt; f.life -= dt; });
+    state.floats = state.floats.filter(f => f.life > 0);
+    state.booms.forEach(b => { b.t += dt; });
+    state.booms = state.booms.filter(b => b.t < b.dur);
+
+    if (state.mode !== 'play') return;
+
+    state.timeLeft -= dt;
+    if (state.timeLeft <= 0) {
+      state.timeLeft = 0;
+      endStageCheck();
+      return;
+    }
+
+    const h = state.hook;
+    if (h.st === 'swing') {
+      h.swingPhase += dt * 1.65;
+      h.angle = Math.sin(h.swingPhase) * (73 * Math.PI / 180);
+    } else if (h.st === 'shoot') {
+      h.len += 540 * dt;
+      const hx = PIVOT_X + Math.sin(h.angle) * h.len;
+      const hy = PIVOT_Y + Math.cos(h.angle) * h.len;
+      if (hx < 18 || hx > W - 18 || hy > H - 18) {
+        h.st = 'pull';
+      } else {
+        for (const it of state.items) {
+          if (!it.alive) continue;
+          if (Math.hypot(hx - it.x, hy - it.y) <= it.r + 14) {
+            it.alive = false;
+            h.caught = it;
+            h.st = 'pull';
+            sfxGrab(it.type.startsWith('Stone'), it.type === 'Diamond');
+            updateDynBtn();
+            break;
+          }
+        }
+      }
+    } else if (h.st === 'pull') {
+      let speed = 560;
+      if (h.caught) {
+        const mult = state.strength ? 1.85 : 1.0;
+        speed = Math.max(72, (48000 / (h.caught.mass + 65)) * mult);
+      }
+      h.len -= speed * dt;
+      if (h.len <= 48) {
+        h.len = 48;
+        if (h.caught) {
+          const it = h.caught;
+          let gained = it.val;
+          let txt = '';
+          if (it.type === 'Diamond' && state.diamondPolish) gained = 900;
+          if (it.type === 'MoneyPack') {
+            if (Math.random() < (state.clover ? 0.35 : 0.22)) {
+              state.dynamites++;
+              txt = '+1 炸药 🧨';
+            } else {
+              gained = state.clover ? (380 + Math.floor(Math.random() * 420)) : (150 + Math.floor(Math.random() * 500));
+              txt = '+$' + gained;
+            }
+          } else {
+            txt = '+$' + gained;
+          }
+          state.score += gained;
+          sfxScore(gained);
+          state.floats.push({ x: PIVOT_X, y: PIVOT_Y - 12, text: txt, color: gained >= 400 ? '#7dff9a' : '#ffe46b', life: 1.15 });
+          h.caught = null;
+          updateDynBtn();
+          // Early clear if all valuable items gone
+          if (state.items.every(x => !x.alive || x.type.startsWith('Stone'))) {
+            if (state.score >= state.goal) { endStageCheck(); return; }
+          }
+        }
+        h.st = 'swing';
+      }
+    }
+  }
+
+  function draw() {
+    ctx.save();
+    if (state.shake > 0) {
+      const m = state.shake * 28;
+      ctx.translate((Math.random() - 0.5) * m, (Math.random() - 0.5) * m);
+    }
+    // Sky & underground bg
+    if (imgs.sky && imgs.sky.complete) ctx.drawImage(imgs.sky, 0, 0, W, 198);
+    else { ctx.fillStyle = '#8ad6f5'; ctx.fillRect(0, 0, W, 198); }
+    if (imgs.bg && imgs.bg.complete) ctx.drawImage(imgs.bg, 0, 118, W, H - 118);
+    else { ctx.fillStyle = '#5c3a21'; ctx.fillRect(0, 118, W, H - 118); }
+
+    // Miner cart sitting cleanly on the grass surface
+    if (imgs.car && imgs.car.complete) ctx.drawImage(imgs.car, PIVOT_X - 95, 64, 190, 102);
+
+    // Underground items
+    const now = performance.now() / 1000;
+    for (const it of state.items) {
+      if (!it.alive) continue;
+      const im = imgs[it.img];
+      if (im && im.complete) ctx.drawImage(im, it.x - it.w / 2, it.y - it.h / 2, it.w, it.h);
+      if (it.type === 'Diamond' || it.type === 'GoldBig') {
+        const a = 0.35 + 0.55 * Math.abs(Math.sin(now * 3.2 + it.sparkle));
+        ctx.fillStyle = it.type === 'Diamond' ? `rgba(190,245,255,${a})` : `rgba(255,245,175,${a})`;
+        ctx.beginPath();
+        ctx.arc(it.x - it.w * 0.18, it.y - it.h * 0.16, it.type === 'Diamond' ? 4.5 : 5.5, 0, Math.PI * 2);
+        ctx.fill();
+      }
+    }
+
+    // Hook rope & claw
+    const h = state.hook;
+    const hx = PIVOT_X + Math.sin(h.angle) * h.len;
+    const hy = PIVOT_Y + Math.cos(h.angle) * h.len;
+    ctx.strokeStyle = '#3b2412';
+    ctx.lineWidth = 4.5;
+    ctx.beginPath(); ctx.moveTo(PIVOT_X, PIVOT_Y); ctx.lineTo(hx, hy); ctx.stroke();
+    ctx.strokeStyle = '#d9b06c';
+    ctx.lineWidth = 2;
+    ctx.beginPath(); ctx.moveTo(PIVOT_X, PIVOT_Y); ctx.lineTo(hx, hy); ctx.stroke();
+
+    // Caught item attached to claw
+    if (h.caught) {
+      const it = h.caught;
+      const im = imgs[it.img];
+      if (im && im.complete) {
+        ctx.save();
+        ctx.translate(hx + Math.sin(h.angle) * (it.r * 0.65), hy + Math.cos(h.angle) * (it.r * 0.65));
+        ctx.rotate(-h.angle);
+        ctx.drawImage(im, -it.w / 2, -it.h / 2, it.w, it.h);
+        ctx.restore();
+      }
+    }
+    ctx.save();
+    ctx.translate(hx, hy);
+    ctx.rotate(-h.angle);
+    const hookIm = h.caught ? imgs.hook_close : imgs.hook_open;
+    if (hookIm && hookIm.complete) ctx.drawImage(hookIm, -22, -10, 44, 34);
+    ctx.restore();
+
+    // Explosions
+    for (const b of state.booms) {
+      const frame = Math.min(8, Math.floor((b.t / b.dur) * 8) + 1);
+      const im = imgs['explosion/explosion_0' + frame];
+      if (im && im.complete) ctx.drawImage(im, b.x - 85, b.y - 85, 170, 170);
+    }
+
+    // Floating cash labels
+    ctx.textAlign = 'center';
+    for (const f of state.floats) {
+      ctx.globalAlpha = Math.min(1, f.life * 1.5);
+      ctx.font = '900 30px system-ui, sans-serif';
+      ctx.lineWidth = 5;
+      ctx.strokeStyle = '#3a1b04';
+      ctx.strokeText(f.text, f.x, f.y);
+      ctx.fillStyle = f.color;
+      ctx.fillText(f.text, f.x, f.y);
+    }
+    ctx.globalAlpha = 1;
+
+    // Crisp HUD bar
+    ctx.fillStyle = 'rgba(32,16,6,0.78)';
+    ctx.beginPath(); ctx.roundRect(16, 12, 360, 76, 14); ctx.fill();
+    ctx.strokeStyle = '#f2b749'; ctx.lineWidth = 2; ctx.stroke();
+
+    ctx.textAlign = 'left';
+    ctx.font = '700 16px system-ui, sans-serif'; ctx.fillStyle = '#f5d9a6';
+    ctx.fillText('资金', 32, 36);
+    ctx.fillText('目标', 165, 36);
+    ctx.fillText('关卡', 292, 36);
+    ctx.font = '900 26px system-ui, sans-serif';
+    ctx.fillStyle = state.score >= state.goal ? '#7dff9a' : '#ffd452';
+    ctx.fillText('$' + state.score, 32, 68);
+    ctx.fillStyle = '#ffffff';
+    ctx.fillText('$' + state.goal, 165, 68);
+    ctx.fillStyle = '#ffd452';
+    ctx.fillText('Lv.' + state.level, 292, 68);
+
+    // Timer pill
+    ctx.fillStyle = 'rgba(32,16,6,0.78)';
+    ctx.beginPath(); ctx.roundRect(W - 265, 12, 130, 44, 12); ctx.fill();
+    ctx.strokeStyle = state.timeLeft <= 10 ? '#ff5447' : '#f2b749'; ctx.lineWidth = 2; ctx.stroke();
+    if (imgs.clock && imgs.clock.complete) ctx.drawImage(imgs.clock, W - 255, 19, 30, 30);
+    ctx.font = '900 24px system-ui, sans-serif';
+    ctx.fillStyle = state.timeLeft <= 10 ? '#ff695e' : '#fff5d6';
+    ctx.fillText(Math.ceil(state.timeLeft) + 's', W - 216, 43);
+
+    ctx.restore();
+  }
+
+  function loop(ts) {
+    const dt = Math.min(0.05, (ts - lastTs) / 1000);
+    lastTs = ts;
+    update(dt);
+    draw();
+    requestAnimationFrame(loop);
+  }
+
+  document.getElementById('startBtn').onclick = () => { ensureAudio(); startLevel(1); };
+  muteBtn.onclick = (e) => { e.stopPropagation(); muted = !muted; muteBtn.textContent = muted ? '🔇 静音' : '🔊 音效'; };
+  dynBtn.onclick = (e) => { e.stopPropagation(); useDynamite(); };
+  canvas.addEventListener('pointerdown', () => { ensureAudio(); launchHook(); });
+  window.addEventListener('keydown', (e) => {
+    if (e.code === 'Space' || e.code === 'ArrowDown' || e.code === 'KeyS') { e.preventDefault(); ensureAudio(); if (state.mode === 'menu') startLevel(1); else launchHook(); }
+    if (e.code === 'ArrowUp' || e.code === 'KeyE' || e.code === 'KeyW') { e.preventDefault(); useDynamite(); }
+  });
+
+  requestAnimationFrame(loop);
+})();
+</script>
+</body>
+</html>

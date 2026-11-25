@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<script>window.Worker=undefined;</script>
+<script>
+(function(){
+  function mem(){var s=Object.create(null);return{get length(){return Object.keys(s).length;},key:function(i){return Object.keys(s)[i]||null;},getItem:function(k){k=String(k);return Object.prototype.hasOwnProperty.call(s,k)?s[k]:null;},setItem:function(k,v){s[String(k)]=String(v);},removeItem:function(k){delete s[String(k)];},clear:function(){for(var k in s)delete s[k];}};}
+  ['localStorage','sessionStorage'].forEach(function(n){try{void window[n];}catch(e){try{Object.defineProperty(window,n,{value:mem(),configurable:true});}catch(_){}}});
+})();
+</script>
+<script>
+(function(){
+  var MAP={"assets/16f7eafd193614cc87bb1157014be57a.wav":["16f7eafd193614cc87bb1157014be57a.wav.part0","16f7eafd193614cc87bb1157014be57a.wav.part1","16f7eafd193614cc87bb1157014be57a.wav.part2"],"assets/2833b3740a42b8813b481a16e44fbde9.mp3":["2833b3740a42b8813b481a16e44fbde9.mp3.part0","2833b3740a42b8813b481a16e44fbde9.mp3.part1","2833b3740a42b8813b481a16e44fbde9.mp3.part2","2833b3740a42b8813b481a16e44fbde9.mp3.part3","2833b3740a42b8813b481a16e44fbde9.mp3.part4"],"assets/b3fe1d0eebb8bbc2fa8239e11e8d910d.svg":["b3fe1d0eebb8bbc2fa8239e11e8d910d.svg.part0","b3fe1d0eebb8bbc2fa8239e11e8d910d.svg.part1"],"assets/d87f90daa84e76a06ea6c9f18297f0e1.svg":["d87f90daa84e76a06ea6c9f18297f0e1.svg.part0","d87f90daa84e76a06ea6c9f18297f0e1.svg.part1"],"assets/project.json":["project.json.part0","project.json.part1","project.json.part2"]};
+  function matchKey(u){
+    if(!u) return null;
+    var s=String(u).split('?')[0].split('#')[0];
+    for(var k in MAP){
+      if(s===k||s==='./'+k||s.endsWith('/'+k)) return k;
+    }
+    return null;
+  }
+  function partBase(u,k){
+    var s=String(u).split('?')[0].split('#')[0];
+    var idx=s.lastIndexOf(k);
+    return idx>=0?s.slice(0,idx):'';
+  }
+  function loadBuf(u,k){
+    var pre=partBase(u,k);
+    var parts=MAP[k];
+    var dir=k.includes('/')?k.slice(0,k.lastIndexOf('/')+1):'';
+    return Promise.all(parts.map(function(p){
+      return origFetch(pre+dir+p).then(function(r){if(!r.ok)throw new Error('HTTP '+r.status);return r.arrayBuffer();});
+    })).then(function(bufs){
+      var total=0; for(var i=0;i<bufs.length;i++) total+=bufs[i].byteLength;
+      var out=new Uint8Array(total), off=0;
+      for(var j=0;j<bufs.length;j++){out.set(new Uint8Array(bufs[j]),off);off+=bufs[j].byteLength;}
+      return out.buffer;
+    });
+  }
+  var origFetch=window.fetch.bind(window);
+  window.fetch=function(input,init){
+    var u=typeof input==='string'?input:(input&&input.url)||'';
+    var k=matchKey(u);
+    if(!k) return origFetch(input,init);
+    return loadBuf(u,k).then(function(buf){
+      var ct=k.endsWith('.json')?'application/json':k.endsWith('.svg')?'image/svg+xml':k.endsWith('.mp3')?'audio/mpeg':k.endsWith('.wav')?'audio/wav':'application/octet-stream';
+      return new Response(buf,{status:200,headers:{'Content-Type':ct}});
+    });
+  };
+  var X=window.XMLHttpRequest, origOpen=X.prototype.open, origSend=X.prototype.send;
+  X.prototype.open=function(m,u){this.__ckUrl=u;this.__ckKey=matchKey(u);return origOpen.apply(this,arguments);};
+  X.prototype.send=function(){
+    var self=this;
+    if(!self.__ckKey) return origSend.apply(self,arguments);
+    loadBuf(self.__ckUrl,self.__ckKey).then(function(buf){
+      var rt=self.responseType||'', val=buf;
+      if(rt===''||rt==='text'){val=new TextDecoder('utf-8').decode(buf);}
+      else if(rt==='json'){val=JSON.parse(new TextDecoder('utf-8').decode(buf));}
+      else if(rt==='blob'){val=new Blob([buf]);}
+      Object.defineProperty(self,'readyState',{configurable:true,value:4});
+      Object.defineProperty(self,'status',{configurable:true,value:200});
+      Object.defineProperty(self,'response',{configurable:true,value:val});
+      if(rt===''||rt==='text'){Object.defineProperty(self,'responseText',{configurable:true,value:val});}
+      if(typeof self.onprogress==='function') self.onprogress({lengthComputable:true,loaded:buf.byteLength,total:buf.byteLength});
+      self.dispatchEvent(new Event('readystatechange'));
+      self.dispatchEvent(new Event('load'));
+    }).catch(function(err){
+      self.dispatchEvent(new Event('error'));
+    });
+  };
+  var origAppend=Node.prototype.appendChild;
+  Node.prototype.appendChild=function(el){
+    if(el&&el.tagName==='STYLE'&&el.textContent&&el.textContent.indexOf('@font-face')>=0){
+      var txt=el.textContent;
+      for(var fk in MAP){
+        if((fk.endsWith('.ttf')||fk.endsWith('.otf')||fk.endsWith('.woff2'))&&txt.indexOf(fk)>=0){
+          var fm=txt.match(/font-family\s*:\s*['"]?([^;'"]+)['"]?/i);
+          var fam=fm?fm[1].trim():'custom-font';
+          el.textContent='';
+          loadBuf(fk,fk).then(function(buf){
+            if(typeof FontFace!=='undefined'){
+              var ff=new FontFace(fam,buf);
+              return ff.load().then(function(loaded){document.fonts.add(loaded);});
+            }
+          }).catch(function(){});
+          break;
+        }
+      }
+    }
+    return origAppend.call(this,el);
+  };
+})();
+</script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <!-- We only include this to explicitly loosen the CSP of various packager environments. It does not provide any security. -->
+  
+  <title>植物大战僵尸</title>
+  <style>
+    body {
+      color: #ffffff;
+      font-family: sans-serif;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+    }
+    :root, body.is-fullscreen {
+      background-color: #000000;
+    }
+    [hidden] {
+      display: none !important;
+    }
+    h1 {
+      font-weight: normal;
+    }
+    a {
+      color: inherit;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    #app, #loading, #error, #launch {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .screen {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      cursor: default;
+      user-select: none;
+      -webkit-user-select: none;
+      background-color: #000000;
+    }
+    #launch {
+      background-color: rgba(0, 0, 0, 0.7);
+      cursor: pointer;
+    }
+    .green-flag {
+      width: 80px;
+      height: 80px;
+      padding: 16px;
+      border-radius: 100%;
+      background: rgba(255, 255, 255, 0.75);
+      border: 3px solid hsla(0, 100%, 100%, 1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-sizing: border-box;
+    }
+    #loading {
+      
+    }
+    .progress-bar-outer {
+      border: 1px solid currentColor;
+      height: 10px;
+      width: 200px;
+      max-width: 200px;
+    }
+    .progress-bar-inner {
+      height: 100%;
+      width: 0;
+      background-color: currentColor;
+    }
+    .loading-text, noscript {
+      font-weight: normal;
+      font-size: 36px;
+      margin: 0 0 16px;
+    }
+    .loading-image {
+      margin: 0 0 16px;
+    }
+    #error-message, #error-stack {
+      font-family: monospace;
+      max-width: 600px;
+      white-space: pre-wrap;
+      user-select: text;
+      -webkit-user-select: text;
+    }
+    #error-stack {
+      text-align: left;
+      max-height: 200px;
+      overflow: auto;
+    }
+    .control-button {
+      width: 2rem;
+      height: 2rem;
+      padding: 0.375rem;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+      user-select: none;
+      -webkit-user-select: none;
+      cursor: pointer;
+      border: 0;
+      border-radius: 4px;
+    }
+    .control-button-highlight:hover {
+      background: #ff4c4c26;
+    }
+    .control-button-highlight.active {
+      background: #ff4c4c59;
+    }
+    .fullscreen-button {
+      background: white;
+    }
+    .standalone-fullscreen-button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 0 0 0 4px;
+      padding: 4px;
+      cursor: pointer;
+    }
+    .sc-canvas {
+      cursor: auto;
+    }
+    .sc-monitor-root[data-opcode^="data_"] .sc-monitor-value-color {
+      background-color: #ff8c1a;
+    }
+    .sc-monitor-row-value-outer {
+      background-color: #fc662c;
+    }
+    .sc-monitor-row-value-editing .sc-monitor-row-value-outer {
+      background-color: #e25b27;
+    }
+    
+  </style>
+  <meta name="theme-color" content="#000000">
+  
+</head>
+<body>
+  <div id="app"></div>
+
+  <div id="launch" class="screen" hidden title="Click to start">
+    <div class="green-flag">
+      <svg viewBox="0 0 16.63 17.5" width="42" height="44">
+        <defs><style>.cls-1,.cls-2{fill:#4cbf56;stroke:#45993d;stroke-linecap:round;stroke-linejoin:round;}.cls-2{stroke-width:1.5px;}</style></defs>
+        <path class="cls-1" d="M.75,2A6.44,6.44,0,0,1,8.44,2h0a6.44,6.44,0,0,0,7.69,0V12.4a6.44,6.44,0,0,1-7.69,0h0a6.44,6.44,0,0,0-7.69,0"/>
+        <line class="cls-2" x1="0.75" y1="16.75" x2="0.75" y2="0.75"/>
+      </svg>
+    </div>
+  </div>
+
+  <div id="loading" class="screen">
+    <noscript>Enable JavaScript</noscript>
+    <h1 class="loading-text">正在加载植物大战僵尸...</h1>
+    
+    <div class="progress-bar-outer"><div class="progress-bar-inner" id="loading-inner"></div></div>
+  </div>
+
+  <div id="error" class="screen" hidden>
+    <h1>Error</h1>
+    <details>
+      <summary id="error-message"></summary>
+      <p id="error-stack"></p>
+    </details>
+  </div>
+
+  <script>
+Promise.all(["script.part0.js","script.part1.js","script.part2.js"].map(function(u){return fetch(u).then(function(r){if(!r.ok)throw new Error('HTTP '+r.status);return r.text();});}))
+.then(function(p){
+  (0,eval)(p.join(''));
+  (function(){
+
+    const appElement = document.getElementById('app');
+    const launchScreen = document.getElementById('launch');
+    const loadingScreen = document.getElementById('loading');
+    const loadingInner = document.getElementById('loading-inner');
+    const errorScreen = document.getElementById('error');
+    const errorScreenMessage = document.getElementById('error-message');
+    const errorScreenStack = document.getElementById('error-stack');
+
+    const handleError = (error) => {
+      console.error(error);
+      if (!errorScreen.hidden) return;
+      errorScreen.hidden = false;
+      errorScreenMessage.textContent = '' + error;
+      let debug = error && error.stack || 'no stack';
+      debug += '\nUser agent: ' + navigator.userAgent;
+      errorScreenStack.textContent = debug;
+    };
+    const setProgress = (progress) => {
+      if (loadingInner) loadingInner.style.width = progress * 100 + '%';
+    };
+    const interpolate = (a, b, t) => a + t * (b - a);
+
+    try {
+      setProgress(0.1);
+
+      const scaffolding = new Scaffolding.Scaffolding();
+      scaffolding.width = 480;
+      scaffolding.height = 360;
+      scaffolding.resizeMode = "preserve-ratio";
+      scaffolding.editableLists = false;
+      scaffolding.usePackagedRuntime = true;
+      scaffolding.setup();
+      scaffolding.appendTo(appElement);
+
+      const vm = scaffolding.vm;
+      window.scaffolding = scaffolding;
+      window.vm = scaffolding.vm;
+      window.Scratch = {
+        vm,
+        renderer: vm.renderer,
+        audioEngine: vm.runtime.audioEngine,
+        bitmapAdapter: vm.runtime.v2BitmapAdapter,
+        videoProvider: vm.runtime.ioDevices.video.provider
+      };
+
+      scaffolding.setUsername("player####".replace(/#/g, () => Math.floor(Math.random() * 10)));
+      scaffolding.setAccentColor("#ff4c4c");
+
+      try {
+        ;
+      } catch (error) {
+        console.error(error);
+      }
+
+      vm.setTurboMode(false);
+      if (vm.setInterpolation) vm.setInterpolation(true);
+      if (vm.setFramerate) vm.setFramerate(30);
+      if (vm.renderer.setUseHighQualityRender) vm.renderer.setUseHighQualityRender(true);
+      if (vm.setRuntimeOptions) vm.setRuntimeOptions({
+        fencing: true,
+        miscLimits: true,
+        maxClones: 300,
+      });
+      if (vm.setCompilerOptions) vm.setCompilerOptions({
+        enabled: true,
+        warpTimer: false
+      });
+      if (vm.renderer.setMaxTextureDimension) vm.renderer.setMaxTextureDimension(2048);
+
+      // enforcePrivacy threat model only makes sense in the editor
+      if (vm.runtime.setEnforcePrivacy) vm.runtime.setEnforcePrivacy(false);
+
+      if (typeof ScaffoldingAddons !== 'undefined') {
+        ScaffoldingAddons.run(scaffolding, {"gamepad":false,"pointerlock":false,"specialCloudBehaviors":false,"unsafeCloudBehaviors":false,"pause":false});
+      }
+
+      scaffolding.setExtensionSecurityManager({
+        getSandboxMode: () => 'unsandboxed',
+        canLoadExtensionFromProject: () => true
+      });
+      for (const extension of []) {
+        vm.extensionManager.loadExtensionURL(extension);
+      }
+
+    } catch (e) {
+      handleError(e);
+    }
+  
+
+      const getProjectData = (function() {
+        const storage = scaffolding.storage;
+        storage.onprogress = (total, loaded) => {
+          setProgress(interpolate(0.2, 0.98, loaded / total));
+        };
+        
+        storage.addWebStore(
+          [
+            storage.AssetType.ImageVector,
+            storage.AssetType.ImageBitmap,
+            storage.AssetType.Sound,
+            storage.AssetType.Font
+          ].filter(i => i),
+          (asset) => new URL('./assets/' + asset.assetId + '.' + asset.dataFormat, location).href
+        );
+        return () => new Promise((resolve, reject) => {
+        const xhr = new XMLHttpRequest();
+        xhr.onload = () => {
+          resolve(xhr.response);
+        };
+        xhr.onerror = () => {
+          if (location.protocol === 'file:') {
+            reject(new Error('Zip environment must be used on a website, not on a local file. To fix this error, use the "Plain HTML" environment instead.'));
+          } else {
+            reject(new Error('Request to load project data failed.'));
+          }
+        };
+        xhr.onprogress = (e) => {
+          if (e.lengthComputable) {
+            setProgress(interpolate(0.1, 0.2, e.loaded / e.total));
+          }
+        };
+        xhr.responseType = 'arraybuffer';
+        xhr.open('GET', "./assets/project.json");
+        xhr.send();
+      });
+      })();
+    
+
+    const run = async () => {
+      const projectData = await getProjectData();
+      await scaffolding.loadProject(projectData);
+      setProgress(1);
+      loadingScreen.hidden = true;
+      if (true) {
+        scaffolding.start();
+      } else {
+        launchScreen.hidden = false;
+        launchScreen.addEventListener('click', () => {
+          launchScreen.hidden = true;
+          scaffolding.start();
+        });
+        launchScreen.focus();
+      }
+    };
+    run().catch(handleError);
+  
+  })();
+}).catch(function(e){console.error(e);});
+</script>
+</body>
+</html>

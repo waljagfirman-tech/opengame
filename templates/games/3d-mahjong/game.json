@@ -1,0 +1,30 @@
+{
+  "id": "3d-mahjong",
+  "title": "3D Physics Mahjong",
+  "description": "Pick matching 3D mahjong tiles from a tumbling physics pile into your tray, using flip, shuffle, clear, and undo tools to empty the table.",
+  "genre": "casual",
+  "style": "3d",
+  "setting": "retro",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Tap 3D mahjong tiles to move them into the tray; match three identical tiles to clear them. Use Shuffle, Flip, Clear, and Undo buttons below.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "top赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "3D 物理麻将",
+      "description": "在拟真 3D 物理堆叠的麻将牌阵中挑出三张相同牌面装槽消除，活用洗牌、翻牌、消除与回退道具通关。",
+      "controls": "点击 3D 麻将牌收入底部卡槽，凑齐三张相同牌面自动消除；底部支持洗牌、翻牌、消除和回退道具。"
+    }
+  }
+}

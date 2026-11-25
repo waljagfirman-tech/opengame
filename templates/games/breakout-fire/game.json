@@ -1,0 +1,30 @@
+{
+  "id": "breakout-fire",
+  "title": "Breakout Squad",
+  "description": "Lead a 3D tactical squad down action-packed city streets, multiply troops through power gates, upgrade weapons, and blast through enemy barricades.",
+  "genre": "shooter",
+  "style": "3d",
+  "setting": "modern",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Drag left and right to steer your squad through bonus gates and fire automatically at incoming enemies and bosses.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "top赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "激战突围",
+      "description": "3D 都市小队突围射击跑酷：左右滑屏穿越增益门扩充火力小队、升级武器，横扫沿途敌军与关底 Boss。",
+      "controls": "按住并左右拖动控制小队走位，自动开火射击敌人，优先穿过增益大门壮大队伍与火力。"
+    }
+  }
+}

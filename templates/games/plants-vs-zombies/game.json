@@ -1,0 +1,30 @@
+{
+  "id": "plants-vs-zombies",
+  "title": "Garden vs Zombies",
+  "description": "Defend your backyard lawn by gathering falling sun, planting peashooters, sunflowers, and walnut barriers, and halting waves of quirky zombies.",
+  "genre": "shooter",
+  "style": "anime",
+  "setting": "modern",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Click Tap to Start, choose Adventure mode, collect falling sun orbs, and click seed packets then lawn tiles to plant defenders.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "landscape",
+  "tags": [
+    "top赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "植物大战僵尸",
+      "description": "国民级经典塔防回忆杀：收集阳光种植向日葵、豌豆射手与坚果墙，排兵布阵阻挡一波波来袭的僵尸大军。",
+      "controls": "鼠标点击「Tap to start」开始冒险，点击收集掉落阳光，选择上方植物卡牌后再点草坪格子即可种植防御。"
+    }
+  }
+}

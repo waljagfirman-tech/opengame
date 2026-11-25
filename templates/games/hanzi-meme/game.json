@@ -1,0 +1,30 @@
+{
+  "id": "hanzi-meme",
+  "title": "Ink & Riddle",
+  "description": "Explore witty Chinese-character brain teasers and ink-wash puzzle stages where every stroke, radical, and pun unlocks a surprising solution.",
+  "genre": "story",
+  "style": "anime",
+  "setting": "retro",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Tap, drag, or combine Chinese characters and scene objects to solve each brain-teaser stage.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "top赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "汉字找梗",
+      "description": "国风手绘水墨脑洞汉字闯关：拆字组字、爆笑热梗找茬、反转谜题一关接一关停不下来。",
+      "controls": "点击、拖拽或拆合画面中的汉字与道具，发挥脑洞找出隐藏热梗即可过关。"
+    }
+  }
+}

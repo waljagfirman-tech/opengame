@@ -1,0 +1,30 @@
+{
+  "id": "village-defense",
+  "title": "Village Defense",
+  "description": "Collect gear chests, deploy hero skills, and upgrade tower defenses to protect your peaceful meadow village from relentless monster waves.",
+  "genre": "shooter",
+  "style": "anime",
+  "setting": "medieval",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Open starter chests to equip gear, tap Battle to start defending, and choose roguelite skill upgrades between monster waves.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "top赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "村庄保卫战",
+      "description": "轻肉鸽策略塔防：开局免费抽装备宝箱强化战力，排兵布阵并挑选局内技能流派，守卫村庄抵御怪物狂潮。",
+      "controls": "先领取装备宝箱并穿戴强化，点击开始游戏进入战斗，击杀怪物升级后三选一强化技能守住防线。"
+    }
+  }
+}

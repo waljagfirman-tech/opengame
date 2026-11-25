@@ -1,0 +1,30 @@
+{
+  "id": "candy-match",
+  "title": "Candy Island Match",
+  "description": "Journey across a sunlit tropical archipelago matching colorful candies, crafting striped and rainbow boosters, and clearing handcrafted island stages.",
+  "genre": "casual",
+  "style": "anime",
+  "setting": "fantasy",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Select a level on the island map, then swipe adjacent candies to match three or more and combine special boosters.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "top赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "糖果消消乐",
+      "description": "沿着碧海阳光热带岛屿地图一路闯关，滑动消除缤纷糖果，合成条纹糖与彩虹炸弹引爆全屏特效。",
+      "controls": "点击岛屿地图关卡开局，滑动交换相邻糖果凑成三连或四五连合成超级特效糖果过关。"
+    }
+  }
+}

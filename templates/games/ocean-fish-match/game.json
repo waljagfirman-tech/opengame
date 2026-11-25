@@ -1,0 +1,30 @@
+{
+  "id": "ocean-fish-match",
+  "title": "Ocean Fish Match",
+  "description": "Dive into a vibrant coral reef aquarium to match charming tropical sea tiles, unleash bubble boosters, and climb through relaxing underwater stages.",
+  "genre": "casual",
+  "style": "anime",
+  "setting": "fantasy",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Tap Start to dive in, then match identical underwater sea creatures and tiles to clear each coral reef stage.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "top赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "萌鱼海洋消除",
+      "description": "蔚蓝海底珊瑚礁主题消除：伴随灵动可爱的卡通热带鱼群，连消海洋元素触发炫彩泡泡特效，轻松闯关。",
+      "controls": "点击开始游戏进入海底关卡，点击或滑动匹配相同海洋图案完成每关消除目标。"
+    }
+  }
+}

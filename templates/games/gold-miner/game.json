@@ -1,0 +1,30 @@
+{
+  "id": "gold-miner",
+  "title": "Gold Miner Classic",
+  "description": "Time your swinging brass claw to haul up giant gold nuggets, sparkling diamonds, and mystery sacks before the clock runs out across handcrafted underground mines.",
+  "genre": "casual",
+  "style": "anime",
+  "setting": "retro",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Click, tap, or press Space/Down to launch the swinging claw. Press E or click Dynamite while reeling in heavy rocks to blast them away.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "landscape",
+  "tags": [
+    "top赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "黄金矿工",
+      "description": "国民级经典回忆杀：瞄准摆动的矿工铁爪抓起大金块、闪亮钻石与神秘钱袋，活用炸药与关间商店道具冲击高分。",
+      "controls": "点击屏幕或按空格/下方向键放出铁爪抓取金块与钻石；抓到沉重石头时可按 E 或点右下角炸药炸毁。"
+    }
+  }
+}

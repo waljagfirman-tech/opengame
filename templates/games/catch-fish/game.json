@@ -1,0 +1,30 @@
+{
+  "id": "catch-fish",
+  "title": "Catch the Big Fish",
+  "description": "Spot and collect three matching 3D sea creatures from a tumbling ocean heap before the timer expires, chaining quick matches for combo stars.",
+  "genre": "casual",
+  "style": "3d",
+  "setting": "modern",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Tap three matching 3D fish or marine toys to collect them into the bottom slots and clear every target before time runs out.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "top赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "抓大鱼",
+      "description": "抓大鹅同款 3D 物理堆叠找物三消：在满满一盆呆萌海洋生物中眼疾手快凑齐三连消除，限时冲击高星。",
+      "controls": "点击堆叠中的同款 3D 小鱼或海洋玩具收入槽位，集齐三个自动消除；注意别把槽位塞满。"
+    }
+  }
+}

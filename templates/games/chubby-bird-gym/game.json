@@ -1,0 +1,30 @@
+{
+  "id": "chubby-bird-gym",
+  "title": "Chubby Bird Gym",
+  "description": "Renovate a cozy pastel fitness studio for adorable chubby chicks by merging workout gear, unlocking treadmills, and keeping every fluffy guest happy.",
+  "genre": "casual",
+  "style": "anime",
+  "setting": "modern",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Tap highlighted orders and merge matching items on the board to earn stars, renovate rooms, and unlock new bird gym equipment.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "top赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "肥啾瘦身馆",
+      "description": "超治愈手绘风「二合 + 模拟经营」爆款：帮圆滚滚的小肥啾翻新温馨健身房，拖拽合成器材、解锁跑步机与花式瘦身设施。",
+      "controls": "跟着指引点击图标进入合成棋盘，拖动相同物品二合升级完成订单，用星星装修理想健身房。"
+    }
+  }
+}

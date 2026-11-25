@@ -34,13 +34,26 @@ describe('gameCatalog multi-file detection and internal tags', () => {
   it('preserves internal top赚钱 tags on bundled templates for downstream category grouping', () => {
     const tagged = bundledGames.filter(game => game.tags?.includes('top赚钱')).map(game => game.id).sort();
     expect(tagged).toEqual([
+      '3d-mahjong',
+      'backpack-hero',
       'ball-match',
       'block-blast',
+      'breakout-fire',
+      'candy-match',
+      'catch-fish',
       'catch-piggy',
+      'chubby-bird-gym',
+      'doomsday-survivor',
+      'escape-match',
+      'gold-miner',
+      'hanzi-meme',
       'mahjong-pairs',
+      'ocean-fish-match',
+      'plants-vs-zombies',
       'screw-puzzle',
       'tile-stack',
       'vice-beach-motor-club',
+      'village-defense',
     ]);
   });
 });

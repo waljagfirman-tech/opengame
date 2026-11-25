@@ -1,0 +1,30 @@
+{
+  "id": "backpack-hero",
+  "title": "Backpack Hero",
+  "description": "Arrange and merge swords, bows, and daggers inside your grid backpack between waves, then unleash auto-battles across 15 escalating monster raids.",
+  "genre": "casual",
+  "style": "anime",
+  "setting": "fantasy",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Drag weapons and extra bag slots into your backpack, merge matching weapons to level up, tap Refresh for new gear, and hit Battle to fight.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "top赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "背包英雄",
+      "description": "爆款格子背包合成肉鸽：每波战前自由摆放并合成升级剑、弓、匕首与扩容格，迎战 15 波怪物大军。",
+      "controls": "拖拽武器与背包格放入背包，拖到同级武器上合成进阶；点刷新换装备，点开战迎击波次敌人。"
+    }
+  }
+}

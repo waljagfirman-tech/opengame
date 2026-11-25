@@ -3,7 +3,7 @@
 <p align="center"><strong>The First Super Game Agent — Open-Source Full-Stack AI Game Studio</strong></p>
 
 <p align="center">
-  <img src="docs/readme/opengame-hero.webp" width="100%" alt="OpenGame — The First Super Game Agent. Remix, re-style, test, and publish playable 3D, anime, pixel, and 9:16 mini-games from 26 built-in playable templates across 22 local AI agents.">
+  <img src="docs/readme/opengame-hero.webp" width="100%" alt="OpenGame — The First Super Game Agent. Remix, re-style, test, and publish playable 3D, anime, pixel, and 9:16 mini-games from 46 built-in playable templates across 22 local AI agents.">
 </p>
 
 <p align="center">
@@ -33,7 +33,7 @@
 
 OpenGame is **the first Super Game Agent** — turning your local coding agent into an open-source AI Unreal Engine / Unity and full-stack game studio, taking you from a single prompt or viral game template all the way to automated QA, instant web sharing, and monetization-ready builds.
 
-- 🎮 **One-Click Remix Any Game.** **26 built-in playable templates** (3D, voxel, anime, pixel & 9:16 mini-games / playable ads) with full editable source and design specs.
+- 🎮 **One-Click Remix Any Game.** **46 built-in playable templates** (3D, voxel, anime, pixel & 9:16 mini-games / playable ads) with full editable source and design specs.
 - 🎨 **One-Click Re-style Any Game.** Keep a proven game loop while swapping characters, art style, and audio — affordable models like **DeepSeek** ship polished reskins fast, while **Claude Fable 5.2**, **Opus**, **Codex**, and **Gemini** build original 3D worlds from scratch.
 - 💰 **End-to-End Pipeline: Build → Verify → Publish & Monetize.** Automated validation, simulation, headless playtesting, cover capture, and trailers — ship a live web link, a 9:16 Playable Ad, or mini-game platform builds.
 - 🔓 **Full-Stack Open Source (BYOA + BYOK).** Code, art, video, music, voice, SFX, and Three.js 3D are all open source. Bring [your local agent](#agent-wall) and keys, or connect [OpenDesign Go](https://go.open-design.ai/?utm_source=github&utm_medium=referral&utm_campaign=opengame&utm_content=readme_en).
@@ -82,7 +82,7 @@ npm start
 
 ## 🕹️ Playable Game Templates & Showcase
 
-OpenGame ships with **26 ready-to-play games** right inside [`templates/games/`](templates/games/) — complete with playable HTML5 / Three.js source, artwork, controls, and localization. Play them locally in Game Studio, **Remix** any title with one click, or **Re-style** it into your own IP, theme, or brand.
+OpenGame ships with **46 ready-to-play games** right inside [`templates/games/`](templates/games/) — complete with playable HTML5 / Three.js source, artwork, controls, and localization. Play them locally in Game Studio, **Remix** any title with one click, or **Re-style** it into your own IP, theme, or brand.
 
 ### 3D, Voxel & Action Games (16:9)
 
@@ -127,6 +127,34 @@ Pilot an orbital interceptor in a painted starfield, shatter molten comets, and 
 <strong>Harbor Skirmish</strong> · <code>3D FPS · Grapple &amp; Slide</code><br>
 A stylized 3D first-person shooter on a curved island with double-jump, slide, dash, and grappling-hook mobility.<br>
 <a href="templates/games/harbor-skirmish/">Inspect source →</a>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<img src="templates/games/plants-vs-zombies/cover.webp" width="100%" alt="Garden vs Zombies — Classic backyard tower defense"><br>
+<strong>Garden vs Zombies</strong> · <code>Anime · Tower Defense · Classic</code><br>
+Collect falling sun, plant peashooters, sunflowers, and walnut barriers, and defend your suburban lawn from quirky zombie waves.<br>
+<a href="templates/games/plants-vs-zombies/">Inspect source →</a>
+</td>
+<td width="50%" valign="top">
+<img src="templates/games/gold-miner/cover.webp" width="100%" alt="Gold Miner Classic — Underground brass claw arcade"><br>
+<strong>Gold Miner Classic</strong> · <code>Retro · Arcade · Claw Miner</code><br>
+Time your swinging brass claw to haul up giant gold nuggets, diamonds, and mystery sacks across handcrafted underground mines.<br>
+<a href="templates/games/gold-miner/">Inspect source →</a>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<img src="templates/games/vice-beach-motor-club/cover.webp" width="100%" alt="Vice Beach Motor Club — 3D ASCII retro coastal racing"><br>
+<strong>Vice Beach Motor Club</strong> · <code>ASCII · Racing · Retro</code><br>
+Race a 3D City ASCII convertible across Vice Beach and Liberty City, chaining drifts, slipstreams, and garage upgrades.<br>
+<a href="templates/games/vice-beach-motor-club/">Inspect source →</a>
+</td>
+<td width="50%" valign="top">
+<img src="templates/games/doomsday-survivor/cover.webp" width="100%" alt="Doomsday Survivor — Top-down roguelite zombie horde shooter"><br>
+<strong>Doomsday Survivor</strong> · <code>Roguelite · Horde Shooter</code><br>
+Weave through swarms of urban zombies with one-finger movement, auto-firing evolving weapons, bombs, and magnets.<br>
+<a href="templates/games/doomsday-survivor/">Inspect source →</a>
 </td>
 </tr>
 </table>
@@ -229,31 +257,94 @@ Bake dough, merge matching pastries, and serve timed customer orders to hit \$25
 <a href="templates/games/merge-bakery/">Source →</a>
 </td>
 </tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<img src="templates/games/block-blast/cover.webp" width="100%" alt="Block Blast Master — 8x8 combo block puzzle"><br>
+<strong>Block Blast Master</strong><br>
+<code>9:16 · Block Puzzle</code><br>
+Drag colorful block shapes onto an 8×8 board and chain full-row combo clears for high scores.<br>
+<a href="templates/games/block-blast/">Source →</a>
+</td>
+<td width="33%" valign="top" align="center">
+<img src="templates/games/screw-puzzle/cover.webp" width="100%" alt="Screw Puzzle — Layered bolt sorting puzzle"><br>
+<strong>Screw Puzzle</strong><br>
+<code>9:16 · Screw Sorting</code><br>
+Unscrew colored bolts from overlapping acrylic boards into matching boxes before buffer slots fill.<br>
+<a href="templates/games/screw-puzzle/">Source →</a>
+</td>
+<td width="33%" valign="top" align="center">
+<img src="templates/games/tile-stack/cover.webp" width="100%" alt="Tile Stack — Layered triple-match tile puzzle"><br>
+<strong>Tile Stack</strong><br>
+<code>9:16 · Triple Match</code><br>
+Pick three matching farm tiles from layered stacks into a 7-slot tray with undo, pop-out, and shuffle.<br>
+<a href="templates/games/tile-stack/">Source →</a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<img src="templates/games/chubby-bird-gym/cover.webp" width="100%" alt="Chubby Bird Gym — Merge and cozy bird gym tycoon"><br>
+<strong>Chubby Bird Gym</strong><br>
+<code>9:16 · Merge Tycoon</code><br>
+Merge fitness gear and renovate a pastel isometric gym studio for adorable chubby chicks.<br>
+<a href="templates/games/chubby-bird-gym/">Source →</a>
+</td>
+<td width="33%" valign="top" align="center">
+<img src="templates/games/backpack-hero/cover.webp" width="100%" alt="Backpack Hero — Inventory grid merge roguelite"><br>
+<strong>Backpack Hero</strong><br>
+<code>9:16 · Bag Merge RPG</code><br>
+Arrange and merge swords, bows, and bag slots between 15 escalating monster waves.<br>
+<a href="templates/games/backpack-hero/">Source →</a>
+</td>
+<td width="33%" valign="top" align="center">
+<img src="templates/games/candy-match/cover.webp" width="100%" alt="Candy Island Match — Tropical island match-3 puzzle"><br>
+<strong>Candy Island Match</strong><br>
+<code>9:16 · Island Match-3</code><br>
+Match colorful candies and trigger rainbow boosters across a sunlit tropical archipelago map.<br>
+<a href="templates/games/candy-match/">Source →</a>
+</td>
+</tr>
 </table>
 
 <details>
-<summary><strong>Browse all 26 built-in playable game templates</strong></summary>
+<summary><strong>Browse all 46 built-in playable game templates</strong></summary>
 
 | Game | Genre | Style | Format | Summary | Source |
 | --- | --- | --- | --- | --- | --- |
+| **3D Physics Mahjong** | Casual | 3D | 9:16 Portrait | Pick three matching 3D mahjong tiles from a physics pile with shuffle, flip, and undo | [3d-mahjong](templates/games/3d-mahjong/) |
+| **Backpack Hero** | Casual | Anime | 9:16 Portrait | Grid-inventory weapon merging and 15-wave roguelite auto-battles | [backpack-hero](templates/games/backpack-hero/) |
+| **Ball Match** | Casual | 3D | 9:16 Portrait | Connect chains of 3D spheres, trigger bombs, and hit stage targets | [ball-match](templates/games/ball-match/) |
+| **Block Blast Master** | Casual | Minimal | 9:16 Portrait | Drag block shapes onto an 8×8 board and chain row/column combo blasts | [block-blast](templates/games/block-blast/) |
+| **Breakout Squad** | Shooter | 3D | 9:16 Portrait | Lead a 3D tactical squad through multiplier gates and city barricades | [breakout-fire](templates/games/breakout-fire/) |
+| **Candy Island Match** | Casual | Anime | 9:16 Portrait | Tropical archipelago match-3 adventure with striped and rainbow boosters | [candy-match](templates/games/candy-match/) |
 | **Castle Crush** | Casual | Anime | 9:16 Portrait | Slingshot physics siege across four timber-and-stone stages | [castle-crush](templates/games/castle-crush/) |
+| **Catch Piggy** | Casual | Anime | 9:16 Portrait | Pick three matching piggies and toys from a physics pile into a 7-slot tray | [catch-piggy](templates/games/catch-piggy/) |
+| **Catch the Big Fish** | Casual | 3D | 9:16 Portrait | 3D physics pile-matching ocean hunt against the clock | [catch-fish](templates/games/catch-fish/) |
+| **Chubby Bird Gym** | Casual | Anime | 9:16 Portrait | Cozy merge-2 and pastel isometric gym renovation starring chubby chicks | [chubby-bird-gym](templates/games/chubby-bird-gym/) |
 | **Comet Guard** | Shooter | Minimal | 16:9 Landscape | Orbital interceptor defending a starfield station from molten comets | [comet-guard](templates/games/comet-guard/) |
+| **Doomsday Survivor** | Shooter | Anime | 9:16 Portrait | One-finger roguelite zombie-horde survival with evolving auto-weapons | [doomsday-survivor](templates/games/doomsday-survivor/) |
 | **Drift Dash** | Racing | Voxel | 9:16 Portrait | One-thumb retro circuit drifting against three AI rivals | [drift-dash](templates/games/drift-dash/) |
+| **Garden vs Zombies** | Shooter | Anime | 16:9 Landscape | Classic suburban lawn defense — gather sun, plant defenders, stop zombie waves | [plants-vs-zombies](templates/games/plants-vs-zombies/) |
 | **Gate Legion** | Casual | Pixel | 9:16 Portrait | Viral arithmetic-gate squad multiplier & boss clash | [gate-legion](templates/games/gate-legion/) |
 | **Glyph Garden** | Casual | Anime | 16:9 Landscape | Cascading fantasy match-3 bloom puzzle | [glyph-garden](templates/games/glyph-garden/) |
+| **Gold Miner Classic** | Casual | Anime | 16:9 Landscape | Swinging brass claw arcade hauling gold, diamonds, and mystery sacks with dynamite & shop | [gold-miner](templates/games/gold-miner/) |
 | **Harbor Skirmish** | Shooter | 3D | 16:9 Landscape | Stylized 3D FPS with double-jump, slide, dash, and grapple | [harbor-skirmish](templates/games/harbor-skirmish/) |
 | **Hollow Signal** | Horror | Minimal | 16:9 Landscape | Static-tuning radio horror before sanity fades | [hollow-signal](templates/games/hollow-signal/) |
+| **Ink & Riddle** | Story | Anime | 9:16 Portrait | Chinese ink-wash character brain teasers and witty puzzle stages | [hanzi-meme](templates/games/hanzi-meme/) |
 | **Jingyang Ridge** | Casual | Anime | 16:9 Landscape | Ink-wash martial arts boss duel — read tells, dodge lanes, punish | [jingyang-ridge](templates/games/jingyang-ridge/) |
 | **Lane Turret** | Shooter | Pixel | 9:16 Portrait | Auto-turret wave defense with upgrade cards | [lane-turret](templates/games/lane-turret/) |
 | **Lantern Hop** | Platformer | Pixel | 16:9 Landscape | Moonlit rooftop fox endless double-jump runner | [lantern-hop](templates/games/lantern-hop/) |
 | **Last Light** | Horror | Minimal | 16:9 Landscape | Flashlight survival escape through an abandoned school | [last-light](templates/games/last-light/) |
 | **Lighthouse Log** | Story | Anime | 16:9 Landscape | Seven stormy nights of fuel rationing & branching radio choices | [lighthouse-log](templates/games/lighthouse-log/) |
+| **Mahjong Pairs** | Casual | Minimal | 9:16 Portrait | Slide rows and columns of mahjong tiles to line up matching pairs | [mahjong-pairs](templates/games/mahjong-pairs/) |
 | **Merge Bakery** | Casual | Anime | 9:16 Portrait | Bake, merge pastries, and clear timed customer orders | [merge-bakery](templates/games/merge-bakery/) |
 | **Neon Drift** | Racing | 3D | 16:9 Landscape | Rain-slick synthwave highway traffic weaving & boost | [neon-drift](templates/games/neon-drift/) |
 | **Night Train Letters** | Story | Minimal | 16:9 Landscape | Intimate branching story of three unsent letters on a night train | [night-train](templates/games/night-train/) |
+| **Ocean Fish Match** | Casual | Anime | 9:16 Portrait | Vibrant coral reef underwater puzzle matching with tropical sea creatures | [ocean-fish-match](templates/games/ocean-fish-match/) |
 | **Periscope Depth** | Shooter | Minimal | 16:9 Landscape | Submarine patrol: torpedo carriers on periscope, dodge sonar depth charges | [periscope-depth](templates/games/periscope-depth/) |
 | **Pin Rescue** | Casual | Minimal | 9:16 Portrait | Pull-the-pin lava, water, and gold physics puzzles | [pin-rescue](templates/games/pin-rescue/) |
 | **Rooftop Roast** | Casual | Minimal | 16:9 Landscape | Brandable café promo drone game — edit one `SHOP` object to rebrand | [rooftop-roast](templates/games/rooftop-roast/) |
+| **Royal Chamber Escape** | Casual | 3D | 9:16 Portrait | Dungeon rescue match puzzle saving the young king from spike traps | [escape-match](templates/games/escape-match/) |
+| **Screw Puzzle** | Casual | Minimal | 9:16 Portrait | Unscrew colored bolts from layered acrylic boards into matching boxes | [screw-puzzle](templates/games/screw-puzzle/) |
 | **Sky Runner** | Racing | 3D | 9:16 Portrait | Cyberpunk 3D hoverboard lane runner with coins & boost | [sky-runner](templates/games/sky-runner/) |
 | **Skyline Courier** | Platformer | 3D | 16:9 Landscape | 3D rooftop parkour & wall-kicks against a 90-second timer | [skyline-courier](templates/games/skyline-courier/) |
 | **Slime Swell** | Casual | Minimal | 9:16 Portrait | City-devouring growth arena against three rival slimes | [slime-swell](templates/games/slime-swell/) |
@@ -261,7 +352,10 @@ Bake dough, merge matching pastries, and serve timed customer orders to hit \$25
 | **Stack the Moon** | Casual | Minimal | 16:9 Landscape | One-tap moonlit observatory tower stacker | [stack-the-moon](templates/games/stack-the-moon/) |
 | **Starlight Bastion** | Shooter | Voxel | 16:9 Landscape | Five-wave crystal defense with roguelite upgrades | [starlight-bastion](templates/games/starlight-bastion/) |
 | **Tidebreaker** | Racing | 3D | 16:9 Landscape | Storm archipelago 3D speedboat racing & wave jumps | [tidebreaker](templates/games/tidebreaker/) |
+| **Tile Stack** | Casual | Anime | 9:16 Portrait | Layered farm triple-match tile puzzle with undo, pop-out, and shuffle | [tile-stack](templates/games/tile-stack/) |
 | **Tilt Temple** | Casual | 3D | 9:16 Portrait | 3D floating labyrinth — tilt, collect the key, reach the portal | [tilt-temple](templates/games/tilt-temple/) |
+| **Vice Beach Motor Club** | Racing | ASCII | 16:9 Landscape | 3D City ASCII retro convertible racing with drifts, nitro, and upgrades | [vice-beach-motor-club](templates/games/vice-beach-motor-club/) |
+| **Village Defense** | Shooter | Anime | 9:16 Portrait | Chest-gear progression and roguelite skill upgrades defending a meadow fortress | [village-defense](templates/games/village-defense/) |
 
 </details>
 
@@ -274,7 +368,7 @@ Bake dough, merge matching pastries, and serve timed customer orders to hit \$25
 Building a polished game from a blank prompt is hard for any model. OpenGame solves this by separating **verified game engineering** from **theme, art direction, and content**:
 
 - **Every game is clean, inspectable source**: `index.html`, deterministic `logic.js`, vendored Three.js for 3D titles, plus structured design docs (`design/plan.md`, `design/style.md`, `design/assets.csv`, `design/verification.md`).
-- **Remix in one click**: Click **Remix** on any of the 26 templates in Game Studio (or ask your agent to remix it) to fork an owned, editable draft with full controls, tuning knobs, and automated test hooks already wired up.
+- **Remix in one click**: Click **Remix** on any of the 46 templates in Game Studio (or ask your agent to remix it) to fork an owned, editable draft with full controls, tuning knobs, and automated test hooks already wired up.
 - **Re-style into any universe**: Swap genre dressing, characters, palette, sprites, textures, and music without breaking physics or win/loss rules — ideal for fast iteration with affordable models like **DeepSeek**, or pushing AAA-grade 3D & shader ambition with **Claude Fable 5.2**, **Opus**, **Codex**, and **Gemini**.
 
 **Try these prompts in your connected Agent:**
@@ -448,7 +542,7 @@ Every connected agent can read [`skills/openmotion-game/SKILL.md`](skills/openmo
 | **Game Runtime & QA** | Node.js, native HTTP, Puppeteer Core / Chrome, deterministic simulator | [game-projects.ts](game-projects.ts) · [shared/game-contract.ts](shared/game-contract.ts) · [server.ts](server.ts) |
 | **MCP & Agent Skills** | Local stdio MCP server, `openmotion-game` Skill & 18 handbooks | [mcp.ts](mcp.ts) · [skills/openmotion-game/](skills/openmotion-game/) |
 | **Multimodal Gateway** | BYOK model discovery, job polling, asset library & web publish | [gateway/service.ts](gateway/service.ts) · [gateway/catalog.ts](gateway/catalog.ts) · [docs/assets.md](docs/assets.md) |
-| **Playable Templates** | 26 standalone HTML5 / Canvas / Three.js games with covers & metadata | [templates/games/](templates/games/) |
+| **Playable Templates** | 46 standalone HTML5 / Canvas / Three.js games with covers & metadata | [templates/games/](templates/games/) |
 | **Trailer Pipeline** | Headless gameplay capture + HTML composition + FFmpeg MP4 export | [docs/usage.md](docs/usage.md) · [scripts/verify-export.ts](scripts/verify-export.ts) |
 
 <a id="community"></a>

@@ -1,0 +1,30 @@
+{
+  "id": "doomsday-survivor",
+  "title": "Doomsday Survivor",
+  "description": "Weave through swarms of urban zombies with one-finger joystick movement, auto-firing evolving weapons, bombs, and magnets in intense roguelite survival.",
+  "genre": "shooter",
+  "style": "anime",
+  "setting": "modern",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Drag anywhere on screen to move your agent with the virtual joystick; weapons fire automatically while you dodge swarms and pick level-up skills.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "top赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "末日特工队",
+      "description": "高爽感单手肉鸽清屏割草：虚拟摇杆走位躲避尸潮，自动释放进化武器、清屏炸弹与吸铁石，满屏收割超解压。",
+      "controls": "按住屏幕任意位置滑动虚拟摇杆移动特工，角色自动攻击敌人，拾取经验宝石升级选择强力割草技能。"
+    }
+  }
+}
