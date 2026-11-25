@@ -1,0 +1,30 @@
+{
+  "id": "phantom-shooter",
+  "title": "Phantom Shooter",
+  "description": "Line up slick action-movie shots as a stealth agent—aim clean angles, neutralize rival henchmen in rapid firefights, and clear every tactical stage.",
+  "genre": "shooter",
+  "style": "anime",
+  "setting": "modern",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Hold and drag to aim your laser sight, release to fire crisp shots, and clear all targets in each mission.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "TOP赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "幽灵射手",
+      "description": "爽快特工潜行枪战闯关：化身王牌幽灵特工拉线精准瞄准，枪枪爆头或巧借角度干脆利落清剿全员目标！",
+      "controls": "按住拖动控制射击方向与瞄准线，松手开火消灭关卡内全部敌人。"
+    }
+  }
+}

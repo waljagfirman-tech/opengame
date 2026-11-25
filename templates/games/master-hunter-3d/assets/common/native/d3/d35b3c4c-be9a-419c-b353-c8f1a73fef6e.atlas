@@ -1,0 +1,55 @@
+
+gunshi.png
+size: 420, 401
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+Smoke_22_asset_00000
+  rotate: false
+  xy: 2, 315
+  size: 290, 86
+  orig: 640, 360
+  offset: 166, 67
+  index: -1
+Smoke_22_asset_00001
+  rotate: true
+  xy: 170, 30
+  size: 283, 90
+  orig: 640, 360
+  offset: 163, 67
+  index: -1
+Smoke_22_asset_00002
+  rotate: true
+  xy: 2, 59
+  size: 254, 90
+  orig: 640, 360
+  offset: 161, 67
+  index: -1
+Smoke_22_asset_00003
+  rotate: true
+  xy: 343, 24
+  size: 253, 75
+  orig: 640, 360
+  offset: 158, 70
+  index: -1
+Smoke_22_asset_00004
+  rotate: true
+  xy: 94, 26
+  size: 287, 74
+  orig: 640, 360
+  offset: 157, 69
+  index: -1
+Smoke_22_asset_00005
+  rotate: true
+  xy: 262, 4
+  size: 273, 79
+  orig: 640, 360
+  offset: 175, 70
+  index: -1
+石头
+  rotate: true
+  xy: 294, 279
+  size: 122, 116
+  orig: 122, 116
+  offset: 0, 0
+  index: -1

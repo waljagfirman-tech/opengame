@@ -1,0 +1,55 @@
+
+cs.png
+size: 826, 395
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+xz/a1
+  rotate: false
+  xy: 213, 195
+  size: 206, 200
+  orig: 209, 210
+  offset: 3, 10
+  index: -1
+xz/a2
+  rotate: false
+  xy: 626, 197
+  size: 198, 198
+  orig: 209, 210
+  offset: 11, 12
+  index: -1
+xz/a3
+  rotate: false
+  xy: 421, 195
+  size: 203, 200
+  orig: 209, 210
+  offset: 6, 10
+  index: -1
+xz/a4
+  rotate: false
+  xy: 2, 187
+  size: 209, 208
+  orig: 209, 210
+  offset: 0, 0
+  index: -1
+xz/a5
+  rotate: false
+  xy: 407, 4
+  size: 190, 189
+  orig: 209, 210
+  offset: 9, 21
+  index: -1
+xz/a6
+  rotate: false
+  xy: 599, 4
+  size: 190, 189
+  orig: 209, 210
+  offset: 9, 21
+  index: -1
+xz/a7
+  rotate: false
+  xy: 213, 4
+  size: 192, 189
+  orig: 209, 210
+  offset: 8, 21
+  index: -1

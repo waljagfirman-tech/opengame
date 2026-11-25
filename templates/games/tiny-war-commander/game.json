@@ -1,0 +1,30 @@
+{
+  "id": "tiny-war-commander",
+  "title": "Tiny War Commander",
+  "description": "Lead chibi blue squads, jeeps, and mini-tanks across tactical island battlefields to outnumber red garrisons and capture every enemy flag.",
+  "genre": "shooter",
+  "style": "3d",
+  "setting": "modern",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Drag to lead your commander and squads across the battlefield, recruit reinforcements, and capture enemy strongholds.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "TOP赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "战场小指挥",
+      "description": "超上头微型玩具兵团对战：带领蓝色小兵、吉普车和迷你坦克冲锋占点，扩编军团一路推平红方堡垒！",
+      "controls": "拖动屏幕指挥小队走位、抢占资源点并召唤增援部队攻克敌方据点。"
+    }
+  }
+}

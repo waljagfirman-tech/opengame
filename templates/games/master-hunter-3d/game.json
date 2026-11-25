@@ -1,0 +1,30 @@
+{
+  "id": "master-hunter-3d",
+  "title": "Master Hunter 3D",
+  "description": "Track fast-moving targets across sunlit low-poly wilderness ranges, steady your aim, and land pinpoint shots before time runs out.",
+  "genre": "shooter",
+  "style": "3d",
+  "setting": "modern",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Hold and drag to move your aiming reticle onto moving targets, then release to fire.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "TOP赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "狩猎高手",
+      "description": "明快 3D 低多边形荒野狙击狩猎：在阳光林地里预判移动目标走位，稳准瞄准一击命中刷新高分纪录！",
+      "controls": "按住屏幕拖动准星锁定移动目标，找准提前量松手射击完成狩猎任务。"
+    }
+  }
+}

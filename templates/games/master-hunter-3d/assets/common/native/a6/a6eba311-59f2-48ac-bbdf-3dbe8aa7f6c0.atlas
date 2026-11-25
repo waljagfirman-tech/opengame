@@ -1,0 +1,34 @@
+
+ljf.png
+size: 369, 330
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+npc_192
+  rotate: true
+  xy: 171, 4
+  size: 178, 192
+  orig: 179, 198
+  offset: 1, 1
+  index: -1
+npc_193
+  rotate: true
+  xy: 177, 184
+  size: 146, 190
+  orig: 179, 198
+  offset: 14, 7
+  index: -1
+npc_194
+  rotate: true
+  xy: 2, 185
+  size: 145, 173
+  orig: 179, 198
+  offset: 6, 24
+  index: -1
+npc_195
+  rotate: true
+  xy: 2, 34
+  size: 149, 167
+  orig: 179, 198
+  offset: 17, 29
+  index: -1

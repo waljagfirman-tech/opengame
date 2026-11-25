@@ -1,0 +1,76 @@
+
+bzq.png
+size: 271, 671
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+a1
+  rotate: false
+  xy: 2, 250
+  size: 131, 129
+  orig: 149, 144
+  offset: 9, 6
+  index: -1
+a2
+  rotate: false
+  xy: 135, 129
+  size: 122, 122
+  orig: 126, 126
+  offset: 2, 2
+  index: -1
+a3
+  rotate: false
+  xy: 126, 7
+  size: 120, 120
+  orig: 126, 126
+  offset: 3, 3
+  index: -1
+a4
+  rotate: false
+  xy: 174, 577
+  size: 95, 94
+  orig: 97, 96
+  offset: 1, 1
+  index: -1
+b1
+  rotate: false
+  xy: 135, 253
+  size: 131, 126
+  orig: 149, 144
+  offset: 9, 9
+  index: -1
+b2
+  rotate: false
+  xy: 2, 126
+  size: 122, 122
+  orig: 126, 126
+  offset: 2, 2
+  index: -1
+b3
+  rotate: false
+  xy: 2, 4
+  size: 120, 120
+  orig: 126, 126
+  offset: 3, 3
+  index: -1
+b4
+  rotate: false
+  xy: 174, 481
+  size: 95, 94
+  orig: 97, 96
+  offset: 1, 1
+  index: -1
+sd
+  rotate: true
+  xy: 2, 527
+  size: 144, 170
+  orig: 146, 172
+  offset: 1, 1
+  index: -1
+sdh
+  rotate: true
+  xy: 2, 381
+  size: 144, 170
+  orig: 146, 172
+  offset: 1, 1
+  index: -1

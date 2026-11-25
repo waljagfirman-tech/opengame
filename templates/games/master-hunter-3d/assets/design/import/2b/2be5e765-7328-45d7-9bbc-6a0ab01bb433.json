@@ -1,0 +1,1 @@
+[1,0,0,[["cc.TextAsset",["_name","text"],1]],[[0,0,1,3]],[[0,"shop_equip","索引,装备id,装备价格,装备战力\r\nnumber,string,string,string\r\nid,idArr,priceArr,atkArr\r\n1,1011|1012|2011,200|300|400,3|5|7\r\n2,1013|1014|2012,200|300|500,4|12|8\r\n"]],0,0,[],[],[]]

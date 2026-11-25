@@ -1,0 +1,30 @@
+{
+  "id": "zombie-siege-3d",
+  "title": "Zombie Siege 3D",
+  "description": "Fortify a 3D outpost surrounded by swarms of undead—deploy traps, upgrade defensive towers, and mow down wave after wave of zombies closing in from every angle.",
+  "genre": "shooter",
+  "style": "3d",
+  "setting": "modern",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Drag to move your defender around the base, collect resources, and step on build zones to upgrade walls, traps, and firepower.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "TOP赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "僵尸围城",
+      "description": "高燃 3D 尸潮围城防守：在四面受敌的末日据点架起喷火塔、锯片陷阱和机枪阵地，硬扛一波波狂暴尸潮！",
+      "controls": "滑动屏幕控制角色巡防与射击，收集资源升级城墙、陷阱与防御塔抵御僵尸围攻。"
+    }
+  }
+}

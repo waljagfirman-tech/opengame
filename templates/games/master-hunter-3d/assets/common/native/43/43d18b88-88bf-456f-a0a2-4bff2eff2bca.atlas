@@ -1,0 +1,118 @@
+
+baoxiang.png
+size: 793, 394
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+bx
+  rotate: true
+  xy: 2, 4
+  size: 140, 129
+  orig: 144, 134
+  offset: 2, 3
+  index: -1
+bx11
+  rotate: true
+  xy: 133, 4
+  size: 140, 129
+  orig: 144, 134
+  offset: 2, 3
+  index: -1
+bx2
+  rotate: false
+  xy: 442, 4
+  size: 137, 145
+  orig: 141, 149
+  offset: 2, 2
+  index: -1
+bx22
+  rotate: false
+  xy: 613, 5
+  size: 137, 144
+  orig: 142, 149
+  offset: 3, 3
+  index: -1
+ddd
+  rotate: false
+  xy: 642, 245
+  size: 149, 149
+  orig: 153, 153
+  offset: 2, 2
+  index: -1
+g1
+  rotate: true
+  xy: 172, 146
+  size: 248, 146
+  orig: 267, 159
+  offset: 14, 1
+  index: -1
+g11
+  rotate: true
+  xy: 2, 146
+  size: 248, 168
+  orig: 269, 181
+  offset: 14, 1
+  index: -1
+g2
+  rotate: true
+  xy: 486, 151
+  size: 243, 154
+  orig: 272, 176
+  offset: 22, 1
+  index: -1
+g22
+  rotate: true
+  xy: 320, 151
+  size: 243, 164
+  orig: 269, 186
+  offset: 22, 1
+  index: -1
+qq
+  rotate: true
+  xy: 642, 195
+  size: 48, 41
+  orig: 50, 43
+  offset: 1, 1
+  index: -1
+qq2
+  rotate: false
+  xy: 642, 152
+  size: 48, 41
+  orig: 50, 43
+  offset: 1, 1
+  index: -1
+xxx
+  rotate: false
+  xy: 685, 202
+  size: 41, 41
+  orig: 45, 45
+  offset: 2, 2
+  index: -1
+xxx2
+  rotate: false
+  xy: 692, 168
+  size: 32, 32
+  orig: 38, 38
+  offset: 3, 3
+  index: -1
+xxxx
+  rotate: false
+  xy: 726, 179
+  size: 21, 21
+  orig: 21, 21
+  offset: 0, 0
+  index: -1
+yy
+  rotate: true
+  xy: 581, 4
+  size: 145, 30
+  orig: 147, 32
+  offset: 1, 1
+  index: -1
+zzz
+  rotate: false
+  xy: 264, 6
+  size: 176, 138
+  orig: 332, 320
+  offset: 95, 133
+  index: -1

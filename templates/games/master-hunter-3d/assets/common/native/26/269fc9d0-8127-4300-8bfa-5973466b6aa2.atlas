@@ -1,0 +1,41 @@
+
+jiguan.png
+size: 433, 170
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+gg
+  rotate: true
+  xy: 2, 18
+  size: 152, 223
+  orig: 154, 225
+  offset: 1, 1
+  index: -1
+j2
+  rotate: false
+  xy: 227, 26
+  size: 163, 36
+  orig: 163, 36
+  offset: 0, 0
+  index: -1
+x
+  rotate: true
+  xy: 263, 5
+  size: 19, 160
+  orig: 20, 160
+  offset: 1, 0
+  index: -1
+xx
+  rotate: false
+  xy: 227, 64
+  size: 204, 106
+  orig: 206, 108
+  offset: 1, 1
+  index: -1
+xxx
+  rotate: false
+  xy: 2, 4
+  size: 259, 12
+  orig: 261, 14
+  offset: 1, 1
+  index: -1

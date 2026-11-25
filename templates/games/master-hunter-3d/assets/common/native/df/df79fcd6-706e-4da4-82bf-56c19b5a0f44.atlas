@@ -1,0 +1,118 @@
+
+tujiu.png
+size: 409, 388
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+body
+  rotate: false
+  xy: 78, 40
+  size: 143, 91
+  orig: 143, 91
+  offset: 0, 0
+  index: -1
+eye1
+  rotate: true
+  xy: 168, 14
+  size: 10, 9
+  orig: 10, 9
+  offset: 0, 0
+  index: -1
+eye2
+  rotate: true
+  xy: 166, 26
+  size: 12, 11
+  orig: 12, 11
+  offset: 0, 0
+  index: -1
+eye3
+  rotate: false
+  xy: 153, 4
+  size: 13, 13
+  orig: 13, 13
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 166, 133
+  size: 136, 68
+  orig: 136, 68
+  offset: 0, 0
+  index: -1
+rchi
+  rotate: true
+  xy: 166, 203
+  size: 185, 241
+  orig: 185, 241
+  offset: 0, 0
+  index: -1
+rleg1
+  rotate: false
+  xy: 223, 9
+  size: 51, 64
+  orig: 51, 64
+  offset: 0, 0
+  index: -1
+rleg2
+  rotate: false
+  xy: 304, 153
+  size: 90, 48
+  orig: 90, 48
+  offset: 0, 0
+  index: -1
+tmao
+  rotate: false
+  xy: 95, 10
+  size: 56, 28
+  orig: 56, 28
+  offset: 0, 0
+  index: -1
+wei
+  rotate: true
+  xy: 2, 10
+  size: 121, 74
+  orig: 121, 74
+  offset: 0, 0
+  index: -1
+xz
+  rotate: true
+  xy: 78, 8
+  size: 30, 15
+  orig: 31, 15
+  offset: 1, 0
+  index: -1
+yw
+  rotate: true
+  xy: 153, 19
+  size: 19, 11
+  orig: 19, 11
+  offset: 0, 0
+  index: -1
+zchi
+  rotate: false
+  xy: 2, 133
+  size: 162, 255
+  orig: 162, 255
+  offset: 0, 0
+  index: -1
+zleg1
+  rotate: false
+  xy: 276, 10
+  size: 52, 63
+  orig: 52, 63
+  offset: 0, 0
+  index: -1
+zleg2
+  rotate: false
+  xy: 304, 100
+  size: 87, 51
+  orig: 87, 51
+  offset: 0, 0
+  index: -1
+zmao
+  rotate: true
+  xy: 223, 75
+  size: 56, 67
+  orig: 56, 67
+  offset: 0, 0
+  index: -1

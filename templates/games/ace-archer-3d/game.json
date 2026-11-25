@@ -1,0 +1,30 @@
+{
+  "id": "ace-archer-3d",
+  "title": "Ace Archer",
+  "description": "Dodge incoming projectiles across crisp roguelike dungeon rooms, stop to unleash rapid spread-shot volleys, and stack crazy arrow power-ups.",
+  "genre": "shooter",
+  "style": "3d",
+  "setting": "fantasy",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Drag anywhere to dodge enemy shots and reposition; release to automatically loose rapid arrow volleys at the nearest enemy.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "TOP赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "王牌射手",
+      "description": "经典弓箭传说式肉鸽走位射击：单手拖动灵巧躲弹幕，停步瞬间自动连发散射神箭，叠加超爽词条一路清图打 Boss！",
+      "controls": "按住拖动控制射手走位躲避弹幕，松手即自动瞄准最近敌人连续射箭，升级任选强化技能。"
+    }
+  }
+}

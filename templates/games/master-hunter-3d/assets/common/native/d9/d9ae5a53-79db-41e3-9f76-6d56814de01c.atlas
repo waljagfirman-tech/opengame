@@ -1,0 +1,41 @@
+
+dapao.png
+size: 875, 460
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+dan
+  rotate: false
+  xy: 816, 130
+  size: 57, 57
+  orig: 57, 57
+  offset: 0, 0
+  index: -1
+dz
+  rotate: true
+  xy: 672, 25
+  size: 162, 142
+  orig: 162, 142
+  offset: 0, 0
+  index: -1
+p
+  rotate: true
+  xy: 672, 189
+  size: 271, 183
+  orig: 271, 183
+  offset: 0, 0
+  index: -1
+yy
+  rotate: true
+  xy: 857, 201
+  size: 259, 12
+  orig: 261, 14
+  offset: 1, 1
+  index: -1
+图层 1
+  rotate: false
+  xy: 2, 4
+  size: 668, 456
+  orig: 670, 458
+  offset: 1, 1
+  index: -1

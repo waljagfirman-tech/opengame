@@ -1,0 +1,30 @@
+{
+  "id": "goofy-crazy-td",
+  "title": "Goofy Crazy TD",
+  "description": "Place wacky cartoon turrets along winding lanes and unleash absurdly powerful combos to send waves of goofy invaders flying.",
+  "genre": "shooter",
+  "style": "anime",
+  "setting": "fantasy",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Tap lane slots to deploy and upgrade quirky defense towers, merge firepower, and trigger special skills against incoming waves.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "TOP赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "憨憨疯狂塔防",
+      "description": "魔性搞笑卡通塔防：在弯道沿线排满脑洞炮塔与奇葩机关，花式升级打得蠢萌怪兽满天乱飞！",
+      "controls": "点击地图塔位建造并升级防御塔，合理组合火力与技能拦截全部怪物波次。"
+    }
+  }
+}

@@ -1,0 +1,76 @@
+
+yezhu.png
+size: 450, 133
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+er
+  rotate: true
+  xy: 365, 7
+  size: 33, 54
+  orig: 33, 54
+  offset: 0, 0
+  index: -1
+jio1
+  rotate: false
+  xy: 330, 50
+  size: 33, 83
+  orig: 33, 83
+  offset: 0, 0
+  index: -1
+jio2
+  rotate: true
+  xy: 258, 5
+  size: 36, 83
+  orig: 36, 83
+  offset: 0, 0
+  index: -1
+jio3
+  rotate: true
+  xy: 365, 100
+  size: 33, 83
+  orig: 33, 83
+  offset: 0, 0
+  index: -1
+jio4
+  rotate: true
+  xy: 365, 42
+  size: 56, 82
+  orig: 56, 82
+  offset: 0, 0
+  index: -1
+wei
+  rotate: true
+  xy: 258, 43
+  size: 90, 70
+  orig: 90, 70
+  offset: 0, 0
+  index: -1
+yan1
+  rotate: false
+  xy: 421, 26
+  size: 14, 14
+  orig: 14, 14
+  offset: 0, 0
+  index: -1
+yan2
+  rotate: true
+  xy: 343, 9
+  size: 17, 18
+  orig: 17, 18
+  offset: 0, 0
+  index: -1
+yan3
+  rotate: false
+  xy: 343, 28
+  size: 20, 20
+  orig: 20, 20
+  offset: 0, 0
+  index: -1
+形状 53
+  rotate: false
+  xy: 2, 4
+  size: 254, 129
+  orig: 254, 129
+  offset: 0, 0
+  index: -1

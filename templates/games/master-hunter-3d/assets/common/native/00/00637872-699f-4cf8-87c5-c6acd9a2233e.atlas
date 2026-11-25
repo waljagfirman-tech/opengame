@@ -1,0 +1,153 @@
+
+sd.png
+size: 626, 535
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+BOOM/bm_00001
+  rotate: false
+  xy: 375, 4
+  size: 67, 72
+  orig: 150, 150
+  offset: 47, 32
+  index: -1
+BOOM/bm_00002
+  rotate: false
+  xy: 462, 113
+  size: 116, 115
+  orig: 150, 150
+  offset: 17, 19
+  index: -1
+BOOM/bm_00003
+  rotate: true
+  xy: 466, 230
+  size: 121, 122
+  orig: 150, 150
+  offset: 14, 14
+  index: -1
+BOOM/bm_00004
+  rotate: true
+  xy: 128, 9
+  size: 125, 123
+  orig: 150, 150
+  offset: 13, 14
+  index: -1
+BOOM/bm_00005
+  rotate: true
+  xy: 501, 353
+  size: 122, 123
+  orig: 150, 150
+  offset: 14, 14
+  index: -1
+BOOM/bm_00006
+  rotate: true
+  xy: 253, 17
+  size: 125, 120
+  orig: 150, 150
+  offset: 10, 14
+  index: -1
+BOOM/bm_00007
+  rotate: false
+  xy: 375, 353
+  size: 124, 122
+  orig: 150, 150
+  offset: 9, 12
+  index: -1
+BOOM/bm_00008
+  rotate: true
+  xy: 2, 4
+  size: 127, 124
+  orig: 150, 150
+  offset: 7, 11
+  index: -1
+BOOM/bm_00009
+  rotate: false
+  xy: 263, 364
+  size: 110, 111
+  orig: 150, 150
+  offset: 15, 17
+  index: -1
+BOOM/bm_00011
+  rotate: false
+  xy: 364, 162
+  size: 96, 96
+  orig: 150, 150
+  offset: 27, 27
+  index: -1
+BOOM/bm_00013
+  rotate: false
+  xy: 374, 261
+  size: 90, 90
+  orig: 150, 150
+  offset: 30, 30
+  index: -1
+battleAttackSkill_70001
+  rotate: false
+  xy: 159, 139
+  size: 48, 396
+  orig: 60, 404
+  offset: 9, 3
+  index: -1
+battleAttackSkill_70002
+  rotate: false
+  xy: 2, 133
+  size: 49, 402
+  orig: 60, 404
+  offset: 8, 2
+  index: -1
+battleAttackSkill_70003
+  rotate: false
+  xy: 109, 136
+  size: 48, 399
+  orig: 60, 404
+  offset: 9, 3
+  index: -1
+battleAttackSkill_70004
+  rotate: false
+  xy: 53, 134
+  size: 54, 401
+  orig: 60, 404
+  offset: 4, 1
+  index: -1
+battleAttackSkill_70005
+  rotate: false
+  xy: 209, 144
+  size: 52, 391
+  orig: 60, 404
+  offset: 7, 9
+  index: -1
+battleAttackSkill_70006
+  rotate: true
+  xy: 263, 477
+  size: 58, 331
+  orig: 60, 404
+  offset: 0, 12
+  index: -1
+slight_dodge.img/B0
+  rotate: false
+  xy: 461, 18
+  size: 89, 93
+  orig: 111, 104
+  offset: 9, 7
+  index: -1
+slight_dodge.img/B1
+  rotate: false
+  xy: 263, 260
+  size: 109, 102
+  orig: 111, 104
+  offset: 1, 1
+  index: -1
+slight_dodge.img/B2
+  rotate: true
+  xy: 263, 153
+  size: 105, 99
+  orig: 111, 104
+  offset: 4, 4
+  index: -1
+slight_dodge.img/B3
+  rotate: false
+  xy: 375, 78
+  size: 84, 82
+  orig: 111, 104
+  offset: 14, 12
+  index: -1

@@ -1,0 +1,30 @@
+{
+  "id": "doomsday-zombie-rush",
+  "title": "Doomsday Zombie Rush",
+  "description": "Hold the highway barricade against relentless zombie waves—collect loot, unlock automated gun turrets, expand your safe zone, and blast through escalating hordes.",
+  "genre": "shooter",
+  "style": "3d",
+  "setting": "modern",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Drag on screen with the virtual joystick to move your survivor, auto-fire at approaching zombies, gather cash drops, and step onto pads to build turrets and upgrades.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "portrait",
+  "tags": [
+    "TOP赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "末日打僵尸",
+      "description": "超爽末日尸潮割草防线：端枪走位扫射满屏僵尸、捡钞票建自动炮台、解锁火力升级，在尸潮围攻下守住公路据点！",
+      "controls": "按住屏幕拖动虚拟摇杆控制角色移动与走位射击，收集掉落金币踩上解锁区建造炮台与升级装备。"
+    }
+  }
+}

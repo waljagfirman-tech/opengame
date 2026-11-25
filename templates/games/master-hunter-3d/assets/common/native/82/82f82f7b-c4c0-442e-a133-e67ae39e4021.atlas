@@ -1,0 +1,76 @@
+
+hit1.png
+size: 833, 772
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+SJ_00000
+  rotate: false
+  xy: 572, 4
+  size: 93, 81
+  orig: 300, 300
+  offset: 110, 99
+  index: -1
+SJ_00001
+  rotate: false
+  xy: 572, 87
+  size: 197, 181
+  orig: 300, 300
+  offset: 57, 64
+  index: -1
+SJ_00002
+  rotate: false
+  xy: 577, 270
+  size: 254, 225
+  orig: 300, 300
+  offset: 32, 46
+  index: -1
+SJ_00003
+  rotate: true
+  xy: 578, 497
+  size: 275, 246
+  orig: 300, 300
+  offset: 17, 32
+  index: -1
+SJ_00004
+  rotate: false
+  xy: 2, 5
+  size: 280, 252
+  orig: 300, 300
+  offset: 15, 30
+  index: -1
+SJ_00005
+  rotate: false
+  xy: 2, 515
+  size: 287, 257
+  orig: 300, 300
+  offset: 11, 28
+  index: -1
+SJ_00006
+  rotate: false
+  xy: 2, 259
+  size: 285, 254
+  orig: 300, 300
+  offset: 11, 29
+  index: -1
+SJ_00007
+  rotate: false
+  xy: 291, 521
+  size: 285, 251
+  orig: 300, 300
+  offset: 10, 30
+  index: -1
+SJ_00008
+  rotate: false
+  xy: 291, 273
+  size: 284, 246
+  orig: 300, 300
+  offset: 11, 32
+  index: -1
+SJ_00009
+  rotate: false
+  xy: 289, 27
+  size: 281, 244
+  orig: 300, 300
+  offset: 13, 31
+  index: -1

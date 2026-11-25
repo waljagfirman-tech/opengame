@@ -1,0 +1,1 @@
+[1,0,0,[["cc.TextAsset",["_name","text"],1]],[[0,0,1,3]],[[0,"role","索引,名称,动画文件名,初始战力,攻击音效\r\nnumber,string,string,number,string\r\nid,name,body,atk,attack\r\n1,弓箭手,role1,30,hit_gong\r\n2,剑士,role2,50,hit_gong\r\n"]],0,0,[],[],[]]

@@ -1,0 +1,30 @@
+{
+  "id": "billiards-3d-pro",
+  "title": "3D Billiards Pro",
+  "description": "Step up to a crisp 3D emerald felt pool table with realistic ball physics, dotted bank-shot guidelines, smooth power-cue control, and classic 8-ball table runs.",
+  "genre": "casual",
+  "style": "3d",
+  "setting": "modern",
+  "multiplayer": false,
+  "maxPlayers": 1,
+  "status": "published",
+  "cover": "cover.webp",
+  "entry": "index.html",
+  "controls": "Drag around the table to line up your cue aiming guideline, then pull back and release the power bar to strike the cue ball.",
+  "plays": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "createdAt": "2026-11-25T00:00:00.000Z",
+  "updatedAt": "2026-11-25T00:00:00.000Z",
+  "orientation": "landscape",
+  "tags": [
+    "TOP赚钱"
+  ],
+  "i18n": {
+    "zh-CN": {
+      "title": "3D 台球精英",
+      "description": "真实物理碰撞 3D 桌球竞技：清晰辅助瞄准线 + 丝滑蓄力推杆手感，精准走位连杆清台体验一杆进洞快感！",
+      "controls": "拖动桌面调整球杆瞄准角度，下拉左侧力度条蓄力后松手击球进袋。"
+    }
+  }
+}

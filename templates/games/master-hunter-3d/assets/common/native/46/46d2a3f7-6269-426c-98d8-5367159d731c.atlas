@@ -1,0 +1,83 @@
+
+lang.png
+size: 369, 217
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+body
+  rotate: false
+  xy: 2, 95
+  size: 248, 122
+  orig: 248, 122
+  offset: 0, 0
+  index: -1
+eye1
+  rotate: false
+  xy: 52, 10
+  size: 7, 7
+  orig: 7, 7
+  offset: 0, 0
+  index: -1
+eye2
+  rotate: false
+  xy: 297, 23
+  size: 9, 10
+  orig: 9, 10
+  offset: 0, 0
+  index: -1
+eye3
+  rotate: false
+  xy: 252, 105
+  size: 11, 11
+  orig: 11, 11
+  offset: 0, 0
+  index: -1
+leg1
+  rotate: false
+  xy: 205, 17
+  size: 90, 76
+  orig: 90, 76
+  offset: 0, 0
+  index: -1
+leg2
+  rotate: false
+  xy: 252, 118
+  size: 74, 99
+  orig: 74, 99
+  offset: 0, 0
+  index: -1
+leg3
+  rotate: false
+  xy: 297, 35
+  size: 70, 81
+  orig: 70, 81
+  offset: 0, 0
+  index: -1
+leg4
+  rotate: true
+  xy: 110, 18
+  size: 75, 93
+  orig: 75, 93
+  offset: 0, 0
+  index: -1
+wei
+  rotate: false
+  xy: 2, 19
+  size: 106, 74
+  orig: 106, 74
+  offset: 0, 0
+  index: -1
+xb
+  rotate: false
+  xy: 2, 4
+  size: 48, 13
+  orig: 48, 13
+  offset: 0, 0
+  index: -1
+y
+  rotate: false
+  xy: 328, 209
+  size: 17, 8
+  orig: 17, 8
+  offset: 0, 0
+  index: -1
