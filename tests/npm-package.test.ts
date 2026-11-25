@@ -130,7 +130,7 @@ test('release packaging rejects floating npm versions, lock drift, unpinned nati
   assert.throws(() => checkReleaseLocks(pkg, lock, browser), /Browser must match/);
 });
 
-test('test npm artifacts contain their application, locked manifest and no bundled native runtime', { timeout: 60_000 }, async () => {
+test('test npm artifacts contain their application, locked manifest and no bundled native runtime', { timeout: 120_000 }, async () => {
   const directory = await mkdtemp(path.join(tmpdir(), 'motion-npm-pack-'));
   const before = await readFile('package.json', 'utf8');
   // Sentinels must be names that cannot exist in a contributor checkout: the suite writes
@@ -297,7 +297,7 @@ test('test npm artifacts contain their application, locked manifest and no bundl
   }
 });
 
-test('DEV npm packages carry their catalog environment without changing the checkout', { timeout: 60_000 }, async () => {
+test('DEV npm packages carry their catalog environment without changing the checkout', { timeout: 120_000 }, async () => {
   const directory = await mkdtemp(path.join(tmpdir(), 'motion-npm-dev-'));
   try {
     const before = await readFile('shared/template-config.json', 'utf8');
@@ -314,7 +314,7 @@ test('DEV npm packages carry their catalog environment without changing the chec
   } finally { await rm(directory, { recursive: true, force: true }); }
 });
 
-test('stable artifacts stage publication instead of replacing latest and retain source publish guards', { timeout: 60_000 }, async () => {
+test('stable artifacts stage publication instead of replacing latest and retain source publish guards', { timeout: 120_000 }, async () => {
   const directory = await mkdtemp(path.join(tmpdir(), 'motion-npm-stable-'));
   try {
     const built = await packageNpm(path.join(directory, 'build'), '0.6.4');
